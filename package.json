@@ -1,10 +1,17 @@
 {
-  "name": "no-skeleton.docpad",
-  "version": "0.1.0",
-  "description": "New DocPad project without using a skeleton",
+  "name": "vr-matrix-effect",
+  "version": "4.9.9",
+  "description": "Testeando Código Javascript",
   "engines": {
     "node": "0.10",
     "npm": "1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fizzvr/vr-matrix-effect"
+  },
+  "contributors": {
+    "name": "Richard Womersley"
   },
   "dependencies": {
     "docpad": "6.x"
