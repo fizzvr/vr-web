@@ -14,7 +14,14 @@
     "name": "Richard Womersley"
   },
   "dependencies": {
-    "docpad": "6.x"
+    "docpad": "6.x",
+    "docpad-plugin-eco": "~2.0.2",
+    "docpad-plugin-livereload": "~2.4.0",
+    "docpad-plugin-frontend": "~1.1.0",
+    "grunt": "~0.4.1",
+    "grunt-frontend": "~1.1.2",
+    "moment": "~2.1.0",
+    "grunt-htmlcompressor": "~0.1.8"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
