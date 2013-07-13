@@ -1,6 +1,7 @@
 ---
-css: "c/principal.css"
-js: "j/principal.js"
+css: "css/principal.css"
+javascript: "js/principal.js"
+piwix: "js/piw.js"
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -26,7 +27,7 @@ js: "j/principal.js"
 	<link rel="stylesheet" href="<%= url %>">
 	<% end %>
 	
-	<% for url in @assets('js'): %>
+	<% for url in @assets('javascript'): %>
 	<script src="<%= url %>"></script>
 	<% end %>
 	
@@ -38,6 +39,9 @@ js: "j/principal.js"
 		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /></a><br />
 		Online desde el día <%= @formatoFecha(@document.date) %>
 	</footer>
+	<% for url in @assets('piwix'): %>
+	<script src="<%= url %>"></script>
+	<% end %>
 	<%- @getBlock("scripts").toHTML() %>
 </body>
 </html>
