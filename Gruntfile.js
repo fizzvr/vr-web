@@ -10,13 +10,16 @@ module.exports = function(grunt) {
 			main: {
 				css: {
 					src: './src/files/css',
-					dest: './final/c'
+					dest: './final/css'
 				},
 				js: {
 					files: {
-						'./final/j/principal.js': [
-						'./src/files/js/codiguito.js'
-						] 
+						'./final/js/principal.js': [
+							'./src/files/js/principal.js'
+						],
+						'./final/js/piw.js': [
+							'./src/files/js/piw.js'
+						]
 					}
 					
 				}
