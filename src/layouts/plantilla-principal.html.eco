@@ -1,0 +1,43 @@
+---
+css: "c/principal.css"
+js: "j/principal.js"
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- meta estandar -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" >
+	<!-- propiedades del sitio -->
+	<title><%= @site.titulo %></title>
+	<meta name="description" content="<%= @site.descripcion %>" >
+	<meta name="keywords" content="<%= @site.keywords %>" >
+	<meta name="author" content="<%= @site.autor %>" > 
+	
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+	
+	<!-- recursos -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<% for url in @assets('css'): %>
+	<link rel="stylesheet" href="<%= url %>">
+	<% end %>
+	
+	<% for url in @assets('js'): %>
+	<script src="<%= url %>"></script>
+	<% end %>
+	
+</head>
+<body>
+	
+	<%- @content %>
+	<footer>
+		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /></a><br />
+		Online desde el día <%= @formatoFecha(@document.date) %>
+	</footer>
+	<%- @getBlock("scripts").toHTML() %>
+</body>
+</html>
