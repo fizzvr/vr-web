@@ -1,14 +1,17 @@
 {
-  "name": "vr-matrix-effect",
+  "name": "vr-Web",
   "version": "4.9.9",
-  "description": "Testeando Código Javascript",
-  "homepage": "https://github.com/fizzvr/vr-matrix-effect",
+  "description": "Desarrollo de mi sitio web con Docpad",
+  "homepage": "https://github.com/fizzvr/vr-Web",
   "keywords": [
-    "test",
+    "testear",
     "testeando",
-    "code",
-    "código",
-    "javascript"
+    "programar",
+    "programación",
+    "cursos",
+    "recursos",
+    "steam",
+    "hardcore"
   ],
   "author": "fizzvr (http://fizzvr.com)",
   "engines": {
@@ -17,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:fizzvr/vr-matrix-effect.git"
+    "url": "git@github.com:fizzvr/vr-Web.git"
   },
   "contributors": {
     "name": "Richard Womersley"
