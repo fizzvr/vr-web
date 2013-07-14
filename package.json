@@ -1,6 +1,6 @@
 {
   "name": "vr-Web",
-  "version": "4.9.9",
+  "version": "0.1.1",
   "description": "Desarrollo de mi sitio web con Docpad",
   "homepage": "https://github.com/fizzvr/vr-Web",
   "keywords": [
@@ -25,12 +25,11 @@
   "contributors": {
     "name": "Richard Womersley"
   },
-
   "dependencies": {
     "docpad": "6.x",
     "docpad-plugin-eco": "~2.0.2",
     "docpad-plugin-frontend": "~1.1.0",
-    "docpad-plugin-livereçload": "~2.4.0",
+    "docpad-plugin-livereload": "~2.4.0",
     "grunt": "~0.4.1",
     "grunt-frontend": "~1.1.2",
     "grunt-htmlcompressor": "~0.1.8",
