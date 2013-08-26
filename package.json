@@ -22,14 +22,10 @@
     "type": "git",
     "url": "git@github.com:fizzvr/vr-Web.git"
   },
-  "contributors": {
-    "name": "Richard Womersley"
-  },
   "dependencies": {
-    "docpad": "6.x",
+    "docpad": "~6.48.0",
     "docpad-plugin-eco": "~2.0.2",
-    "docpad-plugin-frontend": "~1.1.0",
-    "docpad-plugin-livereload": "~2.4.0",
+    "docpad-plugin-frontend": "~2.0.0",
     "grunt": "~0.4.1",
     "grunt-frontend": "~1.1.2",
     "grunt-htmlcompressor": "~0.1.8",
@@ -38,5 +34,8 @@
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
+  },
+  "devDependencies": {
+    "docpad-plugin-livereload": "~2.5.1"
   }
 }
