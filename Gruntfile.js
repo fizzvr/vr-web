@@ -21,26 +21,27 @@ module.exports = function(grunt) {
 							'./src/files/js/piw.js'
 						]
 					}
-					
+
 				}
 			}
 		},
 		htmlcompressor: {
-		    compile: {
-			      files: {
-			        'final/index.html': 'out/index.html'
-			      },
-			      options: {
-			        type: 'html',
-			        preserveServerScript: true
-			      }
-	    	}
-	  	}
+			compile: {
+				files: {
+					'final/index.html': 'out/index.html'
+				},
+				options: {
+					type: 'html',
+					preserveServerScript: true
+				}
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-frontend');
 	grunt.loadNpmTasks('grunt-htmlcompressor');
 
 	// Default task.
-	grunt.registerTask('default', ['frontend','htmlcompressor']);
+	grunt.registerTask('default', ['frontend']);
+	grunt.registerTask('release', ['default','htmlcompressor']);
 };
