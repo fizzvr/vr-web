@@ -5,10 +5,10 @@ exec = require('child_process').exec;
 docpadConfig = {
 	templateData: {
 		site: {
-			url: "http://fizzvr.com",
-			titulo: "Fizzvr",
+			url: "http://www.fizzvr.com",
+			titulo: "fizzvr",
 			descripcion: "Aficionado de HTML5, Javascript, Dota y hXc",
-			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, tests, cursos, recursos, dota, dota 2, steam, valve, música, metal, core, metalcore, hardcore, web 2.0",
+			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, tests, testeando, curso, recurso, dota, dota2, steam, valve, música, metal, core, metalcore, hardcore, web 2.0",
 			autor: "fizzvr",
 			email: "info@fizzvr.com"
 		},
@@ -24,6 +24,16 @@ docpadConfig = {
 			} else {
 				return this.site.titulo;
 			}
+		},
+		obtenerDescripcion: function() {
+			return this.document.descripcion || this.site.descripcion;
+
+		},
+		obtenerPalabrasClave: function() {
+			return this.site.keywords.concat(this.document.keywords || []).join(", ");
+		},
+		obtenerAutor: function() {
+			return this.document.autor || this.site.autor;
 		}
 	},
 	events: {
