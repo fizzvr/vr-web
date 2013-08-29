@@ -21,6 +21,7 @@
     "docpad-plugin-eco": "~2.0.2",
     "docpad-plugin-frontend": "~2.0.0",
     "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
     "grunt-frontend": "~1.1.2",
     "grunt-htmlcompressor": "~0.1.8",
     "moment": "~2.1.0"
@@ -28,8 +29,5 @@
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
-  },
-  "devDependencies": {
-    "docpad-plugin-livereload": "~2.5.3"
   }
 }
