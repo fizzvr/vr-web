@@ -8,24 +8,29 @@ module.exports = function(grunt) {
 		banner: '/**\n' +
 				'* <%= leerJson.name %> v<%= leerJson.version %> por @fizzvr\n' +
 				'*/\n',
+		// grunt-contrib-clean plugin configuracion
+		clean: [
+			'./final',
+			'./out'
+		],
 		// grunt-frontend plugin configuracion
 		frontendConfig: {
-			srcWebroot: './src/files',
-			webroot: './out'
+			srcWebroot: './src/public/',
+			webroot: './out/'
 		},
 		frontend: {
 			main: {
 				css: {
-					src: './src/files/css',
+					src: './src/public/css',
 					dest: './final/css'
 				},
 				js: {
 					files: {
 						'./final/js/principal.js': [
-							'./src/files/js/principal.js'
+							'./src/public/js/principal.js'
 						],
 						'./final/js/piw.js': [
-							'./src/files/js/piw.js'
+							'./src/public/js/piw.js'
 						]
 					}
 
@@ -46,6 +51,7 @@ module.exports = function(grunt) {
 	});
 
 	// carga de los plugins para el proyecto
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-frontend');
 	grunt.loadNpmTasks('grunt-htmlcompressor');
 
@@ -53,4 +59,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('dist-jscss', ['frontend']);
 	// compresion HTML
 	grunt.registerTask('comp-hmtl', ['htmlcompressor']);
+	// distribucion FULL
+	grunt.registerTask('dist', ['clean', 'dist-jscss', 'comp-hmtl']);
+	// tarea por default
+	grunt.registerTask('default', ['dist']);
 };
