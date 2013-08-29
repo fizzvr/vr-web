@@ -35,31 +35,6 @@ docpadConfig = {
 		obtenerAutor: function() {
 			return this.document.autor || this.site.autor;
 		}
-	},
-	events: {
-		serverAfter: function(_arg) {
-		var server;
-		server = _arg.server;
-			return server.get(/^\/\d+\/(c|j)\//, function(req, res, next) {
-			req.url = req.url.replace(/^\/\d+\//, '/');
-			return next();
-			});
-		},
-		generateBefore: function (opts, next) {
-		var proc;
-		if (this.docpad.getConfig().frontendDebug) {
-			return next();
-		}
-		proc = exec('grunt', {
-		cwd: process.cwd()
-		}, function(error, stdout, stderr) {
-			console.log(stdout);
-			if (error) {
-				return process.exit();
-			}
-		});
-			return proc.on('exit', next);
-		}
 	}
 };
 module.exports = docpadConfig;
