@@ -1,7 +1,14 @@
 module.exports = function(grunt) {
 
-	// Project configuration.
+	// configuracion del proyecto
 	grunt.initConfig({
+
+		// metadatos
+		leerJson: grunt.file.readJSON('package.json'),
+		banner: '/**\n' +
+				'* <%= leerJson.name %> v<%= leerJson.version %> por @fizzvr\n' +
+				'*/\n',
+		// grunt-frontend plugin configuracion
 		frontendConfig: {
 			srcWebroot: './src/files',
 			webroot: './out'
@@ -38,10 +45,12 @@ module.exports = function(grunt) {
 		}
 	});
 
+	// carga de los plugins para el proyecto
 	grunt.loadNpmTasks('grunt-frontend');
 	grunt.loadNpmTasks('grunt-htmlcompressor');
 
-	// Default task.
-	grunt.registerTask('default', ['frontend']);
-	grunt.registerTask('release', ['default','htmlcompressor']);
+	// distribucion JS y CSS
+	grunt.registerTask('dist-jscss', ['frontend']);
+	// compresion HTML
+	grunt.registerTask('comp-hmtl', ['htmlcompressor']);
 };
