@@ -1,5 +1,5 @@
 /node_modules
 /out
-/final
+/full-dist
 .build-catalog.json
 
