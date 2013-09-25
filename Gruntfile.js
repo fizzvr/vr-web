@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 				'*/\n',
 		// tarea de limpieza
 		clean: [
-			'./full-dist'
+			'./out'
 		],
 		// tarea de distribucion JS y CSS minified
 		frontendConfig: {
@@ -21,15 +21,13 @@ module.exports = function(grunt) {
 			main: {
 				css: {
 					src: './src/public/css',
-					dest: './full-dist/c'
+					dest: './out/cvr'
 				},
 				js: {
 					files: {
-						'./full-dist/js/principal.js': [
-							'./src/public/js/principal.js'
-						],
-						'./full-dist/js/piw.js': [
-							'./src/public/js/piw.js'
+						'./out/jvr/vrweb.js': [
+							'./src/public/js/piwik.js',
+							'./src/public/js/jsvr.js'
 						]
 					}
 
@@ -37,7 +35,7 @@ module.exports = function(grunt) {
 			}
 		},
 		// tarea de copia de los archivos bs3
-		copy: {
+		/*copy: {
 			main: {
 				files: [
 				{
@@ -50,7 +48,7 @@ module.exports = function(grunt) {
 					expand: true,
 					flatten: true,
 					src: ["./src/public/vendor/fonts/glyphicons-halflings-regular.*"],
-					dest: 'full-dist/fonts/'
+					dest: 'full-dist/f/'
 				},
 				{
 					expand: true,
@@ -60,9 +58,9 @@ module.exports = function(grunt) {
 				}
 				]
 			}
-		},
+		},*/
 		// tarea de compresion de los HTML
-		htmlcompressor: {
+		/*htmlcompressor: {
 			compile: {
 				files: {
 					'full-dist/index.html': 'out/index.html'
@@ -72,7 +70,7 @@ module.exports = function(grunt) {
 					preserveServerScript: true
 				}
 			}
-		}
+		}*/
 	});
 
 	// carga de los plugins para el proyecto
@@ -90,5 +88,5 @@ module.exports = function(grunt) {
 	// distribucion FULL
 	grunt.registerTask('dist-full', ['clean', 'dist-jscss', 'comp-hmtl']);
 	// tarea por default
-	grunt.registerTask('default', ['clean']);
+	grunt.registerTask('default', ['dist-jscss']);
 };
