@@ -35,6 +35,23 @@ docpadConfig = {
 		obtenerAutor: function() {
 			return this.document.autor || this.site.autor;
 		}
+	},
+	events: {
+		generateBefore: function(opts, next) {
+			var proc;
+			if (this.docpad.getConfig().frontendDebug) {
+			return next();
+		}
+		proc = exec('grunt', {
+		cwd: process.cwd()
+		}, function(error, stdout, stderr) {
+		console.log(stdout);
+			if (error) {
+				return process.exit();
+			}
+		});
+		return proc.on('exit', next);
+		}
 	}
 };
 module.exports = docpadConfig;
