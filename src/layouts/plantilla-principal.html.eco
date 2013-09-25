@@ -1,31 +1,34 @@
 ---
-css: "css/principal.css"
-javascript: "js/principal.js"
-piwix: "js/piw.js"
+css : "cvr/cssvr.css"
+js : "jvr/vrweb.js"
 ---
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<!-- meta estandar -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 	<!-- propiedades del sitio -->
-	<title><%= @obtenerTitulo() %></title>
 	<meta name="description" content="<%= @obtenerDescripcion() %>" >
 	<meta name="keywords" content="<%= @obtenerPalabrasClave() %>" >
 	<meta name="author" content="<%= @obtenerAutor() %>" >
-	<!-- Shims: IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<title><%= @obtenerTitulo() %></title>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="activos/js/html5shiv.js"></script>
+      <script src="activos/js/respond.min.js"></script>
+    <![endif]-->
+
 	<!-- recursos -->
+	<script src="activos/js/jquery.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="bs3/css/bootstrap.min.css">
 	<% for url in @assets('css'): %>
 	<link rel="stylesheet" href="<%= url %>">
 	<% end %>
-	<% for url in @assets('javascript'): %>
-	<script src="<%= url %>"></script>
-	<% end %>
+
 </head>
 <body>
 
@@ -34,9 +37,12 @@ piwix: "js/piw.js"
 		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /></a><br />
 		Online desde el día <%= @formatoFecha(@document.date) %>
 	</footer>
-	<% for url in @assets('piwix'): %>
+
+	<!-- bs core JavaScript -->
+	<script src="bs3/js/bootstrap.min.js"></script>
+	<% for url in @assets('js'): %>
 	<script src="<%= url %>"></script>
 	<% end %>
-	<%- @getBlock("scripts").toHTML() %>
+
 </body>
 </html>
