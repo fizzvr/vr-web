@@ -13,6 +13,7 @@ js : "jvr/vrweb.js"
 	<meta name="description" content="<%= @obtenerDescripcion() %>" >
 	<meta name="keywords" content="<%= @obtenerPalabrasClave() %>" >
 	<meta name="author" content="<%= @obtenerAutor() %>" >
+	<link rel="shortcut icon" href="activos/ico/favicon.png">
 	<title><%= @obtenerTitulo() %></title>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,7 +39,7 @@ js : "jvr/vrweb.js"
 		Online desde el día <%= @formatoFecha(@document.date) %>
 	</footer>
 
-	<!-- bs core JavaScript -->
+	<!--core JavaScript -->
 	<script src="bs3/js/bootstrap.min.js"></script>
 	<% for url in @assets('js'): %>
 	<script src="<%= url %>"></script>
