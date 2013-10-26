@@ -70,7 +70,14 @@ module.exports = function(grunt) {
 					preserveServerScript: true
 				}
 			}
-		}*/
+		}
+		compress: {
+      		target: {
+        			files: {
+          				'pack/<%= pkg.name %>.v<%= pkg.version %>.zip': ['prod/**']
+        			}
+      			}
+    	}*/
 	});
 
 	// carga de los plugins para el proyecto
