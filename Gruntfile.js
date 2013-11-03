@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 				js: {
 					files: {
 						'./out/jvr/vrweb.js': [
-							'./src/public/js/piwik.js',
+							'./src/public/js/plugins.js',
 							'./src/public/js/jsvr.js'
 						]
 					}
