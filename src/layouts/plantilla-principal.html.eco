@@ -14,14 +14,14 @@ js : "jvr/vrweb.js"
 	<meta name="description" content="<%= @obtenerDescripcion() %>" >
 	<meta name="keywords" content="<%= @obtenerPalabrasClave() %>" >
 	<meta name="author" content="<%= @obtenerAutor() %>" >
-	<link rel="shortcut icon" href="activos/ico/favicon.png">
-	<link rel="apple-touch-icon-precomposed" href="activos/ico/apple-touch-icon-precomposed.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="activos/js/html5shiv.js"></script>
-      <script src="activos/js/respond.min.js"></script>
+      <script src="jvr/act/html5shiv.js"></script>
+      <script src="jvr/act/respond.min.js"></script>
     <![endif]-->
 
 	<!-- recursos -->
@@ -41,7 +41,7 @@ js : "jvr/vrweb.js"
 	</footer>
 
 	<!--core JavaScript -->
-	<script src="activos/js/jquery.js"></script>
+	<script src="jvr/act/jquery.js"></script>
 	<script src="bs3/js/bootstrap.min.js"></script>
 	<% for url in @assets('js'): %>
 	<script src="<%= url %>"></script>

@@ -35,30 +35,18 @@ module.exports = function(grunt) {
 			}
 		},
 		// tarea de copia de los archivos bs3
-		/*copy: {
+		copy: {
 			main: {
 				files: [
 				{
 					expand: true,
 					flatten: true,
-					src: ["./src/public/vendor/css/*"],
-					dest: 'full-dist/c/'
-				},
-				{
-					expand: true,
-					flatten: true,
-					src: ["./src/public/vendor/fonts/glyphicons-halflings-regular.*"],
-					dest: 'full-dist/f/'
-				},
-				{
-					expand: true,
-					flatten: true,
-					src: ["./src/public/vendor/js/*"],
-					dest: 'full-dist/j/'
+					src: ["./src/public/js/activos/*"],
+					dest: './out/jvr/act'
 				}
 				]
 			}
-		},*/
+		},
 		// tarea de compresion de los HTML
 		/*htmlcompressor: {
 			compile: {
@@ -84,16 +72,16 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-frontend');
-	grunt.loadNpmTasks('grunt-htmlcompressor');
+	// grunt.loadNpmTasks('grunt-htmlcompressor');
 
 	// distribucion JS y CSS
 	grunt.registerTask('dist-jscss', ['frontend']);
-	// distribucion de las fuentes
-	grunt.registerTask('dist-fonts', ['copy']);
+	// distribucion de los activos
+	grunt.registerTask('dist-activos', ['copy']);
 	// compresion HTML
-	grunt.registerTask('comp-hmtl', ['htmlcompressor']);
+	// grunt.registerTask('comp-hmtl', ['htmlcompressor']);
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['clean', 'dist-jscss', 'comp-hmtl']);
+	grunt.registerTask('dist-full', ['clean', 'dist-jscss', 'dist-activos']);
 	// tarea por default
-	grunt.registerTask('default', ['dist-jscss']);
+	grunt.registerTask('default', ['dist-full']);
 };
