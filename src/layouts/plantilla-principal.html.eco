@@ -8,13 +8,15 @@ js : "jvr/vrweb.js"
 <head>
 	<!-- meta estandar -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
 	<!-- propiedades del sitio -->
+	<title><%= @obtenerTitulo() %></title>
 	<meta name="description" content="<%= @obtenerDescripcion() %>" >
 	<meta name="keywords" content="<%= @obtenerPalabrasClave() %>" >
 	<meta name="author" content="<%= @obtenerAutor() %>" >
 	<link rel="shortcut icon" href="activos/ico/favicon.png">
-	<title><%= @obtenerTitulo() %></title>
+	<link rel="apple-touch-icon-precomposed" href="activos/ico/apple-touch-icon-precomposed.png">
+
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,7 +25,6 @@ js : "jvr/vrweb.js"
     <![endif]-->
 
 	<!-- recursos -->
-	<script src="activos/js/jquery.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="bs3/css/bootstrap.min.css">
 	<% for url in @assets('css'): %>
@@ -40,6 +41,7 @@ js : "jvr/vrweb.js"
 	</footer>
 
 	<!--core JavaScript -->
+	<script src="activos/js/jquery.js"></script>
 	<script src="bs3/js/bootstrap.min.js"></script>
 	<% for url in @assets('js'): %>
 	<script src="<%= url %>"></script>
