@@ -4,7 +4,7 @@ js : "jvr/vrweb.js"
 ---
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
 	<!-- meta estandar -->
 	<meta charset="UTF-8">
