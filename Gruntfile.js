@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		// tarea de copia de los archivos bs3
+		// tarea de copia de los archivos 3rd party
 		copy: {
 			main: {
 				files: [
