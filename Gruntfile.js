@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 	// compresion HTML
 	// grunt.registerTask('comp-hmtl', ['htmlcompressor']);
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['clean', 'dist-jscss', 'dist-activos']);
+	grunt.registerTask('dist-full', ['dist-jscss', 'dist-activos']);
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };
