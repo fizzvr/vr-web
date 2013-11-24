@@ -1,0 +1,33 @@
+* {
+                margin: 0;
+                line-height: 1.5;
+            }
+
+            html {
+                font-family: tahoma;
+                text-align: center;
+            }
+
+            h1 {
+                color: #555;
+                font-size: 2em;
+                font-weight: 400;
+            }
+
+            p {
+                line-height: 1.2;
+            }
+
+            @media only screen and (max-width: 270px) {
+
+                body {
+                    margin: 10px auto;
+                    position: static;
+                    width: 95%;
+                }
+
+                h1 {
+                    font-size: 1.5em;
+                }
+
+            }

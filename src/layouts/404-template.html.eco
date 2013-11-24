@@ -1,0 +1,6 @@
+---
+layout: "plantilla-principal"
+css1 : "cvr/cssvr-errorpage.css"
+---
+<h1><%= @document.titulo %></h1>
+<div class="contenido-error"><%- @content %></div>
