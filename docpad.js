@@ -6,9 +6,9 @@ docpadConfig = {
 	templateData: {
 		site: {
 			url: "http://www.fizzvr.com",
-			titulo: "fizzvr",
-			descripcion: "Aficionado de HTML5, Javascript, Dota y hXc",
-			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, tests, testeando, curso, recurso, dota, dota2, steam, valve, música, metal, core, metalcore, hardcore, web 2.0",
+			titulo: "FizzVR",
+			descripcion: "Professional Web Coder",
+			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, tests, testeando, curso, cursos, recurso, web 2.0",
 			autor: "fizzvr",
 			email: "info@fizzvr.com"
 		},
@@ -20,9 +20,9 @@ docpadConfig = {
 		},
 		obtenerTitulo: function() {
 			if (this.document.titulo) {
-				return "" + this.document.titulo + " | " + this.site.titulo;
+				return "" + this.site.titulo + " | " + this.document.titulo;
 			} else {
-				return this.site.titulo;
+				return "" + this.site.titulo + " | " + this.site.descripcion;
 			}
 		},
 		obtenerDescripcion: function() {
