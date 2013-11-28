@@ -1,0 +1,13 @@
+{
+  "name": "vr-web",
+  "version": "0.1.1",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.2"
+  }
+}
