@@ -34,15 +34,36 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		// tarea de copia de los archivos 3rd party
+		// tarea de copia de los archivos 3rd party desde bower
 		copy: {
 			main: {
 				files: [
+				//bootstrap bower list --path
 				{
 					expand: true,
 					flatten: true,
-					src: ["./src/public/js/activos/*"],
-					dest: './out/jvr/act'
+					src: ["bower_components/bootstrap/dist/js/bootstrap.min.js"],
+					dest: './out/bs3/js'
+				},
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/bootstrap/dist/css/bootstrap.min.css",
+						"bower_components/bootstrap/dist/css/bootstrap-theme.min.css"],
+					dest: './out/bs3/css'
+				},
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/bootstrap/dist/fonts/*"],
+					dest: './out/bs3/fonts'
+				},
+				//jquery bower list --path
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/jquery/jquery.min.js"],
+					dest: './out/jvr/act/'
 				}
 				]
 			}
