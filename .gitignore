@@ -1,5 +1,5 @@
-/node_modules
-/out
-/full-dist
+node_modules/
+bower_components/
+out/
 .build-catalog.json
 
