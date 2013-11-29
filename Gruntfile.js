@@ -14,14 +14,14 @@ module.exports = function(grunt) {
 		],
 		// tarea de distribucion JS y CSS minified
 		frontendConfig: {
-			srcWebroot: './src/public/',
-			webroot: './out/'
+			srcWebroot: 'src/public/',
+			webroot: 'out/'
 		},
 		frontend: {
-			main: {
+			produccion: {
 				css: {
-					src: './src/public/css',
-					dest: './out/cvr'
+					src: 'src/public/css/',
+					dest: 'out/cvr/'
 				},
 				js: {
 					files: {
@@ -62,25 +62,22 @@ module.exports = function(grunt) {
 				{
 					expand: true,
 					flatten: true,
-					src: ["bower_components/jquery/jquery.min.js"],
+					src: ["bower_components/jquery/jquery.min.js",
+					"bower_components/jquery/jquery.min.map"],
 					dest: './out/jvr/act/'
 				}
 				]
 			}
 		},
-		// tarea de compresion de los HTML
-		/*htmlcompressor: {
-			compile: {
-				files: {
-					'full-dist/index.html': 'out/index.html'
-				},
-				options: {
-					type: 'html',
-					preserveServerScript: true
-				}
+		validation: {
+			options: {
+				reset: true
+			},
+			files: {
+				src:['out/**/*.html']
 			}
-		}
-		compress: {
+	    }
+		/*compress: {
       		target: {
         			files: {
           				'pack/<%= pkg.name %>.v<%= pkg.version %>.zip': ['prod/**']
@@ -92,17 +89,17 @@ module.exports = function(grunt) {
 	// carga de los plugins para el proyecto
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-html-validation');
 	grunt.loadNpmTasks('grunt-frontend');
-	// grunt.loadNpmTasks('grunt-htmlcompressor');
 
+	// validar html
+	grunt.registerTask('validar-html', ['validation']);
 	// distribucion JS y CSS
 	grunt.registerTask('dist-jscss', ['frontend']);
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
-	// compresion HTML
-	// grunt.registerTask('comp-hmtl', ['htmlcompressor']);
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['dist-jscss', 'dist-activos']);
+	grunt.registerTask('dist-full', ['dist-jscss', 'dist-activos', 'validar-html']);
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };
