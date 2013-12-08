@@ -2,5 +2,7 @@ node_modules/
 bower_components/
 out/
 .build-catalog.json
+validation-report.json
+validation-status.json
 *.db
 
