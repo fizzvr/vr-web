@@ -17,11 +17,10 @@
     "url": "git@github.com:fizzvr/vr-Web.git"
   },
   "dependencies": {
-    "docpad": "~6.56.0",
+    "docpad": "~6.57.0",
     "docpad-plugin-eco": "~2.0.2",
     "docpad-plugin-frontend": "~2.0.0",
     "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-frontend": "~1.1.2",
     "moment": "~2.1.0"
