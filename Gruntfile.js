@@ -8,10 +8,6 @@ module.exports = function(grunt) {
 		banner: '/**\n' +
 				'* <%= leerJson.name %> v<%= leerJson.version %> por @fizzvr\n' +
 				'*/\n',
-		// tarea de limpieza
-		clean: [
-			'./out'
-		],
 		// tarea de distribucion JS y CSS minified
 		frontendConfig: {
 			srcWebroot: 'src/public/',
@@ -87,7 +83,6 @@ module.exports = function(grunt) {
 	});
 
 	// carga de los plugins para el proyecto
-	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-html-validation');
 	grunt.loadNpmTasks('grunt-frontend');
