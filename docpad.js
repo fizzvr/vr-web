@@ -7,8 +7,8 @@ docpadConfig = {
 		site: {
 			url: "http://www.fizzvr.com",
 			titulo: "FizzVR",
-			descripcion: "Professional Web Coder",
-			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, tests, testeando, curso, cursos, recurso, web 2.0",
+			descripcion: "construyendo el mundo con tecnologías del hoy y creando bits para la web del mañana",
+			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, v2b",
 			autor: "fizzvr",
 			email: "info@fizzvr.com"
 		},
@@ -22,7 +22,7 @@ docpadConfig = {
 			if (this.document.titulo) {
 				return "" + this.site.titulo + " | " + this.document.titulo;
 			} else {
-				return "" + this.site.titulo + " | " + this.site.descripcion;
+				return "" + this.site.titulo + " | Web Coder";
 			}
 		},
 		obtenerDescripcion: function() {
