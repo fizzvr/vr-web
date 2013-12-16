@@ -1,9 +1,18 @@
 body {
-	background: #FFFFFF;
+
 	font-family: "Open Sans", Arial;
 	font-size: 16px;
-	border-top: 5px #000 solid;
+	/*background: #252122;*/
+	/*background-image: url('../ivr/bg01.png');*/
+	color: #5d5d5d;
+
+
 }
+.color-bg { background:#428BCA; }
+.color-bar-1, .color-bar-2 { width:100% }
+.color-bar-1 { background:#414141; height:5px; }
+.color-bar-2 { height:3px; }
+
 
 
 

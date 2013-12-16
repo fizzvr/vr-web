@@ -2,7 +2,6 @@
 css : "cvr/cssvr.css"
 js : "jvr/vrweb.js"
 ---
-
 <!DOCTYPE html>
 <html lang="es" class="no-js">
 <head>
@@ -33,17 +32,15 @@ js : "jvr/vrweb.js"
 
 </head>
 <body>
-
 	<%- @content %>
 
-
-	<footer>
-		<p class="pull-right">
-			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /></a>
-		</p>
-		<br>
-		<p>Última actualización el <%= @formatoFecha(@site.date) %></p>
-	</footer>
+	<!-- <footer>
+	<p class="pull-right">
+	<a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /></a>
+	</p>
+	<br>
+	<p>Última actualización el <%= @formatoFecha(@site.date) %></p>
+	</footer> -->
 
 	<!--core JavaScript -->
 	<script src="jvr/act/jquery.min.js"></script>
