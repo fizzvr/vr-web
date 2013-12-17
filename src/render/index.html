@@ -3,7 +3,6 @@ layout: 'plantilla-principal'
 ---
 	<div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
-	<!-- comienza el header -->
 	<header class="navbar navbar-default navbar-static-top vr-web-navegacion">
 	<div class="container">
 		<div class="navbar-header">
@@ -17,11 +16,12 @@ layout: 'plantilla-principal'
 		</div>
 		<nav class="iconos-sociales">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><img src="ivr/icon_github-48.png" /></a></li>
-				<li><a href="#"><img src="ivr/icon_googleplus-48.png" /></a></li>
-				<li><a href="#"><img src="ivr/icon_twitter-48.png" /></a></li>
-				<li><a href="#"><img src="ivr/icon_youtube-48.png" /></a></li>
-				<li><a href="#"><img src="ivr/icon_rss-48.png" /></a></li>
+				<li><a href="#"><img src="ivr/icon_github-48.png" alt=""></a></li>
+				<li><a href="#"><img src="ivr/icon_googleplus-48.png" alt=""></a></li>
+				<li><a href="#"><img src="ivr/icon_twitter-48.png" alt=""></a></li>
+				<li><a href="#"><img src="ivr/icon_youtube-48.png" alt=""></a></li>
+				<li><a href="#"><img src="ivr/icon_rss-48.png" alt=""></a></li>
+
 			</ul>
 		</nav>
 		<nav class="collapse navbar-collapse" id="colapsar-menu" role="navigation">
@@ -35,13 +35,51 @@ layout: 'plantilla-principal'
 		</nav>
 	</div>
 	</header>
-	<!-- fin header -->
-	<div class="vr-web-cabezera">
+	<!-- fin vr-web-navegacion-->
+	<div class="vr-web-presentacion">
 		<div class="container">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, recusandae, consectetur repellat exercitationem qui delectus quos quia dolore sit cupiditate asperiores odio ipsum excepturi sunt soluta rerum facilis eum quam.</p>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="flexslider">
+						<ul class="slides">
+							<li><a href=""><img src="ivr/slider/slider-img-1.jpg" alt=""></a></li>
+							<li><a href=""><img src="ivr/slider/slider-img-2.jpg" alt=""></a></li>
+							<li><a href=""><img src="ivr/slider/slider-img-3.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h3>Bienvenidos <br>
+		          	Status: Compartiendo conocimiento</h3>
+		            <blockquote class="pull-right"><p>Construyendo el mundo con las tecnologías del hoy y creando bits para la web del mañana.</p><small><cite>Vladimir Rodríguez</cite></small>
+		            </blockquote>
+				</div>
+			</div>
 		</div>
-
 	</div>
-
-
-
+	<!-- fin vr-web-presentacion-->
+	<div class="vr-web-skills">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#">
+                        <span class="img_icon icon1"></span>
+                        <span class="link_title">Html+Css+Javascript</span>Vista del usuario.
+                    </a>
+				</div>
+				<div class="col-md-4">
+					<a href="#">
+                        <span class="img_icon icon1"></span>
+                        <span class="link_title">PHP</span>Interacción con el servidor.
+                    </a>
+                </div>
+				<div class="col-md-4">
+					<a href="#">
+                        <span class="img_icon icon1"></span>
+                        <span class="link_title">MySql</span>Gestión de datos
+                    </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- fin vr-web-skills -->

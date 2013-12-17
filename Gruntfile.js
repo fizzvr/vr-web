@@ -61,6 +61,20 @@ module.exports = function(grunt) {
 					src: ["bower_components/jquery/jquery.min.js",
 					"bower_components/jquery/jquery.min.map"],
 					dest: './out/jvr/act/'
+				},
+				//flexslider bower list --path
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/flexslider/flexslider.css",
+					"bower_components/flexslider/jquery.flexslider.js"],
+					dest: './out/fs/'
+				},
+				{
+					expand: true,
+					flatten: true,
+					src:["bower_components/flexslider/fonts/*"],
+					dest: './out/fs/fonts/'
 				}
 				]
 			}
@@ -94,7 +108,7 @@ module.exports = function(grunt) {
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['dist-jscss', 'dist-activos']);
+	grunt.registerTask('dist-full', ['dist-jscss', 'dist-activos', 'validar-html']);
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };

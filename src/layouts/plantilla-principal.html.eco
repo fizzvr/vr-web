@@ -26,8 +26,16 @@ js : "jvr/vrweb.js"
 	<!-- recursos -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="bs3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="fs/flexslider.css">
 	<% for url in @assets('css'): %>
 	<link rel="stylesheet" href="<%= url %>">
+	<% end %>
+	<!--core JavaScript -->
+	<script src="jvr/act/jquery.min.js"></script>
+	<script src="bs3/js/bootstrap.min.js"></script>
+	<script src="fs/jquery.flexslider.js" ></script>
+	<% for url in @assets('js'): %>
+	<script src="<%= url %>"></script>
 	<% end %>
 
 </head>
@@ -42,12 +50,6 @@ js : "jvr/vrweb.js"
 	<p>Última actualización el <%= @formatoFecha(@site.date) %></p>
 	</footer> -->
 
-	<!--core JavaScript -->
-	<script src="jvr/act/jquery.min.js"></script>
-	<script src="bs3/js/bootstrap.min.js"></script>
-	<% for url in @assets('js'): %>
-	<script src="<%= url %>"></script>
-	<% end %>
-
+	
 </body>
 </html>

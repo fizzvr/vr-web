@@ -8,6 +8,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "bootstrap": "~3.0.2"
+    "bootstrap": "~3.0.2",
+    "flexslider": "git://github.com/woothemes/FlexSlider.git"
   }
 }
