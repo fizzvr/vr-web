@@ -13,6 +13,9 @@ body {
 .color-bar-1 { background:#414141; height:5px; }
 .color-bar-2 { height:3px; }
 
-
-
+.show-grid
+{
+	border: 2px dashed orange;
+	/* margin-bottom: 15px; */
+}
 

@@ -40,16 +40,104 @@ js : "jvr/vrweb.js"
 
 </head>
 <body>
+	<div class="color-bar-1"></div>
+	<div class="color-bar-2 color-bg"></div>
+	<header class="navbar navbar-default navbar-static-top vr-web-navegacion">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colapsar-menu">
+				<span class="sr-only">Menú</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand"><img src="ivr/logo.png" alt="fizzvr"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="colapsar-menu" role="navigation">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{}"><img src="ivr/icon_github-48.png" alt=""></a></li>
+				<li><a href="{}"><img src="ivr/icon_googleplus-48.png" alt=""></a></li>
+				<li><a href="{}"><img src="ivr/icon_twitter-48.png" alt=""></a></li>
+				<li><a href="{}"><img src="ivr/icon_youtube-48.png" alt=""></a></li>
+				<li><a href="{}"><img src="ivr/icon_rss-48.png" alt=""></a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="{}">INICIO</a></li>
+				<li><a href="{}">PERFIL</a></li>
+				<li><a href="{}">PROYECTOS</a> </li>
+				<li><a href="{}">BLOG</a></li>
+				<li><a href="{}">CONTÁCTAME</a></li>
+			</ul>
+		</div>
+	</div>
+	</header>
 	<%- @content %>
+	<footer class="footer-container">
+		<div class="container">
+			<div class="row footer-row">
+				<div class="col-md-4 footer-col">
+					<h5>Información</h5>
+					<!-- TODO: falta poner logo footer -->
+					<img src="" alt="">
+					<ul class="contact">
+						<li>
+							<h3>Contacto</h3>
+							<address>
+							<strong>Vladimir Rodríguez</strong><br> Ciudad mitad del mundo<br>Latitud 0°0"0'<br>	Quito - Ecuador
+							</address>
+							<ul class="social-icons">
+		                        <li><a href="#" class="social-icon github"></a></li>
+		                        <li><a href="#" class="social-icon twitter"></a></li>
+		                        <li><a href="#" class="social-icon google"></a></li>
+		                        <li><a href="#" class="social-icon youtube"></a></li>
+		                        <li><a href="#" class="social-icon rss"></a></li>
+                    		</ul>
+						</li>
+						<li>
+							<h3>Email</h3>
+							<p><a href="{}">fizzvr@gmail.com</a></p>
+						</li>
+						<li>
+							<h3>Celular</h3>
+							<p>+(593) 983288589</p>
+						</li>
+					</ul>
 
-	<!-- <footer>
-	<p class="pull-right">
-	<a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /></a>
-	</p>
-	<br>
-	<p>Última actualización el <%= @formatoFecha(@site.date) %></p>
-	</footer> -->
 
-	
+				</div>
+				<div class="col-md-4 footer-col">
+					<h5>Déjame un Mensaje</h5>
+					<form action="#" method="post">
+                        <input type="text" name="name" id="name" value="Nombre" onFocus="if (this.value == 'Nombre') this.value = '';" onBlur="if (this.value == '') this.value = 'Nombre';" />
+                        <input type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
+                        <textarea name="message" id="message" onFocus="if (this.value == 'Mensaje') this.value = '';" onBlur="if (this.value == '') this.value = 'Mensaje';" >Mensaje</textarea>
+                        <input type="submit" class="btn send_btn" value="Enviar!" />
+                    </form>
+				</div>
+				<div class="col-md-4 footer-col">
+					<h5>Últimos Tweets</h5>
+					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560">Tweets por @fizzvr</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
+				</div>
+			</div>
+			<div class="row footer-col footer-sub">
+				<div class="col-md-12">
+					<a href="#">INICIO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">PERFIL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">PROYECTOS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">CONTÁCTAME</a>
+					<div class="row">
+						<div class="col-md-6">
+							<span class="pull-left">&copy; <%- (new Date()).getFullYear() %> Vladimir Rodríguez - Programador Web <a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /></a>
+							</span>
+						</div>
+						<div class="col-md-6">
+							<span class="pull-right">
+								Última actualización el <%= @formatoFecha(@site.date) %>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

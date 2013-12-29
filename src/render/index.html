@@ -1,40 +1,6 @@
 ---
 layout: 'plantilla-principal'
 ---
-	<div class="color-bar-1"></div>
-    <div class="color-bar-2 color-bg"></div>
-	<header class="navbar navbar-default navbar-static-top vr-web-navegacion">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colapsar-menu">
-				<span class="sr-only">Menú</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a href="index.html" class="navbar-brand"><img src="ivr/logo.png" alt="fizzvr"></a>
-		</div>
-		<nav class="iconos-sociales">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><img src="ivr/icon_github-48.png" alt=""></a></li>
-				<li><a href="#"><img src="ivr/icon_googleplus-48.png" alt=""></a></li>
-				<li><a href="#"><img src="ivr/icon_twitter-48.png" alt=""></a></li>
-				<li><a href="#"><img src="ivr/icon_youtube-48.png" alt=""></a></li>
-				<li><a href="#"><img src="ivr/icon_rss-48.png" alt=""></a></li>
-
-			</ul>
-		</nav>
-		<nav class="collapse navbar-collapse" id="colapsar-menu" role="navigation">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#">INICIO</a></li>
-				<li><a href="">PERFIL</a></li>
-				<li><a href="">PROYECTOS</a> </li>
-				<li><a href="">BLOG</a></li>
-				<li><a href="">CONTÁCTAME</a></li>
-			</ul>
-		</nav>
-	</div>
-	</header>
 	<!-- fin vr-web-navegacion-->
 	<div class="vr-web-presentacion">
 		<div class="container">
@@ -42,17 +8,17 @@ layout: 'plantilla-principal'
 				<div class="col-md-8">
 					<div class="flexslider">
 						<ul class="slides">
-							<li><a href=""><img src="ivr/slider/slider-img-1.jpg" alt=""></a></li>
-							<li><a href=""><img src="ivr/slider/slider-img-2.jpg" alt=""></a></li>
-							<li><a href=""><img src="ivr/slider/slider-img-3.jpg" alt=""></a></li>
+							<li><a href="{}"><img src="ivr/slider/slider-img-1.jpg" alt=""></a></li>
+							<li><a href="{}"><img src="ivr/slider/slider-img-2.jpg" alt=""></a></li>
+							<li><a href="{}"><img src="ivr/slider/slider-img-3.jpg" alt=""></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<h3>Bienvenidos <br>
-		          	Status: Compartiendo conocimiento</h3>
-		            <blockquote class="pull-right"><p>Construyendo el mundo con las tecnologías del hoy y creando bits para la web del mañana.</p><small><cite>Vladimir Rodríguez</cite></small>
-		            </blockquote>
+					Status: {git_status}</h3>
+					<blockquote class="pull-right"><p>Construyendo el mundo con las tecnologías del hoy y creando bits para la web del mañana.</p><small><cite>Vladimir Rodríguez</cite></small>
+					</blockquote>
 				</div>
 			</div>
 		</div>
@@ -62,24 +28,250 @@ layout: 'plantilla-principal'
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<a href="#">
-                        <span class="img_icon icon1"></span>
-                        <span class="link_title">Html+Css+Javascript</span>Vista del usuario.
-                    </a>
+					<a href="{}">
+						<span class="img_icon icon1"></span>
+						<span class="link_title">Html+Css+Javascript</span>Vista del usuario.
+					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="#">
-                        <span class="img_icon icon1"></span>
-                        <span class="link_title">PHP</span>Interacción con el servidor.
-                    </a>
-                </div>
+					<a href="{}">
+						<span class="img_icon icon1"></span>
+						<span class="link_title">PHP</span>Interacción con el servidor.
+					</a>
+				</div>
 				<div class="col-md-4">
-					<a href="#">
-                        <span class="img_icon icon1"></span>
-                        <span class="link_title">MySql</span>Gestión de datos
-                    </a>
+					<a href="{}">
+						<span class="img_icon icon1"></span>
+						<span class="link_title">MySql</span>Gestión de datos
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- fin vr-web-skills -->
+	<div class="vr-web-proyectos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h5 class="title-bg">PROYECTOS TERMINADOS
+						<small>DE LOS MEJORES PROFESIONALES DE LA WEB</small>
+						<!-- <button class="btn btn-mini btn-inverse hidden-phone" type="button">Ver Portafolio</button> -->
+					</h5>
+					<ul class="row tabla-proyectos show-grid">
+						<!-- Proyecto 1 -->
+						<li class="col-md-3" data-id="id-1" data-type="illustration">
+							<span>
+								<span>
+									<a href="ivr/proyectos/gallery-img-1-full.jpg" title="Ilustracion Aleatoria" class="" data-rel="prettyPhoto"></a>
+									<a href="{}" class="link-detalle-item"></a>
+								</span>
+							</span>
+							<a href="{}"><img src="ivr/proyectos/gallery-img-1-4col.jpg" alt="proyecto"></a>
+							<span>
+								<a href="{}">Ilustración Aleatoria</a>
+								Para un campaña internacional.
+							</span>
+						</li>
+						<!-- Proyecto 2 -->
+						<li class="col-md-3" data-id="id-2" data-type="illustration">
+							<span>
+								<span>
+									<a href="ivr/proyectos/gallery-img-1-full.jpg" title="Ilustracion Aleatoria" class="" data-rel="prettyPhoto"></a>
+									<a href="{}" class="link-detalle-item"></a>
+								</span>
+							</span>
+							<a href="{}"><img src="ivr/proyectos/gallery-img-2-4col.jpg" alt="proyecto"></a>
+							<span>
+								<a href="{}">Ilustración Aleatoria</a>
+								Para un campaña internacional.
+							</span>
+						</li>
+						<!-- Proyecto 3 -->
+						<li class="col-md-3" data-id="id-3" data-type="illustration">
+							<span>
+								<span>
+									<a href="ivr/proyectos/gallery-img-1-full.jpg" title="Ilustracion Aleatoria" class="" data-rel="prettyPhoto"></a>
+									<a href="{}" class="link-detalle-item"></a>
+								</span>
+							</span>
+							<a href="{}"><img src="ivr/proyectos/gallery-img-3-4col.jpg" alt="proyecto"></a>
+							<span>
+								<a href="{}">Ilustración Aleatoria</a>
+								Para un campaña internacional.
+							</span>
+						</li>
+						<!-- Proyecto 4 -->
+						<li class="col-md-3" data-id="id-4" data-type="illustration">
+							<span>
+								<span>
+									<a href="ivr/proyectos/gallery-img-1-full.jpg" title="Ilustracion Aleatoria" class="" data-rel="prettyPhoto"></a>
+									<a href="{}" class="link-detalle-item"></a>
+								</span>
+							</span>
+							<a href="{}"><img src="ivr/proyectos/gallery-img-4-4col.jpg" alt="proyecto"></a>
+							<span>
+								<a href="{}">Ilustración Aleatoria</a>
+								Para un campaña internacional.
+							</span>
+						</li>
+						<!-- Proyecto 5 -->
+						<li class="col-md-3" data-id="id-4" data-type="illustration">
+							<span>
+								<span>
+									<a href="ivr/proyectos/gallery-img-1-full.jpg" title="Ilustracion Aleatoria" class="" data-rel="prettyPhoto"></a>
+									<a href="{}" class="link-detalle-item"></a>
+								</span>
+							</span>
+							<a href="{}"><img src="ivr/proyectos/gallery-img-5-4col.jpg" alt="proyecto"></a>
+							<span>
+								<a href="{}">Ilustración Aleatoria</a>
+								Para un campaña internacional.
+							</span>
+						</li>
+						<!-- Proyecto 6 -->
+						<li class="col-md-3" data-id="id-4" data-type="illustration">
+							<span>
+								<span>
+									<a href="ivr/proyectos/gallery-img-1-full.jpg" title="Ilustracion Aleatoria" class="" data-rel="prettyPhoto"></a>
+									<a href="{}" class="link-detalle-item"></a>
+								</span>
+							</span>
+							<a href="{}"><img src="ivr/proyectos/gallery-img-6-4col.jpg" alt="proyecto"></a>
+							<span>
+								<a href="{}">Ilustración Aleatoria</a>
+								Para un campaña internacional.
+							</span>
+						</li>
+						<!-- Proyecto 7 -->
+						<li class="col-md-3" data-id="id-7" data-type="illustration">
+							<span>
+								<span>
+									<a href="ivr/proyectos/gallery-img-1-full.jpg" title="Ilustracion Aleatoria" class="" data-rel="prettyPhoto"></a>
+									<a href="{}" class="link-detalle-item"></a>
+								</span>
+							</span>
+							<a href="{}"><img src="ivr/proyectos/gallery-img-7-4col.jpg" alt="proyecto"></a>
+							<span>
+								<a href="{}">Ilustración Aleatoria</a>
+								Para un campaña internacional.
+							</span>
+						</li>
+						<!-- Proyecto 8 -->
+						<li class="col-md-3" data-id="id-7" data-type="illustration">
+							<span>
+								<span>
+									<a href="ivr/proyectos/gallery-img-1-full.jpg" title="Ilustracion Aleatoria" class="" data-rel="prettyPhoto"></a>
+									<a href="{}" class="link-detalle-item"></a>
+								</span>
+							</span>
+							<a href="{}"><img src="ivr/proyectos/gallery-img-8-4col.jpg" alt="proyecto"></a>
+							<span>
+								<a href="{}">Ilustración Aleatoria</a>
+								Para un campaña internacional.
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- fin vr-web-proyectos -->
+	<div class="vr-web-bot">
+		<div class="container">
+			<div class="row">
+				<!-- vista preliminar del blog
+				======================================== -->
+				<div class="col-md-6">
+					<h5 class="title-bg">DESDE EL BLOG
+						<small>SIGUE LOS ULTIMOS PROYECTOS EN DESARROLLO</small>
+						<button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button"><span class="glyphicon glyphicon-arrow-left"></span></button>
+						<button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button"><span class="glyphicon glyphicon-arrow-right"></span></button>
+					</h5>
+					<div id="blogCarrusel" class="carrusel slide">
+						<div class="carousel-inner">
+							<!-- item activo -->
+							<div class="item-activo">
+								<a href="{}"><img src="ivr/blog/blog-med-img-1.jpg" class="alinear-izq" alt="{}"></a>
+								<div class="informacion-post">
+									<h4><a href="{}">Animación e interactividad con Canvas</a></h4>
+									<ul class="blog-detalle-zoom">
+										<li><span class="glyphicon glyphicon-calendar"></span><strong>Publicado el: </strong>25-12-2013</li>
+										<li><span class="glyphicon glyphicon-user"></span><strong>Publicado por: </strong><a href="{}">Vladimir Rodríguez</a>
+										</li>
+										<!-- TODO: pendiente si ponemos los comentarios -->
+										<li><span class="glyphicon glyphicon-comment"></span><strong>Comentarios: </strong><a href="{}">1055</a>
+										</li>
+										<!-- TODO: un link por cada tag -->
+										<li><span class="glyphicon glyphicon-tags"></span><strong>Tal vez te intérese: </strong><a href="{}">html5, css, php, mysql, postgres, odbc</a>
+										</li>
+									</ul>
+									<p class="resumen-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reprehenderit, nostrum, officiis adipisci eligendi fugit provident doloribus deserunt numquam praesentium eius debitis enim ipsa magnam non beatae vitae quibusdam sapiente. <a href="{}">Ir a la publicación</a></p>
+								</div>
+							</div>
+							<!-- item 2 -->
+							<div class="item-2">
+								<a href="{}"><img src="ivr/blog/blog-med-img-2.jpg" class="alinear-izq" alt="{}"></a>
+								<div class="informacion-post">
+									<h4><a href="{}">Animación e interactividad con Canvas</a></h4>
+									<ul class="blog-detalle-zoom">
+										<li><span class="glyphicon glyphicon-calendar"></span><strong>Publicado el: </strong>25-12-2013</li>
+										<li><span class="glyphicon glyphicon-user"></span><strong>Publicado por: </strong><a href="{}">Vladimir Rodríguez</a>
+										</li>
+
+										<li><span class="glyphicon glyphicon-comment"></span><strong>Comentarios: </strong><a href="{}">1055</a>
+										</li>
+
+										<li><span class="glyphicon glyphicon-tags"></span><strong>Tal vez te intérese: </strong><a href="{}">html5, css, php, mysql, postgres, odbc</a>
+										</li>
+									</ul>
+									<p class="resumen-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reprehenderit, nostrum, officiis adipisci eligendi fugit provident doloribus deserunt numquam praesentium eius debitis enim ipsa magnam non beatae vitae quibusdam sapiente. <a href="{}">Ir a la publicación</a></p>
+								</div>
+							</div>
+							<!-- item 3 -->
+							<div class="item-3">
+								<a href="{}"><img src="ivr/blog/blog-med-img-3.jpg" class="alinear-izq" alt="{}"></a>
+								<div class="informacion-post">
+									<h4><a href="{}">Animación e interactividad con Canvas</a></h4>
+									<ul class="blog-detalle-zoom">
+										<li><span class="glyphicon glyphicon-calendar"></span><strong>Publicado el: </strong>25-12-2013</li>
+										<li><span class="glyphicon glyphicon-user"></span><strong>Publicado por: </strong><a href="{}">Vladimir Rodríguez</a>
+										</li>
+
+										<li><span class="glyphicon glyphicon-comment"></span><strong>Comentarios: </strong><a href="{}">1055</a>
+										</li>
+
+										<li><span class="glyphicon glyphicon-tags"></span><strong>Tal vez te intérese: </strong><a href="{}">html5, css, php, mysql, postgres, odbc</a>
+										</li>
+									</ul>
+									<p class="resumen-post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, reprehenderit, nostrum, officiis adipisci eligendi fugit provident doloribus deserunt numquam praesentium eius debitis enim ipsa magnam non beatae vitae quibusdam sapiente. <a href="{}">Ir a la publicación</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- clientes recientes ======================================== -->
+				<div class="col-md-6">
+					<h5 class="title-bg">clientes recientes
+						<small>que han comprendido mi trabajo</small>
+						<button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button"><span class="glyphicon glyphicon-arrow-left"></span></button>
+						<button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button"><span class="glyphicon glyphicon-arrow-right"></span></button>
+					</h5>
+					<div id="clienteCarrusel" class="carrusel slide sin-margen">
+						<div class="carousel-inner">
+							<!-- item 1 -->
+							<div class="item-activo">
+								<p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, laboriosam, asperiores, qui, tempore delectus dolor tempora non mollitia sequi itaque illo quibusdam eius provident dolorem quaerat eum quas. Distinctio, eius."<cite>- DEAUTO GROUP, Distribuidora de repuestos automotrices</cite></p>
+							</div>
+						</div>
+					</div>
+					<!-- logo de los clientes -->
+					<ul class="cliente-logo">
+						<li>
+							<a href="{}"><img src="ivr/clientes/client-img-1.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- fin bot -->

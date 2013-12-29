@@ -1,11 +1,2 @@
-//codigo flexslider
-$(window).load(function(){
+//codigo fizzvr
 
-    $('.flexslider').flexslider({
-        animation: "slide",
-        slideshow: true,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-    });
-});
