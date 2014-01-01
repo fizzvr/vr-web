@@ -33,27 +33,53 @@ js : "jvr/vrweb.js"
 	<!--core JavaScript -->
 	<script src="jvr/act/jquery.min.js"></script>
 	<script src="bs3/js/bootstrap.min.js"></script>
-	<script src="fs/jquery.flexslider.js" ></script>
-	<% for url in @assets('js'): %>
-	<script src="<%= url %>"></script>
-	<% end %>
+
 
 </head>
 <body>
 	<div class="color-bar-1"></div>
 	<div class="color-bar-2 color-bg"></div>
-	<header class="navbar navbar-default navbar-static-top vr-web-navegacion">
+	<header class="navbar navbar-default navbar-static-top">
 	<div class="container">
-		<div class="navbar-header">
+		<div class="row">
+			<div class="col-md-3 vr-web-logo">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colapsar-menu">
+						<span class="sr-only">Menú</span>
+						<span class="glyphicon glyphicon-arrow-down"></span>
+					</button>
+					<a href="index.html" class="navbar-brand" title="fizzvr"><img src="ivr/logo.png" alt="fizzvr logo"></a>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="vr-web-social text-center">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="{}"><img src="ivr/icon_github-48.png" alt=""></a></li>
+						<li><a href="{}"><img src="ivr/icon_googleplus-48.png" alt=""></a></li>
+						<li><a href="{}"><img src="ivr/icon_twitter-48.png" alt=""></a></li>
+						<li><a href="{}"><img src="ivr/icon_youtube-48.png" alt=""></a></li>
+						<li><a href="{}"><img src="ivr/icon_rss-48.png" alt=""></a></li>
+					</ul>
+				</div>
+				<nav class="collapse navbar-collapse col-md-12 vr-web-navegacion navbar-right show-grid" id="colapsar-menu" role="navigation">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html"><span class="navi"><img src="ivr/inicio.png" alt=""></span>INICIO</a></li>
+						<li><a href="{}"><span class="navi"><img src="ivr/perfil.png" alt=""></span>PERFIL</a></li>
+						<li><a href="{}"><span class="navi"><img src="ivr/proyectos.png" alt=""></span>PROYECTOS</a></li>
+						<li><a href="{}"><span class="navi"><img src="ivr/blog.png" alt=""></span>BLOG</a></li>
+						<li><a href="{}"><span class="navi"><img src="ivr/contacto.png" alt=""></span>CONTÁCTAME</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- <div class="navbar-header logo">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colapsar-menu">
 				<span class="sr-only">Menú</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+				<span class="glyphicon glyphicon-arrow-down"></span>
 			</button>
-			<a href="index.html" class="navbar-brand"><img src="ivr/logo.png" alt="fizzvr"></a>
-		</div>
-		<div class="collapse navbar-collapse" id="colapsar-menu" role="navigation">
+			<a href="index.html" class="navbar-brand" title="fizzvr"><img src="ivr/logo.png" alt="fizzvr logo"></a>
+		</div> -->
+		<!-- <div class="socialContenedor">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="{}"><img src="ivr/icon_github-48.png" alt=""></a></li>
 				<li><a href="{}"><img src="ivr/icon_googleplus-48.png" alt=""></a></li>
@@ -61,14 +87,17 @@ js : "jvr/vrweb.js"
 				<li><a href="{}"><img src="ivr/icon_youtube-48.png" alt=""></a></li>
 				<li><a href="{}"><img src="ivr/icon_rss-48.png" alt=""></a></li>
 			</ul>
+		</div> -->
+		<!-- <nav class="collapse navbar-collapse" id="colapsar-menu" role="navigation">
+
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="{}">INICIO</a></li>
-				<li><a href="{}">PERFIL</a></li>
-				<li><a href="{}">PROYECTOS</a> </li>
-				<li><a href="{}">BLOG</a></li>
-				<li><a href="{}">CONTÁCTAME</a></li>
+				<li class="active"><a href="index.html"><span class="navi"><img src="ivr/inicio.png" alt=""></span>INICIO</a></li>
+				<li><a href="{}"><span class="navi"><img src="ivr/perfil.png" alt=""></span>PERFIL</a></li>
+				<li><a href="{}"><span class="navi"><img src="ivr/proyectos.png" alt=""></span>PROYECTOS</a></li>
+				<li><a href="{}"><span class="navi"><img src="ivr/blog.png" alt=""></span>BLOG</a></li>
+				<li><a href="{}"><span class="navi"><img src="ivr/contacto.png" alt=""></span>CONTÁCTAME</a></li>
 			</ul>
-		</div>
+		</nav> -->
 	</div>
 	</header>
 	<%- @content %>
@@ -78,7 +107,7 @@ js : "jvr/vrweb.js"
 				<div class="col-md-4 footer-col">
 					<h5>Información</h5>
 					<!-- TODO: falta poner logo footer -->
-					<img src="" alt="">
+					<img src="ivr/logo.png" alt="logo-footer">
 					<ul class="contact">
 						<li>
 							<h3>Contacto</h3>
@@ -114,19 +143,19 @@ js : "jvr/vrweb.js"
                         <input type="submit" class="btn send_btn" value="Enviar!" />
                     </form>
 				</div>
-				<div class="col-md-4 footer-col">
+				<!-- <div class="col-md-4 footer-col">
 					<h5>Últimos Tweets</h5>
 					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560">Tweets por @fizzvr</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 					</script>
-				</div>
+				</div> -->
 			</div>
 			<div class="row footer-col footer-sub">
 				<div class="col-md-12">
 					<a href="#">INICIO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">PERFIL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">PROYECTOS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">CONTÁCTAME</a>
 					<div class="row">
 						<div class="col-md-6">
-							<span class="pull-left">&copy; <%- (new Date()).getFullYear() %> Vladimir Rodríguez - Programador Web <a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /></a>
+							<span class="pull-left">&copy; <%- (new Date()).getFullYear() %> Vladimir Rodríguez - Programador Web <a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><!-- <img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /> --></a>
 							</span>
 						</div>
 						<div class="col-md-6">
@@ -139,5 +168,9 @@ js : "jvr/vrweb.js"
 			</div>
 		</div>
 	</footer>
+	<script src="fs/jquery.flexslider.js" ></script>
+	<% for url in @assets('js'): %>
+	<script src="<%= url %>"></script>
+	<% end %>
 </body>
 </html>

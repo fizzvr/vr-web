@@ -1,12 +1,42 @@
-body {
-
+body
+{
 	font-family: "Open Sans", Arial;
-	font-size: 16px;
-	/*background: #252122;*/
-	/*background-image: url('../ivr/bg01.png');*/
+	font-size: 14px;
+	line-height:18px;
+	background: #f9f9f9 url('../ivr/page-bg-1.jpg');
 	color: #5d5d5d;
-
-
+}
+/***HEADER***/
+.navbar-default
+{
+	background-color: rgba(255, 255, 255, 0.6);
+	border-bottom:1px solid #6D8696;
+}
+.navbar-default .navbar-toggle
+{
+	border-color: #414141;
+}
+.vr-web-logo
+{
+	margin-top: 25px;
+}
+.vr-web-navegacion
+{
+	margin-bottom: 20px;
+}
+.vr-web-navegacion .nav
+{
+	background-color: #f8f8f8;
+	border-bottom:1px dotted #a9a9a9;
+	border-top:1px dotted #a9a9a9;
+}
+.navbar .nav > li > a
+{
+	padding: 10px 15px;
+}
+span.navi
+{
+	margin-right: 10px;
 }
 .color-bg { background:#428BCA; }
 .color-bar-1, .color-bar-2 { width:100% }
@@ -15,7 +45,6 @@ body {
 
 .show-grid
 {
-	border: 2px dashed orange;
-	/* margin-bottom: 15px; */
+	border: 2px dashed green;
 }
 
