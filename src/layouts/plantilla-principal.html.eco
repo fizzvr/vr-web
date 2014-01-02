@@ -52,8 +52,8 @@ js : "jvr/vrweb.js"
 				</div>
 			</div>
 			<div class="col-md-9">
-				<div class="vr-web-social text-center">
-					<ul class="nav navbar-nav navbar-right">
+				<div class="vr-web-social">
+					<ul>
 						<li><a href="{}"><img src="ivr/icon_github-48.png" alt=""></a></li>
 						<li><a href="{}"><img src="ivr/icon_googleplus-48.png" alt=""></a></li>
 						<li><a href="{}"><img src="ivr/icon_twitter-48.png" alt=""></a></li>
@@ -61,7 +61,7 @@ js : "jvr/vrweb.js"
 						<li><a href="{}"><img src="ivr/icon_rss-48.png" alt=""></a></li>
 					</ul>
 				</div>
-				<nav class="collapse navbar-collapse col-md-12 vr-web-navegacion navbar-right show-grid" id="colapsar-menu" role="navigation">
+				<nav class="collapse navbar-collapse vr-web-navegacion navbar-right" id="colapsar-menu" role="navigation">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.html"><span class="navi"><img src="ivr/inicio.png" alt=""></span>INICIO</a></li>
 						<li><a href="{}"><span class="navi"><img src="ivr/perfil.png" alt=""></span>PERFIL</a></li>
@@ -72,32 +72,6 @@ js : "jvr/vrweb.js"
 				</nav>
 			</div>
 		</div>
-		<!-- <div class="navbar-header logo">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colapsar-menu">
-				<span class="sr-only">Menú</span>
-				<span class="glyphicon glyphicon-arrow-down"></span>
-			</button>
-			<a href="index.html" class="navbar-brand" title="fizzvr"><img src="ivr/logo.png" alt="fizzvr logo"></a>
-		</div> -->
-		<!-- <div class="socialContenedor">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="{}"><img src="ivr/icon_github-48.png" alt=""></a></li>
-				<li><a href="{}"><img src="ivr/icon_googleplus-48.png" alt=""></a></li>
-				<li><a href="{}"><img src="ivr/icon_twitter-48.png" alt=""></a></li>
-				<li><a href="{}"><img src="ivr/icon_youtube-48.png" alt=""></a></li>
-				<li><a href="{}"><img src="ivr/icon_rss-48.png" alt=""></a></li>
-			</ul>
-		</div> -->
-		<!-- <nav class="collapse navbar-collapse" id="colapsar-menu" role="navigation">
-
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="index.html"><span class="navi"><img src="ivr/inicio.png" alt=""></span>INICIO</a></li>
-				<li><a href="{}"><span class="navi"><img src="ivr/perfil.png" alt=""></span>PERFIL</a></li>
-				<li><a href="{}"><span class="navi"><img src="ivr/proyectos.png" alt=""></span>PROYECTOS</a></li>
-				<li><a href="{}"><span class="navi"><img src="ivr/blog.png" alt=""></span>BLOG</a></li>
-				<li><a href="{}"><span class="navi"><img src="ivr/contacto.png" alt=""></span>CONTÁCTAME</a></li>
-			</ul>
-		</nav> -->
 	</div>
 	</header>
 	<%- @content %>

@@ -20,6 +20,14 @@ body
 {
 	margin-top: 25px;
 }
+.vr-web-social
+{
+	text-align: right;
+}
+.vr-web-social ul li
+{
+	display: inline-block;
+}
 .vr-web-navegacion
 {
 	margin-bottom: 20px;
