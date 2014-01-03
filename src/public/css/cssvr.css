@@ -1,7 +1,6 @@
 body
 {
 	font-family: "Open Sans", Arial;
-	font-size: 14px;
 	line-height:18px;
 	background: #f9f9f9 url('../ivr/page-bg-1.jpg');
 	color: #5d5d5d;
@@ -9,28 +8,95 @@ body
 /***HEADER***/
 .navbar-default
 {
-	background-color: rgba(255, 255, 255, 0.6);
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-image: url('../ivr/bg01.png');
+	background-size: 100% 100%;
+	z-index: 0;
+	background-color: rgba(255, 255, 255, 0.5);
 	border-bottom:1px solid #6D8696;
 }
 .navbar-default .navbar-toggle
 {
 	border-color: #414141;
+	margin-right: 100px;
 }
+/*LOGO*/
 .vr-web-logo
 {
-	margin-top: 25px;
+	padding:30px 0 20px 60px;
 }
+/*SOCIAL*/
 .vr-web-social
 {
 	text-align: right;
+	padding:30px 30px 9px 0;
 }
 .vr-web-social ul li
 {
-	display: inline-block;
+	padding:0;
+	margin:0 0 0 5px;
+	display:inline-block;
+	line-height:30px;
 }
+.vr-web-social a
+{
+	background-image: url(../ivr/top-social.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	display:block;
+	text-indent:-9999px;
+	text-align:left;
+}
+.vr-web-social a.github
+{
+	background-position: 0 0;
+}
+.vr-web-social a.github:hover
+{
+	background-position: 0 -30px;
+}
+.vr-web-social a.google
+{
+	background-position: -35px 0;
+}
+.vr-web-social a.google:hover
+{
+	background-position: -35px -30px;
+}
+.vr-web-social a.twitter
+{
+	background-position: -70px 0;
+}
+.vr-web-social a.twitter:hover
+{
+	background-position: -70px -30px;
+}
+.vr-web-social a.youtube
+{
+	background-position: -105px 0;
+}
+.vr-web-social a.youtube:hover
+{
+	background-position: -105px -30px;
+}
+.vr-web-social a.rss
+{
+	background-position: -140px 0;
+}
+.vr-web-social a.rss:hover
+{
+	background-position: -140px -30px;
+}
+
+
+
+/*NAVEGACION*/
 .vr-web-navegacion
 {
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 }
 .vr-web-navegacion .nav
 {
@@ -42,13 +108,42 @@ body
 {
 	padding: 10px 15px;
 }
-span.navi
-{
-	margin-right: 10px;
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+	color:#FFF;
+	background-color:#428BCA;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
-.color-bg { background:#428BCA; }
+@media (max-width:660px) {
+	.vr-web-logo {
+		padding-top: 30px;
+		padding-left: 60px;
+	}
+	.navbar-default .navbar-toggle
+	{
+		margin-right: 15px;
+	}
+	.vr-web-social {
+		text-align: center;
+		padding: 0 30px 9px 0;
+	}
+	.vr-web-navegacion .nav
+	{
+		text-align: center;
+	}
+	.navbar .nav > li > a
+	{
+		padding: 5px 5px 5px;
+	}
+}
+
+
+.color-bg { background:#414141; }
 .color-bar-1, .color-bar-2 { width:100% }
-.color-bar-1 { background:#414141; height:5px; }
+.color-bar-1 { background:#428BCA; height:5px; }
 .color-bar-2 { height:3px; }
 
 .show-grid

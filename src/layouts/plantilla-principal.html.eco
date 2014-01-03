@@ -24,7 +24,8 @@ js : "jvr/vrweb.js"
     <![endif]-->
 
 	<!-- recursos -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="bs3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="fs/flexslider.css">
 	<% for url in @assets('css'): %>
@@ -54,20 +55,20 @@ js : "jvr/vrweb.js"
 			<div class="col-md-9">
 				<div class="vr-web-social">
 					<ul>
-						<li><a href="{}"><img src="ivr/icon_github-48.png" alt=""></a></li>
-						<li><a href="{}"><img src="ivr/icon_googleplus-48.png" alt=""></a></li>
-						<li><a href="{}"><img src="ivr/icon_twitter-48.png" alt=""></a></li>
-						<li><a href="{}"><img src="ivr/icon_youtube-48.png" alt=""></a></li>
-						<li><a href="{}"><img src="ivr/icon_rss-48.png" alt=""></a></li>
+						<li><a href="{}" class="github">Github</a></li>
+						<li><a href="{}" class="google">Google</a></li>
+						<li><a href="{}" class="twitter">Twitter</a></li>
+						<li><a href="{}" class="youtube">Youtube</a></li>
+						<li><a href="{}" class="rss">Rss</a></li>
 					</ul>
 				</div>
 				<nav class="collapse navbar-collapse vr-web-navegacion navbar-right" id="colapsar-menu" role="navigation">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html"><span class="navi"><img src="ivr/inicio.png" alt=""></span>INICIO</a></li>
-						<li><a href="{}"><span class="navi"><img src="ivr/perfil.png" alt=""></span>PERFIL</a></li>
-						<li><a href="{}"><span class="navi"><img src="ivr/proyectos.png" alt=""></span>PROYECTOS</a></li>
-						<li><a href="{}"><span class="navi"><img src="ivr/blog.png" alt=""></span>BLOG</a></li>
-						<li><a href="{}"><span class="navi"><img src="ivr/contacto.png" alt=""></span>CONTÁCTAME</a></li>
+						<li class="active"><a href="index.html">INICIO</a></li>
+						<li><a href="{}">PERFIL</a></li>
+						<li><a href="{}">PROYECTOS</a></li>
+						<li><a href="{}">BLOG</a></li>
+						<li><a href="{}">CONTÁCTAME</a></li>
 					</ul>
 				</nav>
 			</div>
