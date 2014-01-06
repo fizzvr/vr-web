@@ -20,8 +20,6 @@
     "docpad": "~6.59.6",
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-frontend": "~2.0.0",
-    "grunt": "~0.4.1",
-    "grunt-contrib-copy": "~0.4.1",
     "grunt-frontend": "~1.1.2",
     "moment": "~2.1.0"
   },
@@ -30,6 +28,8 @@
     "start": "node_modules/docpad/bin/docpad-server"
   },
   "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
     "grunt-html-validation": "~0.1.10"
   }
 }

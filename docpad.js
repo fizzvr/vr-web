@@ -37,6 +37,14 @@ docpadConfig = {
 		}
 	},
 	events: {
+		serverAfter: function(_arg) {
+	      var server;
+	      server = _arg.server;
+	      return server.get(/^\/\d+\/(c|j)\//, function(req, res, next) {
+	        req.url = req.url.replace(/^\/\d+\//, '/');
+	        return next();
+	      });
+	    },
 		generateBefore: function(opts, next) {
 			var proc;
 			if (this.docpad.getConfig().frontendDebug) {

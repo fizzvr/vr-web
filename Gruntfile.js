@@ -2,38 +2,32 @@ module.exports = function(grunt) {
 
 	// configuracion del proyecto
 	grunt.initConfig({
-
 		// metadatos
 		leerJson: grunt.file.readJSON('package.json'),
 		banner: '/**\n' +
 				'* <%= leerJson.name %> v<%= leerJson.version %> por @fizzvr\n' +
 				'*/\n',
-		// tarea de distribucion JS y CSS minified
 		frontendConfig: {
-			srcWebroot: 'src/public/',
-			webroot: 'out/'
-		},
-		frontend: {
-			produccion: {
-				css: {
-					src: 'src/public/css/',
-					dest: 'out/cvr/'
-				},
-				js: {
-					files: {
-						'./out/jvr/vrweb.js': [
-							'./src/public/js/plugins.js',
-							'./src/public/js/jsvr.js'
-						]
-					}
-
-				}
-			}
+			srcWebroot: './src/public',
+			webroot: './out'
 		},
 		// tarea de copia de los archivos 3rd party desde bower
 		copy: {
 			main: {
 				files: [
+				//bauserif fuente
+				{
+					expand: true,
+					flatten: true,
+					src: ["./src/public/css/tipo/bauserif.*"],
+					dest: './out/cvr'
+				},
+				// {
+				// 		expand: true,
+				// 		flatten: true,
+				// 		src: ['./src/public/css/tipo/pincoyablack-webfont.*'],
+				// 		dest: './out/cvr'
+				// },
 				//bootstrap bower list --path
 				{
 					expand: true,
@@ -79,6 +73,25 @@ module.exports = function(grunt) {
 				]
 			}
 		},
+		// tarea de distribucion JS y CSS minified
+		frontend: {
+			produccion: {
+				css: {
+					src: 'src/public/css/',
+					dest: 'out/cvr/'
+				},
+				js: {
+					files: {
+						'./out/jvr/vrweb.js': [
+							'./src/public/js/plugins.js',
+							'./src/public/js/jsvr.js'
+						]
+					}
+
+				}
+			}
+		},
+		// validacion HTML
 		validation: {
 			options: {
 				reset: true
@@ -108,7 +121,7 @@ module.exports = function(grunt) {
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['dist-jscss', 'dist-activos', 'validar-html']);
+	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss']);
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };
