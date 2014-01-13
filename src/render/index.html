@@ -15,8 +15,8 @@ layout: 'plantilla-principal'
 					</div>
 				</div>
 				<div class="col-md-4">
-					<h3>Bienvenidos <br>
-					Status: {git_status}</h3>
+					<h2>Bienvenidos<br>
+					Status: {git_status}</h2>
 					<blockquote class="pull-right"><p>Construyendo el mundo con las tecnologías del hoy y creando bits para la web del mañana.</p><small><cite>Vladimir Rodríguez</cite></small>
 					</blockquote>
 				</div>
@@ -28,23 +28,47 @@ layout: 'plantilla-principal'
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<a href="{}">
-						<span class="img_icon icon1"></span>
-						<span class="link_title">Html+Css+Javascript</span>Vista del usuario.
-					</a>
+					<span class="pennant">							<span class="icon64 icon64-1"></span>
+					</span>
+					<h3>Diseño<br><small>Sintáxis, Presentación Semántica y Acabados del lado cliente</small>
+					</h3>
+					<span class="vr-logo-skills">
+						<ul>
+							<li><a href="{}" class="html">html</a></li>
+							<li><a href="{}" class="css">css</a></li>
+							<li><a href="{}" class="jquery">js</a></li>
+						</ul>
+					</span>
+				</div>
+				<div class="col-md-4" id="medio">
+					<span class="pennant pennant-alt">
+						<span class="icon64 icon64-2"></span>
+					</span>
+					<h3>Código<br><small>Entorno de programación del lado del servidor</small>
+					</h3>
+					<span class="vr-logo-skills">
+						<ul>
+							<li><a href="{}" class="php">php</a></li>
+							<li><a href="{}" class="asp">asp</a></li>
+						</ul>
+					</span>
 				</div>
 				<div class="col-md-4">
-					<a href="{}">
-						<span class="img_icon icon1"></span>
-						<span class="link_title">PHP</span>Interacción con el servidor.
-					</a>
+					<span class="pennant pennant-alt2">
+						<span class="icon64 icon64-3"></span>
+					</span>
+					<h3>Datos<br><small>Sistemas de gestión de bases de datos</small>
+					</h3>
+					<span class="vr-logo-skills">
+						<ul>
+							<li><a href="{}" class="mysql">mysql</a></li>
+						</ul>
+					</span>
 				</div>
-				<div class="col-md-4">
-					<a href="{}">
-						<span class="img_icon icon1"></span>
-						<span class="link_title">MySql</span>Gestión de datos
-					</a>
-				</div>
+				<span class="col-md-12">
+					<blockquote><p>"Construyendo el mundo con las tecnologías del hoy y creando bits para la web del mañana."</p><small><cite>VLADIMIR RODRIGUEZ - PROGRAMADOR</cite></small>
+					</blockquote>
+				</span>
 			</div>
 		</div>
 	</div>
@@ -53,10 +77,10 @@ layout: 'plantilla-principal'
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h5 class="title-bg">PROYECTOS TERMINADOS
-						<small>DE LOS MEJORES PROFESIONALES DE LA WEB</small>
+					<h4 class="title-bg">proyectos terminados
+						<small>de los mejores profesionales de la web</small>
 						<!-- <button class="btn btn-mini btn-inverse hidden-phone" type="button">Ver Portafolio</button> -->
-					</h5>
+					</h4>
 					<ul class="row tabla-proyectos show-grid">
 						<!-- Proyecto 1 -->
 						<li class="col-md-3" data-id="id-1" data-type="illustration">
@@ -182,11 +206,10 @@ layout: 'plantilla-principal'
 				<!-- vista preliminar del blog
 				======================================== -->
 				<div class="col-md-6">
-					<h5 class="title-bg">DESDE EL BLOG
-						<small>SIGUE LOS ULTIMOS PROYECTOS EN DESARROLLO</small>
+					<h4 class="title-bg">proyectos en desarrolo<small>sigue los ultimos pasos en el blog</small>
 						<button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button"><span class="glyphicon glyphicon-arrow-left"></span></button>
 						<button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button"><span class="glyphicon glyphicon-arrow-right"></span></button>
-					</h5>
+					</h4>
 					<div id="blogCarrusel" class="carrusel slide">
 						<div class="carousel-inner">
 							<!-- item activo -->
@@ -251,11 +274,11 @@ layout: 'plantilla-principal'
 				</div>
 				<!-- clientes recientes ======================================== -->
 				<div class="col-md-6">
-					<h5 class="title-bg">clientes recientes
-						<small>que han comprendido mi trabajo</small>
+					<h4 class="title-bg">proyectos futuros
+						<small>lo que esta por venir</small>
 						<button id="btn-cliente-prev" class="btn btn-inverse btn-mini" type="button"><span class="glyphicon glyphicon-arrow-left"></span></button>
 						<button id="btn-cliente-next" class="btn btn-inverse btn-mini" type="button"><span class="glyphicon glyphicon-arrow-right"></span></button>
-					</h5>
+					</h4>
 					<div id="clienteCarrusel" class="carrusel slide sin-margen">
 						<div class="carousel-inner">
 							<!-- item 1 -->
