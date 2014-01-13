@@ -8,21 +8,58 @@ body
 	color: #5d5d5d;
 }
 /*TITULOS y SMALL*/
-h1, h2, h3, h4 , h5, h6 {
+
+h2, h3, h4 , h5 {
 	font-family: "bauserif", sans-serif;
 	font-weight: normal;
 	text-transform:uppercase;
 }
+h2
+{
+	text-shadow: 1px 1px 0 #fdfdfd, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #fdfdfd;
+}
+h4.title-bg , h5.title-bg
+{
+	background:#f8f8f8;
+	padding:10px 5px;
+	margin: 0px 0px 20px 0px;
+	border-bottom: 1px dotted #a9a9a9;
+	border-top: 1px dotted #a9a9a9;
+}
+h3 small, h4 small, h5 small
+{
+	color:#7f7f7f;
+}
+h4 small {
+	font-size: 18px;
+}
 h3
 {
+	font-weight: 700;
+}
+h2
+{
+	letter-spacing: 3px;
 	line-height: 40px;
 }
+blockquote {
+	background:#f8f8f8;
+	font-size:16px;
+	line-height:24px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	border-left: none;
+	border-bottom: 1px dotted #a9a9a9;
+	border-top: 1px dotted #a9a9a9;
+}
+
 /***HEADER***/
 .navbar-default
 {
-	background-color: transparent;
+	background-color: #fff;
 	border-color: transparent;
-	margin-bottom: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 0px;
 }
 .navbar-default .navbar-toggle
 {
@@ -42,18 +79,18 @@ h3
 }
 .vr-web-social ul li
 {
-	padding:0;
+	/*padding:0;*/
 	margin:0 0 0 5px;
 	display:inline-block;
-	line-height:30px;
+	/*line-height:30px;*/
 }
 .vr-web-social a
 {
-	background-image: url(../ivr/top-social.png);
+	background-image: url('../ivr/top-social.png');
 	background-repeat: no-repeat;
 	height: 30px;
 	width: 30px;
-	display:block;
+	display:inline-block;
 	text-indent:-9999px;
 	text-align:left;
 }
@@ -141,17 +178,19 @@ h3
 
 .vr-web-presentacion
 {
-	margin-bottom: 40px;
+	background-color: #fff;
+	padding-bottom: 40px;
 }
 .flexslider
 {
-	border: 4px solid #efefef;
+	border: 4px solid #5d5d5d;
+	margin: 0;
 }
 .flex-direction-nav a
 {
 	width: 30px;
 	height: 30px;
-	background: url(../ivr/bg_direction_nav.png) no-repeat;
+	background: url('../ivr/bg_direction_nav.png') no-repeat;
 	text-indent: -9999px;
 }
 .flex-direction-nav .flex-next {
@@ -166,6 +205,141 @@ h3
 {
 	display: none;
 }
+
+/*SKILLS*/
+.vr-web-skills .vr-logo-skills ul
+{
+	padding: 0;
+}
+.vr-web-skills
+{
+	background-color: #fff;
+	padding-top: 15px;
+	margin-bottom: 30px;
+	text-align: center;
+	border-bottom: 1px dotted #a9a9a9;
+
+}
+/*.vr-web-skills #medio
+{
+	box-shadow:	16px 0px 0px 0px #fff,
+				17px 0px 0px 0px #ccc,
+
+				-16px 0px 0px 0px #fff,
+				-17px 0px 0px 0px #ccc,
+
+				-16px -45px 0px 0px #fff,
+				16px -45px 0px 0px #fff,
+
+				-16px 45px 0px 0px #fff,
+				16px 45px 0px 0px #fff,
+
+				-16px 0px 45px 0px rgba(0,0,0,0.15),
+				16px 0px 45px 0px rgba(0,0,0,0.15);
+}*/
+.pennant
+{
+	position: relative;
+	display: inline-block;
+	background-color: #428BCA;
+	width: 126px;
+	margin-bottom: 55px;
+	padding: 21px 0 7px 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.pennant:after
+{
+	content: '';
+	position: absolute;
+	bottom: -1.98em;
+	left: 0;
+	border-top: solid 2em #428BCA;
+	border-left: solid 4.5em transparent;
+	border-right: solid 4.5em transparent;
+}
+.pennant-alt
+			{
+				background-color: #252122;
+			}
+
+				.pennant-alt:after
+				{
+					border-top-color: #252122;
+				}
+
+			.pennant-alt2
+			{
+				background-color: #827a7c;
+			}
+
+				.pennant-alt2:after
+				{
+					border-top-color: #827a7c;
+				}
+.icon64
+{
+	background-image: url("../ivr/icons64.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	text-indent: -9999px;
+}
+	.icon64-1
+	{
+		background-position: 0 0;
+	}
+	.icon64-2
+	{
+		background-position: -64px 0;
+	}
+	.icon64-3
+	{
+		background-position: -128px 0;
+	}
+
+/*LOGO SKILLS*/
+.vr-logo-skills ul li
+{
+	margin: 0 0 0 5px;
+	display: inline-block;
+}
+.vr-logo-skills a
+{
+	background-image: url('../ivr/vr-logo-skills.png');
+	background-repeat: no-repeat;
+	height: 48px;
+	width: 48px;
+	display:inline-block;
+	text-indent:-9999px;
+}
+	.vr-logo-skills a.html
+	{
+		background-position: 0 0;
+	}
+	.vr-logo-skills a.css
+	{
+		background-position: -48px 0;
+	}
+	.vr-logo-skills a.jquery
+	{
+		background-position: -96px 0;
+	}
+	.vr-logo-skills a.php
+	{
+		background-position: -144px 0;
+	}
+	.vr-logo-skills a.asp
+	{
+		background-position: -192px 0;
+	}
+	.vr-logo-skills a.mysql
+	{
+		background-position: -240px 0;
+	}
+
+
 .color-bg { background:#414141; }
 .color-bar-1, .color-bar-2 { width:100% }
 .color-bar-1 { background:#428BCA; height:5px; }
