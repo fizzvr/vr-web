@@ -4,7 +4,7 @@ body
 {
 	font-family: "Open Sans", sans-serif;
 	line-height:18px;
-	background: #f9f9f9 url('../ivr/page-bg-1.jpg');
+	background: #f8f8f8 url('../ivr/page-bg-1.jpg');
 	color: #5d5d5d;
 }
 /*TITULOS y SMALL*/
@@ -48,6 +48,7 @@ blockquote {
 	line-height:24px;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-style:italic;
+	margin-top: 20px;
 	border-left: none;
 	border-bottom: 1px dotted #a9a9a9;
 	border-top: 1px dotted #a9a9a9;
@@ -58,7 +59,7 @@ blockquote {
 {
 	background-color: #fff;
 	border-color: transparent;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	margin-bottom: 0px;
 }
 .navbar-default .navbar-toggle
@@ -220,23 +221,25 @@ blockquote {
 	border-bottom: 1px dotted #a9a9a9;
 
 }
-/*.vr-web-skills #medio
+.vr-web-skills #medio
 {
-	box-shadow:	16px 0px 0px 0px #fff,
-				17px 0px 0px 0px #ccc,
+	/*box-shadow: color,x,y,bluer,*,inset*/
+	box-shadow: #fff 16px 0,
+				#ccc 17px 0,
 
-				-16px 0px 0px 0px #fff,
-				-17px 0px 0px 0px #ccc,
+				#fff -16px 0,
+				#ccc -17px 0,
 
-				-16px -45px 0px 0px #fff,
-				16px -45px 0px 0px #fff,
+				#fff 16px -30px, #fff -16px -30px,
+				#fff 16px 30px, #fff -16px 30px,
 
-				-16px 45px 0px 0px #fff,
-				16px 45px 0px 0px #fff,
-
-				-16px 0px 45px 0px rgba(0,0,0,0.15),
-				16px 0px 45px 0px rgba(0,0,0,0.15);
-}*/
+				rgba(0,0,0,0.15) 16px 0 45px,
+				rgba(0,0,0,0.15) -16px 0 45px;
+}
+.vr-web-skills section
+{
+	padding: 1em 0 1em 0;
+}
 .pennant
 {
 	position: relative;
@@ -270,12 +273,12 @@ blockquote {
 
 			.pennant-alt2
 			{
-				background-color: #827a7c;
+				background-color: #ccc;
 			}
 
 				.pennant-alt2:after
 				{
-					border-top-color: #827a7c;
+					border-top-color: #ccc;
 				}
 .icon64
 {
