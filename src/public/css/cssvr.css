@@ -70,7 +70,7 @@ blockquote {
 /*LOGO*/
 .vr-web-logo
 {
-	padding:30px 0 20px 60px;
+	padding:30px 0 20px 25px;
 }
 /*SOCIAL*/
 .vr-web-social
@@ -273,12 +273,12 @@ blockquote {
 
 			.pennant-alt2
 			{
-				background-color: #ccc;
+				background-color: #827a7c;
 			}
 
 				.pennant-alt2:after
 				{
-					border-top-color: #ccc;
+					border-top-color: #827a7c;
 				}
 .icon64
 {
