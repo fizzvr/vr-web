@@ -18,28 +18,29 @@ js : "jvr/vrweb.js"
 
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
 
 	<!-- recursos -->
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'> -->
 
 	<link rel="stylesheet" href="bs3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="fs/flexslider.css">
+	<link rel="stylesheet" href="pp/css/prettyPhoto.css">
 	<% for url in @assets('css'): %>
 	<link rel="stylesheet" href="<%= url %>">
 	<% end %>
 	<!--core JavaScript -->
 	<script src="jvr/act/jquery.min.js"></script>
 	<script src="bs3/js/bootstrap.min.js"></script>
-
+	<script src="fs/jquery.flexslider.js" ></script>
+	<script src="pp/jquery.prettyPhoto.js" ></script>
 
 </head>
 <body>
-	<div class="color-bar-1"></div>
-	<div class="color-bar-2 color-bg"></div>
+
 	<header class="navbar navbar-default navbar-static-top">
 	<div class="container">
 		<div class="row">
@@ -74,7 +75,10 @@ js : "jvr/vrweb.js"
 			</div>
 		</div>
 	</div>
+	<div class="color-bar-1"></div>
+	<div class="color-bar-2 color-bg"></div>
 	</header>
+
 	<%- @content %>
 	<footer class="footer-container">
 		<div class="container">
@@ -90,12 +94,12 @@ js : "jvr/vrweb.js"
 							<strong>Vladimir Rodríguez</strong><br> Ciudad mitad del mundo<br>Latitud 0°0"0'<br>	Quito - Ecuador
 							</address>
 							<ul class="social-icons">
-		                        <li><a href="#" class="social-icon github"></a></li>
-		                        <li><a href="#" class="social-icon twitter"></a></li>
-		                        <li><a href="#" class="social-icon google"></a></li>
-		                        <li><a href="#" class="social-icon youtube"></a></li>
-		                        <li><a href="#" class="social-icon rss"></a></li>
-                    		</ul>
+								<li><a href="#" class="social-icon github"></a></li>
+								<li><a href="#" class="social-icon twitter"></a></li>
+								<li><a href="#" class="social-icon google"></a></li>
+								<li><a href="#" class="social-icon youtube"></a></li>
+								<li><a href="#" class="social-icon rss"></a></li>
+							</ul>
 						</li>
 						<li>
 							<h3>Email</h3>
@@ -112,11 +116,11 @@ js : "jvr/vrweb.js"
 				<div class="col-md-4 footer-col">
 					<h5>Déjame un Mensaje</h5>
 					<form action="#" method="post">
-                        <input type="text" name="name" id="name" value="Nombre" onFocus="if (this.value == 'Nombre') this.value = '';" onBlur="if (this.value == '') this.value = 'Nombre';" />
-                        <input type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
-                        <textarea name="message" id="message" onFocus="if (this.value == 'Mensaje') this.value = '';" onBlur="if (this.value == '') this.value = 'Mensaje';" >Mensaje</textarea>
-                        <input type="submit" class="btn send_btn" value="Enviar!" />
-                    </form>
+						<input type="text" name="name" id="name" value="Nombre" onFocus="if (this.value == 'Nombre') this.value = '';" onBlur="if (this.value == '') this.value = 'Nombre';" />
+						<input type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
+						<textarea name="message" id="message" onFocus="if (this.value == 'Mensaje') this.value = '';" onBlur="if (this.value == '') this.value = 'Mensaje';" >Mensaje</textarea>
+						<input type="submit" class="btn send_btn" value="Enviar!" />
+					</form>
 				</div>
 				<!-- <div class="col-md-4 footer-col">
 					<h5>Últimos Tweets</h5>
@@ -143,7 +147,7 @@ js : "jvr/vrweb.js"
 			</div>
 		</div>
 	</footer>
-	<script src="fs/jquery.flexslider.js" ></script>
+
 	<% for url in @assets('js'): %>
 	<script src="<%= url %>"></script>
 	<% end %>
