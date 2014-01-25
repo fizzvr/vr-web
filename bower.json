@@ -1,6 +1,5 @@
 {
   "name": "vr-web",
-  "version": "0.1.1",
   "private": true,
   "ignore": [
     "**/.*",
@@ -9,6 +8,7 @@
   ],
   "dependencies": {
     "bootstrap": "https://github.com/twbs/bootstrap.git",
-    "flexslider": "git://github.com/woothemes/FlexSlider.git"
+    "flexslider": "git://github.com/woothemes/FlexSlider.git",
+    "jquery-prettyPhoto": "https://github.com/scaron/prettyphoto.git"
   }
 }

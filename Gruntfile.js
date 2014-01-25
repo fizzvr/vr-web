@@ -22,12 +22,6 @@ module.exports = function(grunt) {
 					src: ["./src/public/css/tipo/bauserif.*"],
 					dest: './out/cvr'
 				},
-				// {
-				// 		expand: true,
-				// 		flatten: true,
-				// 		src: ['./src/public/css/tipo/pincoyablack-webfont.*'],
-				// 		dest: './out/cvr'
-				// },
 				//bootstrap bower list --path
 				{
 					expand: true,
@@ -69,7 +63,27 @@ module.exports = function(grunt) {
 					flatten: true,
 					src:["bower_components/flexslider/fonts/*"],
 					dest: './out/fs/fonts/'
+				},
+				//prettyPhoto bower list --path
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"],
+					dest: './out/pp/'
+				},
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/jquery-prettyPhoto/css/*"],
+					dest: './out/pp/css/'
+				},
+				{
+					expand: true,
+					cwd: 'bower_components/jquery-prettyPhoto/images/prettyPhoto/',
+					src: ['**'],
+					dest: './out/pp/images/prettyPhoto/'
 				}
+
 				]
 			}
 		},
