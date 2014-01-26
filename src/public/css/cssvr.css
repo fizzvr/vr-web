@@ -412,7 +412,11 @@ blockquote {
 		width:262px;
 		height:214px;
 	}
-	/*1200px pendientes ancho project details*/
+	li.col-md-3 .project-details
+	{
+		width: 262px;
+
+	}
 }
 li.col-md-3 .project-details
 	{
