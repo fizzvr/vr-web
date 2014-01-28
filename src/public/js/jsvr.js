@@ -5,6 +5,7 @@ function inicio ()
 	fs();
 	galleryHover();
 	callprettyPhoto();
+	blogCarrusel();
 }
 
 /////flexslider
@@ -36,4 +37,12 @@ function callprettyPhoto() {
 	});
 	///* light_rounded / dark_rounded / light_square / dark_square / facebook */
 	$(".gallery-icons a[rel^='prettyPhoto']").prettyPhoto({allow_expand: false, theme: 'light_rounded',social_tools:false, deeplinking: false });
+}
+function blogCarrusel () {
+	$("#btn-blog-next").click(function () {
+      $('#blogCarrusel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarrusel').carousel('prev')
+    });
 }

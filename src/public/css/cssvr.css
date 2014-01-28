@@ -344,6 +344,10 @@ blockquote {
 		background-position: -240px 0;
 	}
 /*## proyectos ##*/
+.vr-web-proyectos
+{
+	margin-bottom: 30px;
+}
 
 .vr-web-proyectos ul
 {
@@ -474,7 +478,7 @@ a.item-zoom-link:hover {background: #d8450b url(../ivr/gallery-item-icons.png) n
 	font-family: "bauserif", sans-serif;
 	font-style: normal;
 	text-transform:uppercase;
-	color: #333333;
+	color: #333;
 	text-align: center;
 }
 
@@ -483,8 +487,45 @@ a.item-zoom-link:hover {background: #d8450b url(../ivr/gallery-item-icons.png) n
 	color:#428BCA;
 	text-decoration: none;
 }
+/*BLOG*/
+.vr-web-bot
+{
+	margin-bottom: 30px;
+}
+h4.title-bg button
+{
+	float: right;
+	text-transform: none;
+	margin-left: 5px;
+}
 
-
+.informacion-post
+{
+	line-height: 20px;
+	padding-top: 10px;
+}
+.informacion-post h4
+{
+	line-height: 26px;
+	margin-top: 0;
+}
+.informacion-post h4 a,
+.informacion-post h4 a:hover
+{
+	color:#333;
+	text-decoration: none;
+}
+.informacion-post ul li
+{
+	list-style: none;
+	padding-bottom: 2px;
+	margin: 0px;
+}
+.resumen-post
+{
+	line-height: 18px;
+	border-bottom: 1px dotted #a9a9a9;
+}
 
 .color-bg { background:#414141; }
 .color-bar-1, .color-bar-2 { width:100% }
