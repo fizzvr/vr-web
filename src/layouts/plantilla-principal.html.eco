@@ -32,12 +32,6 @@ js : "jvr/vrweb.js"
 	<% for url in @assets('css'): %>
 	<link rel="stylesheet" href="<%= url %>">
 	<% end %>
-	<!--core JavaScript -->
-	<script src="jvr/act/jquery.min.js"></script>
-	<script src="bs3/js/bootstrap.min.js"></script>
-	<script src="fs/jquery.flexslider.js" ></script>
-	<script src="pp/jquery.prettyPhoto.js" ></script>
-
 </head>
 <body>
 
@@ -147,7 +141,11 @@ js : "jvr/vrweb.js"
 			</div>
 		</div>
 	</footer>
-
+	<!--core JavaScript -->
+	<script src="jvr/act/jquery.min.js"></script>
+	<script src="bs3/js/bootstrap.min.js"></script>
+	<script src="fs/jquery.flexslider.js" ></script>
+	<script src="pp/jquery.prettyPhoto.js" ></script>
 	<% for url in @assets('js'): %>
 	<script src="<%= url %>"></script>
 	<% end %>
