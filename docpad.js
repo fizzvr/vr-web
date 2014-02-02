@@ -3,6 +3,7 @@ moment = require('moment');
 moment.lang('es');
 exec = require('child_process').exec;
 docpadConfig = {
+	prompts: false,
 	templateData: {
 		site: {
 			url: "http://www.fizzvr.com",
