@@ -492,6 +492,10 @@ a.item-zoom-link:hover {background: #d8450b url(../ivr/gallery-item-icons.png) n
 {
 	margin-bottom: 30px;
 }
+.vr-web-bot ul
+{
+	padding-left: 0;
+}
 h4.title-bg button
 {
 	float: right;
@@ -508,6 +512,7 @@ h4.title-bg button
 {
 	line-height: 26px;
 	margin-top: 0;
+	text-align: center;
 }
 .informacion-post h4 a,
 .informacion-post h4 a:hover
@@ -524,7 +529,6 @@ h4.title-bg button
 .resumen-post
 {
 	line-height: 18px;
-	border-bottom: 1px dotted #a9a9a9;
 }
 
 .color-bg { background:#414141; }
