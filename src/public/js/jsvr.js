@@ -1,11 +1,23 @@
 //llamo a la funcion inicio
 $(document).on("ready", inicio);
+
 function inicio ()
 {
 	fs();
 	galleryHover();
 	callprettyPhoto();
 	blogCarrusel();
+	$('.vr-web-social .github').tooltip();
+	$('.vr-web-social .google').tooltip();
+	$('.vr-web-social .twitter').tooltip();
+	$('.vr-web-social .youtube').tooltip();
+	$('.vr-web-social .rss').tooltip();
+	$('.vr-logo-skills .html').tooltip();
+	$('.vr-logo-skills .css').tooltip();
+	$('.vr-logo-skills .jquery').tooltip();
+	$('.vr-logo-skills .php').tooltip();
+	$('.vr-logo-skills .asp').tooltip();
+	$('.vr-logo-skills .mysql').tooltip();
 }
 
 /////flexslider

@@ -49,12 +49,12 @@ js : "jvr/vrweb.js"
 			</div>
 			<div class="col-md-9">
 				<div class="vr-web-social">
-					<ul>
-						<li><a href="{}" class="github">Github</a></li>
-						<li><a href="{}" class="google">Google</a></li>
-						<li><a href="{}" class="twitter">Twitter</a></li>
-						<li><a href="{}" class="youtube">Youtube</a></li>
-						<li><a href="{}" class="rss">Rss</a></li>
+					<ul >
+						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="GitHub" class="github">Github</a></li>
+						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Google" class="google">Google</a></li>
+						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Twitter" class="twitter">Twitter</a></li>
+						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Youtube" class="youtube">Youtube</a></li>
+						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Rss" class="rss">Rss</a></li>
 					</ul>
 				</div>
 				<nav class="collapse navbar-collapse vr-web-navegacion navbar-right" id="colapsar-menu" role="navigation">
