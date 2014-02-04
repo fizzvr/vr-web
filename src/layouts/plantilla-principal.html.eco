@@ -81,7 +81,7 @@ js : "jvr/vrweb.js"
 				<div class="col-md-4 footer-col">
 					<h4>Información</h4>
 					<!-- TODO: falta poner logo footer -->
-					<img src="ivr/logo.png" alt="logo-footer">
+					<img src="ivr/logo_footer.png" alt="logo-footer">
 					<address>
 						<strong>Vladimir Rodríguez</strong><br> Ciudad mitad del mundo<br>Latitud 0°0"0'<br>	Quito - Ecuador
 					</address>
