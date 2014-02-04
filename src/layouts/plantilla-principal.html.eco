@@ -123,6 +123,7 @@ js : "jvr/vrweb.js"
 			</div>
 		</div>
 	</footer>
+	<div id="toTop">Ir para Arriba</div>
 	<!--core JavaScript -->
 	<script src="jvr/act/jquery.min.js"></script>
 	<script src="bs3/js/bootstrap.min.js"></script>

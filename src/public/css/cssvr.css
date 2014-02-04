@@ -611,6 +611,19 @@ h4.title-bg button
 	color:#428BCA;
 	text-decoration: none;
 }
+#toTop {
+	width:47px;
+	height:47px;
+	background:url('../ivr/back-top-btn.png') no-repeat;
+	text-align:center;
+	position:fixed;
+	bottom:75px;
+	right:20px;
+	cursor:pointer;
+	display:none;
+	text-indent:-9999px;
+	z-index:12;
+}
 .color-bg { background:#1f1f1f; }
 .color-bar-1, .color-bar-2 { width:100% }
 .color-bar-1 { background:#428BCA; height:5px; }

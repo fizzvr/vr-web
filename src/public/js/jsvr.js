@@ -18,6 +18,7 @@ function inicio ()
 	$('.vr-logo-skills .php').tooltip();
 	$('.vr-logo-skills .asp').tooltip();
 	$('.vr-logo-skills .mysql').tooltip();
+	aTop();
 }
 
 /////flexslider
@@ -58,3 +59,18 @@ function blogCarrusel () {
       $('#blogCarrusel').carousel('prev')
     });
 }
+////////// Back to Top //////////
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+			$('#toTop').fadeIn();
+		} else {
+			$('#toTop').fadeOut();
+		}
+	});
+
+	$('#toTop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+	});
+});
+
