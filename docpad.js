@@ -53,6 +53,19 @@ docpadConfig = {
 			});
 			return proc.on('exit', next);
 		}
+	},
+	collections: {
+	    paginas: function(database) {
+	    return database.findAllLive({
+	        pageOrder: {
+	          $exists: true
+	        }
+	      }, [
+	        {
+	          pageOrder: 1
+	        }
+	      ]);
+	    }
 	}
 };
 module.exports = docpadConfig;

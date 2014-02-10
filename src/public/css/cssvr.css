@@ -143,6 +143,7 @@ blockquote {
 	background-color: #f8f8f8;
 	border-bottom:1px dotted #a9a9a9;
 	border-top:1px dotted #a9a9a9;
+	text-transform: uppercase;
 }
 .navbar .nav > li > a
 {
@@ -305,7 +306,6 @@ blockquote {
 	{
 		background-position: -128px 0;
 	}
-
 /*LOGO SKILLS*/
 .vr-logo-skills ul li
 {

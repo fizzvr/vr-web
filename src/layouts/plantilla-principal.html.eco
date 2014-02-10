@@ -58,11 +58,19 @@ js : "jvr/vrweb.js"
 				</div>
 				<nav class="collapse navbar-collapse vr-web-navegacion navbar-right" id="colapsar-menu" role="navigation">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">INICIO</a></li>
-						<li><a href="{}">PERFIL</a></li>
+						<% for page in @getCollection("paginas").toJSON(): %>
+				        <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+				            <a href="<%= page.url %>">
+				                <%= page.titulo %>
+				            </a>
+				        </li>
+				    	<% end %>
+
+						<!-- <li class="active"><a href="index.html">INICIO</a></li>
+						<li><a href="perfil.html">PERFIL</a></li>
 						<li><a href="{}">PROYECTOS</a></li>
 						<li><a href="{}">BLOG</a></li>
-						<li><a href="{}">CONTÁCTAME</a></li>
+						<li><a href="{}">CONTÁCTAME</a></li> -->
 					</ul>
 				</nav>
 			</div>
@@ -80,7 +88,6 @@ js : "jvr/vrweb.js"
 			<div class="row footer-row">
 				<div class="col-md-4 footer-col">
 					<h4>Información</h4>
-					<!-- TODO: falta poner logo footer -->
 					<img src="ivr/logo_footer.png" alt="logo-footer">
 					<address>
 						<strong>Vladimir Rodríguez</strong><br> Ciudad mitad del mundo<br>Latitud 0°0"0'<br>	Quito - Ecuador
@@ -99,12 +106,12 @@ js : "jvr/vrweb.js"
 						<input type="submit" class="btn btn-default" value="Enviar" />
 					</form>
 				</div>
-				<div class="col-md-4 footer-col">
-					<h4>Últimos Tweets</h34>
+				<!-- <div class="col-md-4 footer-col">
+					<h4>Últimos Tweets</h4>
 					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560">Tweets por @fizzvr</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 					</script>
-				</div>
+				</div> -->
 			</div>
 			<div class="row footer-col footer-sub">
 				<div class="col-md-12">

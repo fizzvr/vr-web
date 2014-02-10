@@ -18,7 +18,6 @@ function inicio ()
 	$('.vr-logo-skills .php').tooltip();
 	$('.vr-logo-skills .asp').tooltip();
 	$('.vr-logo-skills .mysql').tooltip();
-	aTop();
 }
 
 /////flexslider
