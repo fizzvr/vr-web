@@ -62,7 +62,8 @@ docpadConfig = {
 	        }
 	      }, [
 	        {
-	          pageOrder: 1
+	          pageOrder: 1,
+	          titulo: 1
 	        }
 	      ]);
 	    }

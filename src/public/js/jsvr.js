@@ -60,7 +60,7 @@ function blogCarrusel () {
 }
 ////////// Back to Top //////////
 $(function() {
-	$(window).scroll(function() {
+	$(document).scroll(function() {
 		if($(this).scrollTop() != 0) {
 			$('#toTop').fadeIn();
 		} else {

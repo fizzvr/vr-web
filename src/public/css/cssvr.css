@@ -575,6 +575,7 @@ h4.title-bg button
 {
 	background: #1f1f1f;
 	padding: 10px 0px;
+	text-transform: uppercase;
 }
 .footer-col input[type="text"], .footer-col textarea
 {
@@ -632,4 +633,43 @@ h4.title-bg button
 .show-grid
 {
 	border: 1px dashed green;
+}
+/*###perfil###*/
+#perfil h2
+{
+	font-size: 16px;
+	color: #464c5b;
+	text-align: center;
+	text-shadow: none;
+}
+#perfil
+{
+	margin-bottom: 30px;
+}
+#perfil ul
+{
+	padding-left: 0;
+}
+#perfil ul li
+{
+	list-style: none;
+}
+/*###proyectos###*/
+#proyectos h2
+{
+	font-size: 16px;
+	color: #464c5b;
+	text-align: center;
+	text-shadow: none;
+}
+.gallery-cats li
+{
+	list-style: none;
+	float: left;
+	padding: 0px 10px;
+	border-left: 1px dotted #a9a9a9;
+}
+.gallery-cats li:first-child
+{
+	border-left:0px;
 }

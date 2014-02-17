@@ -65,12 +65,6 @@ js : "jvr/vrweb.js"
 				            </a>
 				        </li>
 				    	<% end %>
-
-						<!-- <li class="active"><a href="index.html">INICIO</a></li>
-						<li><a href="perfil.html">PERFIL</a></li>
-						<li><a href="{}">PROYECTOS</a></li>
-						<li><a href="{}">BLOG</a></li>
-						<li><a href="{}">CONTÁCTAME</a></li> -->
 					</ul>
 				</nav>
 			</div>
@@ -122,7 +116,11 @@ js : "jvr/vrweb.js"
 						</div>
 						<div class="col-md-6">
 							<span class="pull-right">
-								<a href="#">PERFIL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">PROYECTOS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">CONTÁCTAME</a>
+								<% for page in @getCollection("paginas").toJSON(): %>
+						        <a href="<%= page.url %>">
+						                <%= page.titulo %>
+						        </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+						       	<% end %>
 							</span>
 						</div>
 					</div>
