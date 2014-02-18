@@ -8,8 +8,8 @@ module.exports = function(grunt) {
 				'* <%= leerJson.name %> v<%= leerJson.version %> por @fizzvr\n' +
 				'*/\n',
 		frontendConfig: {
-			srcWebroot: './src/public',
-			webroot: './out'
+			webroot: './out',
+			srcWebroot: './src/public'
 		},
 		// tarea de copia de los archivos 3rd party desde bower
 		copy: {
@@ -89,16 +89,16 @@ module.exports = function(grunt) {
 		},
 		// tarea de distribucion JS y CSS minified
 		frontend: {
-			produccion: {
+			main: {
 				css: {
 					src: 'src/public/css/',
 					dest: 'out/cvr/'
 				},
 				js: {
 					files: {
-						'./out/jvr/vrweb.js': [
-							'./src/public/js/plugins.js',
-							'./src/public/js/jsvr.js'
+						'out/jvr/vrweb.js': [
+							'src/public/js/plugins.js',
+							'src/public/js/jsvr.js'
 						]
 					}
 
@@ -125,8 +125,8 @@ module.exports = function(grunt) {
 
 	// carga de los plugins para el proyecto
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-html-validation');
 	grunt.loadNpmTasks('grunt-frontend');
+	grunt.loadNpmTasks('grunt-html-validation');
 
 	// validar html
 	grunt.registerTask('validar-html', ['validation']);

@@ -11,7 +11,9 @@ docpadConfig = {
 			descripcion: "Compilando el mundo con tecnologías de hoy y generando bits para la web de mañana",
 			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, v2b",
 			autor: "fizzvr",
-			email: "info@fizzvr.com"
+			email: "info@fizzvr.com",
+			styles: "/cvr/cssvr.css",
+			scripts: "/jvr/vrweb.js"
 		},
 		formatoFecha: function (fecha, formato) {
 			if (formato == null) {
@@ -37,6 +39,29 @@ docpadConfig = {
 			return this.document.autor || this.site.autor;
 		}
 	},
+	collections: {
+	    paginas: function(database) {
+	    return database.findAllLive({
+	        pageOrder: {
+	          $exists: true
+	        }
+	      }, [
+	        {
+	          pageOrder: 1,
+	          titulo: 1
+	        }
+	      ]);
+	    },
+	    proyectos: function(database) {
+	      return database.findAllLive({
+	        relativeOutDirPath: 'proyectos'
+	      }, [
+	        {
+	          date: -1
+	        }
+	      ]);
+	    }
+	},
 	events: {
 		generateBefore: function(opts, next) {
 			var proc;
@@ -53,20 +78,6 @@ docpadConfig = {
 			});
 			return proc.on('exit', next);
 		}
-	},
-	collections: {
-	    paginas: function(database) {
-	    return database.findAllLive({
-	        pageOrder: {
-	          $exists: true
-	        }
-	      }, [
-	        {
-	          pageOrder: 1,
-	          titulo: 1
-	        }
-	      ]);
-	    }
 	}
 };
 module.exports = docpadConfig;

@@ -1,6 +1,6 @@
 {
   "name": "vr-Web",
-  "version": "0.2",
+  "version": "3.0.0",
   "description": "Desarrollo de mi sitio web con Docpad",
   "homepage": "https://github.com/fizzvr/vr-Web",
   "keywords": [
@@ -17,19 +17,16 @@
     "url": "git@github.com:fizzvr/vr-Web.git"
   },
   "dependencies": {
+    "moment": "~2.1.0",
+    "docpad": "~6.63.3",
+    "docpad-plugin-eco": "~2.0.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
     "grunt-frontend": "~1.1.2",
-    "moment": "~2.1.0"
+    "grunt-html-validation": "~0.1.10"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-html-validation": "~0.1.10",
-    "docpad-plugin-frontend": "~2.0.0",
-    "docpad-plugin-eco": "~2.0.3",
-    "docpad": "~6.63.3"
   }
 }
