@@ -106,27 +106,27 @@ blockquote {
 {
 	background-position: 0 -30px;
 }
-.vr-web-social a.google
+.vr-web-social a.steam
 {
 	background-position: -35px 0;
 }
-.vr-web-social a.google:hover
+.vr-web-social a.steam:hover
 {
 	background-position: -35px -30px;
 }
-.vr-web-social a.twitter
+.vr-web-social a.sc
 {
 	background-position: -70px 0;
 }
-.vr-web-social a.twitter:hover
+.vr-web-social a.sc:hover
 {
 	background-position: -70px -30px;
 }
-.vr-web-social a.youtube
+.vr-web-social a.twitter
 {
 	background-position: -105px 0;
 }
-.vr-web-social a.youtube:hover
+.vr-web-social a.twitter:hover
 {
 	background-position: -105px -30px;
 }

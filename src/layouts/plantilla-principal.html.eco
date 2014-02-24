@@ -45,9 +45,9 @@
 				<div class="vr-web-social">
 					<ul >
 						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="GitHub" class="github">Github</a></li>
-						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Google" class="google">Google</a></li>
+						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Steam" class="steam">Steam</a></li>
+						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Sound Cloud" class="sc">Sound Cloud</a></li>
 						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Twitter" class="twitter">Twitter</a></li>
-						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Youtube" class="youtube">Youtube</a></li>
 						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Rss" class="rss">Rss</a></li>
 					</ul>
 				</div>
@@ -77,7 +77,7 @@
 			<div class="row footer-row">
 				<div class="col-md-4 footer-col">
 					<h4>Información</h4>
-					<img src="/ivr/logo_footer.png" alt="logo-footer">
+					<img src="/ivr/logo_foot.png" alt="logo-footer">
 					<address>
 						<strong>Vladimir Rodríguez</strong><br> Ciudad mitad del mundo<br>Latitud 0°0"0'<br>	Quito - Ecuador
 					</address>

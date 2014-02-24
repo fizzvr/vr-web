@@ -3,7 +3,7 @@ layout: 'proyecto'
 titulo: 'Introducción a GIMP'
 hex: 500
 tipo: Ilustracion
-comentario: Conociendo las herramientas de este famoso editor gráfico
+comentario: Edita tus imágenes con software libre
 tags: ['Diseño','Gimp']
 ---
 <div class="row clearfix">
@@ -17,7 +17,12 @@ tags: ['Diseño','Gimp']
 
 		<ul class="project-info">
 			<li><h5>Fecha:</h5><%= @formatoFecha(@document.date) %></li>
-			<li><h5>Servicios:</h5><%= @document.tipo %></li>
+			<li><h5>Duración:</h5>01:41 horas</li>
+			<li><h5>Curso:</h5>En linea</li>
+			<li><h5>Formador:</h5>José Vicente Carratalá
+			</li>
+			<li><h5>Información:</h5><a href="http://www.video2brain.com/mx/cursos/introduccion-a-gimp"> Web Oficial</a>
+			</li>
 		</ul>
 
 		<button class="btn btn-default pull-left" type="button">Demo</button>

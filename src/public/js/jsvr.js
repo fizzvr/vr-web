@@ -8,9 +8,9 @@ function inicio ()
 	callprettyPhoto();
 	blogCarrusel();
 	$('.vr-web-social .github').tooltip();
-	$('.vr-web-social .google').tooltip();
+	$('.vr-web-social .steam').tooltip();
+	$('.vr-web-social .sc').tooltip();
 	$('.vr-web-social .twitter').tooltip();
-	$('.vr-web-social .youtube').tooltip();
 	$('.vr-web-social .rss').tooltip();
 	$('.vr-logo-skills .html').tooltip();
 	$('.vr-logo-skills .css').tooltip();
