@@ -9,7 +9,7 @@
 	<meta name="description" content="<%= @obtenerDescripcion() %>" >
 	<meta name="keywords" content="<%= @obtenerPalabrasClave() %>" >
 	<meta name="author" content="<%= @obtenerAutor() %>" >
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
 
