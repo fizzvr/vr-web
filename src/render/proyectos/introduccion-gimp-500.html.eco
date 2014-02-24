@@ -1,0 +1,26 @@
+---
+layout: 'proyecto'
+titulo: 'Introducción a GIMP'
+hex: 500
+tipo: Ilustracion
+comentario: Conociendo las herramientas de este famoso editor gráfico
+tags: ['Diseño','Gimp']
+---
+<div class="row clearfix">
+	<div class="col-md-6">
+		<img src="/ivr/proyectos/gallery-img-<%- @document.hex %>-full.jpg" class="thumbnail img-responsive" alt="<%- @document.titulo %>" title="<%- @document.titulo %>">
+	</div>
+	<div class="col-md-6">
+		<h1 class="text-center"><%- @document.titulo %></h1>
+		<p class="lead">For an international ad campaign. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+
+		<ul class="project-info">
+			<li><h5>Fecha:</h5><%= @formatoFecha(@document.date) %></li>
+			<li><h5>Servicios:</h5><%= @document.tipo %></li>
+		</ul>
+
+		<button class="btn btn-default pull-left" type="button">Demo</button>
+		<a href="index.html" class="pull-right"><i class="glyphicon glyphicon-arrow-left"></i> Regresar a los Proyectos</a>
+	</div>
+</div>

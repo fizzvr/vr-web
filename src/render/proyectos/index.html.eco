@@ -1,0 +1,30 @@
+---
+layout: 'proyecto'
+titulo: Proyectos
+pageOrder: 2
+---
+<ul id="filterOptions" class="gallery-cats clearfix">
+	<li class="active"><a href="#" class="all">All</a></li>
+	<li><a href="#" class="illustration">Illustration</a></li>
+	<li><a href="#" class="design">Design</a></li>
+	<li><a href="#" class="video">Video</a></li>
+</ul>
+
+<div class="row clearfix">
+	<ul class="tabla-proyectos">
+		<% for pro in @getCollection("proyectos").toJSON(): %>
+		<!-- Proyecto N -->
+		<li class="col-md-3 item-de-la-galeria" data-id="id-<%= pro.hex %>" data-type="<%= pro.tipo %>">
+			<span class="gallery-hover-4col" >
+				<span class="gallery-icons">
+					<a href="/ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" title="<%= pro.titulo %>" class="item-zoom-link" data-rel="prettyPhoto"></a>
+				</span>
+			</span>
+			<img src="/ivr/proyectos/gallery-img-<%= pro.hex %>.jpg" alt="proyecto" class="img-responsive">
+			<span class="project-details">
+				<a href="<%= pro.url %>"><%= pro.titulo %></a><%= pro.comentario %>
+			</span>
+		</li>
+		<% end %>
+	</ul>
+</div>

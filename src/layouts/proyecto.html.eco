@@ -1,5 +1,16 @@
 ---
 layout: 'plantilla-principal'
 ---
-<h1><%- @document.documentTitle or @document.title %></h1>
-<%- @content %>
+<div class="vr-web-proyectos" id="proyectos">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>
+					<a class="breadcrumb" href="/index.html"><img src="/ivr/home.png" alt=""></a>&nbsp;&raquo;&nbsp; <span class="active">Proyectos</span>
+				</h2>
+				<h4 class="title-bg">dictados por los mejores profesionales <small>del mundo web</small></h4>
+				<%- @content %>
+			</div>
+		</div>
+	</div>
+</div>

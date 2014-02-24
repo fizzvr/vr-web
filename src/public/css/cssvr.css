@@ -10,7 +10,7 @@ body
 }
 /*TITULOS y SMALL*/
 
-h2, h3, h4 , h5 {
+h1, h2, h3, h4 , h5 {
 	font-family: "bauserif", sans-serif;
 	font-weight: normal;
 	text-transform:uppercase;
@@ -673,3 +673,9 @@ h4.title-bg button
 {
 	border-left:0px;
 }
+.project-info {margin: 0px 0px 40px 0px;}
+.project-info li {
+	list-style: none;
+	border-bottom: 1px dashed #a9a9a9;;
+	padding: 10px; }
+.project-info li h5 {display: inline; margin-right: 5px;}

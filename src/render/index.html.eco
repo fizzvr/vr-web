@@ -7,20 +7,24 @@ pageOrder: 0
 	<div class="vr-web-presentacion">
 		<div class="container">
 			<div class="row">
+				<% for pro,i in @getCollection('proyectos').toJSON(): %>
+					<% break if i > 0 %>
 				<div class="col-md-8">
 					<div class="flexslider">
 						<ul class="slides">
-							<li><a href="{}"><img src="ivr/slider/slider-img-1.jpg" alt=""></a></li>
-							<li><a href="{}"><img src="ivr/slider/slider-img-2.jpg" alt=""></a></li>
-							<li><a href="{}"><img src="ivr/slider/slider-img-3.jpg" alt=""></a></li>
+							<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt=""></a></li>
+							<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt=""></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<h2>En desarrollo<br>vr-veb</h2>
-					<p>Desarrollo de mi sitio web con Docpad</p>
-           	 		<a href="{}">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
+					<h2>proyecto actual</h2>
+					<h4><%= pro.titulo %>
+						<small><%= pro.comentario %></small>
+					</h4>
+					<a href="<%= pro.url %>">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
 				</div>
+				<% end %>
 			</div>
 		</div>
 	</div>
@@ -90,30 +94,20 @@ pageOrder: 0
 					</h4>
 					<div class="row clearfix">
 						<ul class="tabla-proyectos">
-							<!-- Proyecto 1 -->
-							<li class="col-md-3 item-de-la-galeria" data-id="id-1" data-type="illustration">
+							<% for pro in @getCollection("proyectos").toJSON(): %>
+							<!-- Proyecto N -->
+							<li class="col-md-3 item-de-la-galeria" data-id="id-<%= pro.hex %>" data-type="<%= pro.tipo %>">
 								<span class="gallery-hover-4col" >
 									<span class="gallery-icons">
-										<a href="ivr/proyectos/gallery-img-1-full.jpg" title="1" class="item-zoom-link" data-rel="prettyPhoto"></a>
+										<a href="/ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" title="<%= pro.titulo %>" class="item-zoom-link" data-rel="prettyPhoto"></a>
 									</span>
 								</span>
-								<img src="ivr/proyectos/gallery-img-1-4col.jpg" alt="proyecto" class="img-responsive">
+								<img src="/ivr/proyectos/gallery-img-<%= pro.hex %>.jpg" alt="proyecto" class="img-responsive">
 								<span class="project-details">
-									<a href="{}">1vr-mejorandola</a>Conociendo Html, Css, Jquery y algo maas asd asd asdasd
+									<a href="<%= pro.url %>"><%= pro.titulo %></a><%= pro.comentario %>
 								</span>
 							</li>
-							<!-- Proyecto 2 -->
-							<li class="col-md-3 item-de-la-galeria" data-id="id-2" data-type="illustration">
-								<span class="gallery-hover-4col" >
-									<span class="gallery-icons">
-										<a href="ivr/proyectos/gallery-img-1-full.jpg" title="2" class="item-zoom-link" data-rel="prettyPhoto"></a>
-									</span>
-								</span>
-								<img src="ivr/proyectos/gallery-img-2-4col.jpg" alt="proyecto" class="img-responsive">
-								<span class="project-details">
-									<a href="{}">2vr-mejorandola</a>Conociendo Html, Css, Jquery
-								</span>
-							</li>
+							<% end %>
 						</ul>
 					</div>
 				</div>
@@ -177,7 +171,7 @@ pageOrder: 0
 					</h4>
 					<div class="lista">
 						<ul>
-							<!-- TODO: pendiente-->
+
 						</ul>
 					</div>
 
