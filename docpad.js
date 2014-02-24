@@ -54,10 +54,13 @@ docpadConfig = {
 	    },
 	    proyectos: function(database) {
 	      return database.findAllLive({
-	        relativeOutDirPath: 'proyectos'
+	        relativeOutDirPath: 'proyectos',
+	        hex: {
+	          $exists: true
+	        }
 	      }, [
 	        {
-	          date: -1
+	          hex: 1
 	        }
 	      ]);
 	    }
