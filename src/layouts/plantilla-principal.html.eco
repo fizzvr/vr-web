@@ -44,10 +44,10 @@
 			<div class="col-md-9">
 				<div class="vr-web-social">
 					<ul >
-						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="GitHub" class="github">Github</a></li>
-						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Steam" class="steam">Steam</a></li>
-						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Sound Cloud" class="sc">Sound Cloud</a></li>
-						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Twitter" class="twitter">Twitter</a></li>
+						<li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="github">Github</a></li>
+						<li><a href="http://steamcommunity.com/id/fizzvr" data-toggle="tooltip" data-placement="top" title="Steam" class="steam">Steam</a></li>
+						<li><a href="https://soundcloud.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Sound Cloud" class="sc">Sound Cloud</a></li>
+						<li><a href="http://twitter.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Twitter" class="twitter">Twitter</a></li>
 						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Rss" class="rss">Rss</a></li>
 					</ul>
 				</div>
@@ -79,12 +79,14 @@
 					<h4>Información</h4>
 					<img src="/ivr/logo_foot.png" alt="logo-footer">
 					<address>
-						<strong>Vladimir Rodríguez</strong><br> Ciudad mitad del mundo<br>Latitud 0°0"0'<br>	Quito - Ecuador
+						<strong>Vladimir Rodríguez</strong><br>San Francisco de Quito,<br>Ecuador<br>Latitud 0°0"0'
 					</address>
 					<h5>Email</h5>
 					<p><a href="mailto:<%= @site.email %>"><%= @site.email %></a></p>
 					<h5>Celular</h5>
 					<p>+(593) 983288589</p>
+					<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: Express, <a href="http://docpad.org/"><strong>DocPad</strong></a><br>además el repositorio de este<br>proyecto se encuentra en:</p>
+					<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a></p>
 				</div>
 				<div class="col-md-4 footer-col">
 					<h4>Déjame un Mensaje</h4>
@@ -101,12 +103,16 @@
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 					</script>
 				</div> -->
+				<!-- <div class="col-md-4 footer-col">
+					<h4>Mi lista HxC</h4>
+					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=true&amp;hide_related=false&amp;show_artwork=true"></iframe>
+				</div> -->
 			</div>
 			<div class="row footer-col footer-sub">
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-md-6">
-							<span class="pull-left">&copy; <%- (new Date()).getFullYear() %> Vladimir Rodríguez - Programador<a rel="license" href="http://creativecommons.org/licenses/by/3.0/ec/"><!-- <img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/ec/80x15.png" /> --></a>
+							<span class="pull-left"><%- (new Date()).getFullYear() %> Vladimir Rodríguez - Programador
 							</span>
 						</div>
 						<div class="col-md-6">
@@ -119,6 +125,7 @@
 							</span>
 						</div>
 					</div>
+					<div class="text-center" style="margin-top: 10px;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.</div>
 				</div>
 			</div>
 		</div>
