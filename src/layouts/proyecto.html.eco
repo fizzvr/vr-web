@@ -1,7 +1,7 @@
 ---
 layout: 'plantilla-principal'
 ---
-<div class="vr-web-proyectos" id="proyectos">
+<div class="vr-web-proyectos">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
