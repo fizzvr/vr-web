@@ -11,7 +11,7 @@ docpadConfig = {
 			descripcion: "Compilando el mundo con tecnologías de hoy y generando bits para la web de mañana",
 			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, v2b",
 			autor: "fizzvr",
-			email: "info@fizzvr.com",
+			email: "fizzvr@gmail.com",
 			styles: "/cvr/cssvr.css",
 			scripts: "/jvr/vrweb.js"
 		},
