@@ -618,7 +618,7 @@ h4.title-bg button
 	background:url('../ivr/back-top-btn.png') no-repeat;
 	text-align:center;
 	position:fixed;
-	bottom:75px;
+	bottom:32px;
 	right:20px;
 	cursor:pointer;
 	display:none;
@@ -635,27 +635,27 @@ h4.title-bg button
 	border: 1px dashed green;
 }
 /*###perfil###*/
-#perfil h2
+.vr-web-perfil h2
 {
 	font-size: 16px;
 	color: #464c5b;
 	text-align: center;
 	text-shadow: none;
 }
-#perfil
+.vr-web-perfil
 {
 	margin-bottom: 30px;
 }
-#perfil ul
+.vr-web-perfil ul
 {
 	padding-left: 0;
 }
-#perfil ul li
+.vr-web-perfil ul li
 {
 	list-style: none;
 }
 /*###proyectos###*/
-#proyectos h2
+.vr-web-proyectos h2
 {
 	font-size: 16px;
 	color: #464c5b;
@@ -679,3 +679,11 @@ h4.title-bg button
 	border-bottom: 1px dashed #a9a9a9;;
 	padding: 10px; }
 .project-info li h5 {display: inline; margin-right: 5px;}
+/*###Contacto###*/
+.vr-web-contacto h2
+{
+	font-size: 16px;
+	color: #464c5b;
+	text-align: center;
+	text-shadow: none;
+}
