@@ -17,96 +17,98 @@
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-	<![endif]-->
+	  <![endif]-->
 
-	<!-- recursos -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'> -->
+	  <!-- recursos -->
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 
-	<!-- estilos -->
-	<link rel="stylesheet" href="/bs3/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/fs/flexslider.css">
-	<link rel="stylesheet" href="/pp/css/prettyPhoto.css">
-	<%- @getBlock('styles').add(@site.styles).toHTML() %>
-</head>
-<body>
-	<header class="navbar navbar-default navbar-static-top">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 vr-web-logo">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colapsar-menu">
-						<span class="sr-only">Menú</span>
-						<span class="glyphicon glyphicon-arrow-down"></span>
-					</button>
-					<a href="/index.html" class="navbar-brand" title="fizzvr"><img src="/ivr/logo.png" alt="fizzvr logo"></a>
+	  <!-- estilos -->
+	  <link rel="stylesheet" href="/bs3/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="/fs/flexslider.css">
+	  <link rel="stylesheet" href="/pp/css/prettyPhoto.css">
+	  <%- @getBlock('styles').add(@site.styles).toHTML() %>
+	</head>
+	<body>
+		<header class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 vr-web-logo">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colapsar-menu">
+								<span class="sr-only">Menú</span>
+								<span class="glyphicon glyphicon-arrow-down"></span>
+							</button>
+							<a href="/index.html" class="navbar-brand" title="fizzvr"><img src="/ivr/logo.png" alt="fizzvr logo"></a>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="vr-web-social">
+							<ul >
+								<li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="github">Github</a></li>
+								<li><a href="http://steamcommunity.com/id/fizzvr" data-toggle="tooltip" data-placement="top" title="Steam" class="steam">Steam</a></li>
+								<li><a href="https://soundcloud.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Sound Cloud" class="sc">Sound Cloud</a></li>
+								<li><a href="http://twitter.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Twitter" class="twitter">Twitter</a></li>
+								<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Rss" class="rss">Rss</a></li>
+							</ul>
+						</div>
+						<nav class="collapse navbar-collapse vr-web-navegacion navbar-right" id="colapsar-menu" role="navigation">
+							<ul class="nav navbar-nav">
+								<% for page in @getCollection("paginas").toJSON(): %>
+								<li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+									<a href="<%= page.url %>">
+										<%= page.titulo %>
+									</a>
+								</li>
+								<% end %>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-9">
-				<div class="vr-web-social">
-					<ul >
-						<li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="github">Github</a></li>
-						<li><a href="http://steamcommunity.com/id/fizzvr" data-toggle="tooltip" data-placement="top" title="Steam" class="steam">Steam</a></li>
-						<li><a href="https://soundcloud.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Sound Cloud" class="sc">Sound Cloud</a></li>
-						<li><a href="http://twitter.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Twitter" class="twitter">Twitter</a></li>
-						<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Rss" class="rss">Rss</a></li>
-					</ul>
-				</div>
-				<nav class="collapse navbar-collapse vr-web-navegacion navbar-right" id="colapsar-menu" role="navigation">
-					<ul class="nav navbar-nav">
-						<% for page in @getCollection("paginas").toJSON(): %>
-				        <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
-				            <a href="<%= page.url %>">
-				                <%= page.titulo %>
-				            </a>
-				        </li>
-				    	<% end %>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</div>
-	<div class="color-bar-1"></div>
-	<div class="color-bar-2 color-bg"></div>
-	</header>
+			<div class="color-bar-1"></div>
+			<div class="color-bar-2 color-bg"></div>
+		</header>
 
-	<%- @content %>
+		<%- @content %>
 
-	<div class="color-bar-1"></div>
-	<footer class="footer-container">
-		<div class="container vr-foot">
-			<div class="row footer-row">
-				<div class="col-md-4 footer-col">
-					<h4>Información</h4>
-					<img src="/ivr/logo_foot.png" alt="logo-footer">
-					<address>
-						<strong>Vladimir Rodríguez</strong><br>San Francisco de Quito,<br>Ecuador<br>Latitud 0°0"0'
-					</address>
-					<h5>Email</h5>
-					<p><a href="mailto:<%= @site.email %>"><%= @site.email %></a></p>
-					<h5>Celular</h5>
-					<p>+(593) 983288589</p>
-					<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: Express, <a href="http://docpad.org/"><strong>DocPad</strong></a><br>además el repositorio de este<br>proyecto se encuentra en:</p>
-					<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a></p>
-				</div>
-				<div class="col-md-4 footer-col">
-					<h4>Déjame un Mensaje</h4>
-					<form action="#" method="post">
-						<input type="text" name="name" id="name" value="Nombre" onFocus="if (this.value == 'Nombre') this.value = '';" onBlur="if (this.value == '') this.value = 'Nombre';" />
-						<input type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
-						<textarea name="message" id="message" onFocus="if (this.value == 'Mensaje') this.value = '';" onBlur="if (this.value == '') this.value = 'Mensaje';" >Mensaje</textarea>
-						<input type="submit" class="btn btn-default" value="Enviar" />
-					</form>
-				</div>
+		<div class="color-bar-1"></div>
+		<footer class="footer-container">
+			<div class="container vr-foot">
+				<div class="row footer-row">
+					<div class="col-md-4 footer-col">
+						<h4>Información</h4>
+						<img src="/ivr/logo_foot.png" alt="logo-footer">
+						<address>
+							<strong>Vladimir Rodríguez</strong><br>San Francisco de Quito,<br>Ecuador<br>Latitud 0°0"0'
+						</address>
+						<h5>Email</h5>
+						<p><a href="mailto:<%= @site.email %>"><%= @site.email %></a></p>
+						<h5>Celular</h5>
+						<p>+(593) 983288589</p>
+						<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: Express, <a href="http://docpad.org/"><strong>DocPad</strong></a><br>además el repositorio de este<br>proyecto se encuentra en:</p>
+						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a></p>
+					</div>
+					<div class="col-md-4 footer-col">
+						<h4>Déjame un Mensaje</h4>
+						<form action="#" method="post" role="form">
+							<div class="form-group">
+								<input type="text" class="form-control" id="nombre" placeholder="Nombre (requerido)">
+								<input type="text" class="form-control" id="email" placeholder="Email (requerido)">
+								<textarea class="form-control" placeholder="Mensaje" name="mensaje" id="mensaje"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default">Enviar Mensaje</button>
+						</form>
+					</div>
 				<!-- <div class="col-md-4 footer-col">
 					<h4>Últimos Tweets</h4>
 					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560">Tweets por @fizzvr</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 					</script>
 				</div> -->
-				<!-- <div class="col-md-4 footer-col">
+				<div class="col-md-4 footer-col">
 					<h4>Mi lista HxC</h4>
 					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=true&amp;hide_related=false&amp;show_artwork=true"></iframe>
-				</div> -->
+				</div>
 			</div>
 			<div class="row footer-col footer-sub">
 				<div class="col-md-12">
@@ -118,10 +120,10 @@
 						<div class="col-md-6">
 							<span class="pull-right">
 								<% for page in @getCollection("paginas").toJSON(): %>
-						        <a href="<%= page.url %>">
-						                <%= page.titulo %>
-						        </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-						       	<% end %>
+								<a href="<%= page.url %>">
+									<%= page.titulo %>
+								</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+								<% end %>
 							</span>
 						</div>
 					</div>
@@ -137,5 +139,21 @@
 	<script src="/fs/jquery.flexslider.js" ></script>
 	<script src="/pp/jquery.prettyPhoto.js" ></script>
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+	<!-- Piwik -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://fizzvr.com/anal/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', 1]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+			g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		})();
+
+	</script>
+	<noscript><p><img src="http://fizzvr.com/anal/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
 </body>
 </html>
