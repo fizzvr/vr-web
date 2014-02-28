@@ -97,8 +97,8 @@ module.exports = function(grunt) {
 				js: {
 					files: {
 						'out/jvr/vrweb.js': [
-							'src/public/js/plugins.js',
-							'src/public/js/jsvr.js'
+							'src/public/js/jsvr.js',
+							'src/public/js/plugins.js'
 						]
 					}
 
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss']);
+	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss', 'validar-html']);
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };

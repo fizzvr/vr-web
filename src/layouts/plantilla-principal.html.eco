@@ -92,9 +92,9 @@
 						<h4>Déjame un Mensaje</h4>
 						<form action="#" method="post" role="form">
 							<div class="form-group">
-								<input type="text" class="form-control" id="nombre" placeholder="Nombre (requerido)">
-								<input type="text" class="form-control" id="email" placeholder="Email (requerido)">
-								<textarea class="form-control" placeholder="Mensaje" name="mensaje" id="mensaje"></textarea>
+								<input type="text" class="form-control" id="nombref" placeholder="Nombre (requerido)">
+								<input type="text" class="form-control" id="emailf" placeholder="Email (requerido)">
+								<textarea class="form-control" placeholder="Mensaje" name="mensaje" id="mensajef"></textarea>
 							</div>
 							<button type="submit" class="btn btn-default">Enviar Mensaje</button>
 						</form>
@@ -139,21 +139,6 @@
 	<script src="/fs/jquery.flexslider.js" ></script>
 	<script src="/pp/jquery.prettyPhoto.js" ></script>
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
-	<!-- Piwik -->
-	<script type="text/javascript">
-		var _paq = _paq || [];
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function() {
-			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://fizzvr.com/anal/";
-			_paq.push(['setTrackerUrl', u+'piwik.php']);
-			_paq.push(['setSiteId', 1]);
-			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-			g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-		})();
-
-	</script>
 	<noscript><p><img src="http://fizzvr.com/anal/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-	<!-- End Piwik Code -->
 </body>
 </html>
