@@ -9,27 +9,44 @@ pageOrder: 4
            <a class="breadcrumb" href="/index.html"><img src="ivr/home.png" alt=""></a>&nbsp;&raquo;&nbsp; <span class="active">Contáctame</span>
        </h2>
        <div class="row">
-        <div class="col-md-7 contact">
-            <h4 class="title-bg">Dejame un Mensaje!!!</h4>
-            <!-- TODO: Programar -->
-        </div>
-        <div class="col-md-5 sidebar page-sidebar">
-            <h4 class="title-bg">Información de Contacto</h4>
-            <address>
-                <strong>Vladimir Rodríguez</strong><br>
-                San Francisco de Quito,<br>
-                Ecuador<br>
-                Latitud 0°0"0'
-                <abbr title="Celular">Cel:</abbr> +(593) 983288589
-            </address>
-
-            <address>
-                <strong>Fizzvr</strong><br>
-                <a href="mailto:<%= @site.email %>"><%= @site.email %></a>
-            </address>
-            <h4 class="title-bg">Dirección</h4>
-            <a href="https://www.google.com.ec/maps/place/Iglesia+de+San+Francisco/@-0.2203096,-78.5163492,16z/data=!4m2!3m1!1s0x0:0x6c3ffdf1d61ff005"><img src="/ivr/map.jpg"  class="thumbnail img-responsive" alt=""></a>
+            <div class="col-md-7 contact">
+                <h4 class="title-bg">Dejame un Mensaje!!!</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="nombre">Tu Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre (requerido)">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Tu Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email (requerido)">
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">El Mensaje</label>
+                        <textarea class="form-control" rows="10" placeholder="Mensaje" name="mensaje" id="mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="col-md-5 sidebar page-sidebar">
+                <h4 class="title-bg">Información de Contacto</h4>
+                <address>
+                    <strong>Vladimir Rodríguez</strong><br>
+                    San Francisco de Quito,<br>
+                    Ecuador<br>
+                    Latitud 0°0"0'
+                    <abbr title="Celular">Cel:</abbr> +(593) 983288589
+                </address>
+                <address>
+                    <strong>Fizzvr</strong><br>
+                    <a href="mailto:<%= @site.email %>"><%= @site.email %></a>
+                </address>
+                <h4 class="title-bg">Dirección</h4>
+                <a href="https://www.google.com.ec/maps/place/Iglesia+de+San+Francisco/@-0.2203096,-78.5163492,16z/data=!4m2!3m1!1s0x0:0x6c3ffdf1d61ff005"><img src="/ivr/map.jpg"  class="thumbnail img-responsive" alt=""></a>
+            </div>
         </div>
     </div>
-</div>
 </div>
