@@ -1,0 +1,33 @@
+---
+layout: 'proyecto'
+titulo: 'CreateJS. Juegos interactivos con HTML5'
+hex: 497
+tipo: Diseño
+comentario: Crea juegos multiplataforma con HTML5 y JavaScript
+tags: ['Html','CreateJS']
+repositorio: 'https://github.com/fizzvr/vr-v2b-createjs'
+---
+<div class="row clearfix">
+	<div class="col-md-6">
+		<img src="/ivr/proyectos/gallery-img-<%- @document.hex %>-full.jpg" class="thumbnail img-responsive" alt="<%- @document.titulo %>" title="<%- @document.titulo %>">
+	</div>
+	<div class="col-md-6">
+		<h1 class="text-center"><%- @document.titulo %></h1>
+		<p class="lead">En este Curso de Video2Brain aprenderé como crear juegos interactivos con <abbr title="HyperText Markup Language">HTML</abbr> Y <abbr title="Javascript">Js</abbr> comencemos con los COMMITS :)</p>
+
+		<ul class="project-info">
+			<li><h5>Fecha:</h5><%= @formatoFecha(@document.date) %></li>
+			<li><h5>Duración:</h5>03:20 horas</li>
+			<li><h5>Curso:</h5>En linea</li>
+			<li><h5>Formador:</h5>Marcos González Sancho
+			</li>
+			<li><h5>Información:</h5><a href="https://www.video2brain.com/mx/cursos/createjs-juegos-interactivos-con-html5"> Web Oficial</a>
+			</li>
+			<li><h5>Repositorio:</h5><a href="<%- @document.repositorio %>"> GitHub</a>
+			</li>
+		</ul>
+
+		<button class="btn btn-default pull-left" type="button">Demo</button>
+		<a href="index.html" class="pull-right"><i class="glyphicon glyphicon-arrow-left"></i> Regresar a los Proyectos</a>
+	</div>
+</div>
