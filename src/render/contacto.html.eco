@@ -34,15 +34,10 @@ pageOrder: 4
             <div class="col-md-5 sidebar page-sidebar">
                 <h4 class="title-bg">Información de Contacto</h4>
                 <address>
-                    <strong>Vladimir Rodríguez</strong><br>
-                    San Francisco de Quito,<br>
-                    Ecuador<br>
-                    Latitud 0°0"0'
-                    <abbr title="Celular">Cel:</abbr> +(593) 983288589
-                </address>
-                <address>
-                    <strong>Fizzvr</strong><br>
-                    <a href="mailto:<%= @site.email %>"><%= @site.email %></a>
+                    <strong>Vladimir Rodríguez</strong><br>San Francisco de Quito<br>
+                    Ecuador, Latitud 0°0"0'<br>
+                    <abbr title="Celular">C:</abbr> (593) 983288589<br>
+                    <abbr title="Email">E:</abbr> <a href="mailto:<%= @site.email %>"><%= @site.email %></a>
                 </address>
                 <h4 class="title-bg">Dirección</h4>
                 <a href="https://www.google.com.ec/maps/place/Iglesia+de+San+Francisco/@-0.2203096,-78.5163492,16z/data=!4m2!3m1!1s0x0:0x6c3ffdf1d61ff005"><img src="/ivr/map.jpg"  class="thumbnail img-responsive" alt=""></a>

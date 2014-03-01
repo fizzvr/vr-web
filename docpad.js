@@ -1,9 +1,9 @@
-var docpadConfig, moment, exec;
+var docpadConfig, moment, exec, json;
 moment = require('moment');
 moment.lang('es');
 exec = require('child_process').exec;
+json = require('./package.json');
 docpadConfig = {
-	prompts: false,
 	templateData: {
 		site: {
 			url: "http://www.fizzvr.com",
@@ -12,8 +12,12 @@ docpadConfig = {
 			keywords: "vladimir, vladimir rodríguez, rodríguez, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, v2b",
 			autor: "fizzvr",
 			email: "fizzvr@gmail.com",
-			styles: "/cvr/cssvr.css",
-			scripts: "/jvr/vrweb.js"
+			go_css: "/cvr/cssvr.css",
+			go_js: "/jvr/vrweb.js"
+		},
+		obtenerDocpadv: function () {
+			version = json.dependencies.docpad;
+			return version;
 		},
 		formatoFecha: function (fecha, formato) {
 			if (formato == null) {
@@ -30,13 +34,18 @@ docpadConfig = {
 		},
 		obtenerDescripcion: function() {
 			return this.document.descripcion || this.site.descripcion;
-
 		},
 		obtenerPalabrasClave: function() {
 			return this.site.keywords.concat(this.document.keywords || []).join(", ");
 		},
 		obtenerAutor: function() {
 			return this.document.autor || this.site.autor;
+		},
+		obtenerEstilos: function() {
+			return this.document.css || this.site.go_css;
+		},
+		obtenerJavascript: function() {
+			return this.document.js || this.site.go_js;
 		}
 	},
 	collections: {

@@ -26,7 +26,7 @@
 	  <link rel="stylesheet" href="/bs3/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="/fs/flexslider.css">
 	  <link rel="stylesheet" href="/pp/css/prettyPhoto.css">
-	  <%- @getBlock('styles').add(@site.styles).toHTML() %>
+	  <link rel="stylesheet" href="<%= @obtenerEstilos() %>">
 	</head>
 	<body>
 		<header class="navbar navbar-default navbar-static-top">
@@ -79,13 +79,12 @@
 						<h4>Información</h4>
 						<img src="/ivr/logo_foot.png" alt="logo-footer">
 						<address>
-							<strong>Vladimir Rodríguez</strong><br>San Francisco de Quito,<br>Ecuador<br>Latitud 0°0"0'
+							<strong>Vladimir Rodríguez</strong><br>San Francisco de Quito<br>
+					        Ecuador, Latitud 0°0"0'<br>
+					        <abbr title="Celular">C:</abbr> (593) 983288589<br>
+					        <abbr title="Email">E:</abbr> <a href="mailto:<%= @site.email %>"><%= @site.email %></a>
 						</address>
-						<h5>Email</h5>
-						<p><a href="mailto:<%= @site.email %>"><%= @site.email %></a></p>
-						<h5>Celular</h5>
-						<p>+(593) 983288589</p>
-						<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: Express, <a href="http://docpad.org/"><strong>DocPad</strong></a><br>además el repositorio de este<br>proyecto se encuentra en:</p>
+						<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: <a href="http://docpad.org/"><strong>DocPad </strong></a><%= @obtenerDocpadv() %><br>además el repositorio de este<br>proyecto se encuentra en:</p>
 						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a></p>
 					</div>
 					<div class="col-md-4 footer-col">
@@ -138,7 +137,7 @@
 	<script src="/bs3/js/bootstrap.min.js"></script>
 	<script src="/fs/jquery.flexslider.js" ></script>
 	<script src="/pp/jquery.prettyPhoto.js" ></script>
-	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+	<script src="<%= @obtenerJavascript() %>"></script>
 	<noscript><p><img src="http://fizzvr.com/anal/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 </body>
 </html>

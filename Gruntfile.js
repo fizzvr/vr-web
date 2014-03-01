@@ -135,7 +135,7 @@ module.exports = function(grunt) {
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss', 'validar-html']);
+	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss']);
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };
