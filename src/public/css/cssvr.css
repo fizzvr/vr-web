@@ -681,6 +681,10 @@ h4.title-bg button
 	padding: 10px; }
 .project-info li h5 {display: inline; margin-right: 5px;}
 /*###Contacto###*/
+.vr-web-contacto
+{
+	margin-bottom: 30px;
+}
 .vr-web-contacto h2
 {
 	font-size: 16px;
