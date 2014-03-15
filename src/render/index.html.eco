@@ -77,7 +77,7 @@ pageOrder: 0
 					</section>
 				</div>
 				<div class="col-md-12">
-					<blockquote><p>"<%= @site.descripcion %>"</p><small><cite>VLADIMIR RODRIGUEZ</cite></small>
+					<blockquote><p>"Compilando el mundo con tecnologías de hoy y generando bits para la web de mañana"</p><small><cite>VLADIMIR RODRIGUEZ</cite></small>
 					</blockquote>
 				</div>
 			</div>
