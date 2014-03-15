@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="es">
 <head>
 	<!-- meta estandar -->
 	<meta charset="UTF-8">
@@ -80,9 +80,9 @@
 						<img src="/ivr/logo_foot.png" alt="logo-footer">
 						<address>
 							<strong>Vladimir Rodríguez</strong><br>San Francisco de Quito<br>
-					        Ecuador, Latitud 0°0"0'<br>
-					        <abbr title="Celular">C:</abbr> (593) 983288589<br>
-					        <abbr title="Email">E:</abbr> <a href="mailto:<%= @site.email %>"><%= @site.email %></a>
+							Ecuador, Latitud 0°0"0'<br>
+							<abbr title="Celular">C:</abbr> (593) 983288589<br>
+							<abbr title="Email">E:</abbr> <a href="mailto:<%= @site.email %>"><%= @site.email %></a>
 						</address>
 						<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: <a href="http://docpad.org/"><strong>DocPad </strong></a><%= @obtenerDocpadv() %><br>además el repositorio de este<br>proyecto se encuentra en:</p>
 						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a></p>
@@ -92,7 +92,11 @@
 						<form action="#" method="post" role="form">
 							<div class="form-group">
 								<input type="text" class="form-control" id="nombref" placeholder="Nombre (requerido)">
+							</div>
+							<div class="form-group">
 								<input type="text" class="form-control" id="emailf" placeholder="Email (requerido)">
+							</div>
+							<div class="form-group">
 								<textarea class="form-control" placeholder="Mensaje" name="mensaje" id="mensajef"></textarea>
 							</div>
 							<button type="submit" class="btn btn-default">Enviar Mensaje</button>
@@ -106,7 +110,7 @@
 				</div> -->
 				<div class="col-md-4 footer-col">
 					<h4>Mi lista HxC</h4>
-					<iframe height="450" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=true&amp;hide_related=false&amp;show_artwork=true"></iframe>
+					<iframe height="450" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
 				</div>
 			</div>
 			<div class="row footer-col footer-sub">
@@ -138,6 +142,5 @@
 	<script src="/fs/jquery.flexslider.js" ></script>
 	<script src="/pp/jquery.prettyPhoto.js" ></script>
 	<script src="<%= @obtenerJavascript() %>"></script>
-	<noscript><p><img src="http://fizzvr.com/anal/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 </body>
 </html>
