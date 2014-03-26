@@ -81,7 +81,7 @@ blockquote {
 .vr-web-social
 {
 	text-align: right;
-	padding:30px 30px 9px 0;
+	padding:30px 0 9px 0;
 }
 .vr-web-social ul li
 {
@@ -312,7 +312,7 @@ blockquote {
 	margin: 0 0 0 5px;
 	display: inline-block;
 }
-.vr-logo-skills a
+.vr-logo-skills li
 {
 	background-image: url('../ivr/vr-logo-skills.png');
 	background-repeat: no-repeat;
@@ -321,27 +321,27 @@ blockquote {
 	display:inline-block;
 	text-indent:-9999px;
 }
-	.vr-logo-skills a.html
+	.vr-logo-skills li.html
 	{
 		background-position: 0 0;
 	}
-	.vr-logo-skills a.css
+	.vr-logo-skills li.css
 	{
 		background-position: -48px 0;
 	}
-	.vr-logo-skills a.jquery
+	.vr-logo-skills li.jquery
 	{
 		background-position: -96px 0;
 	}
-	.vr-logo-skills a.php
+	.vr-logo-skills li.php
 	{
 		background-position: -144px 0;
 	}
-	.vr-logo-skills a.asp
+	.vr-logo-skills li.asp
 	{
 		background-position: -192px 0;
 	}
-	.vr-logo-skills a.mysql
+	.vr-logo-skills li.mysql
 	{
 		background-position: -240px 0;
 	}

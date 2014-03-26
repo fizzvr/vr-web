@@ -40,9 +40,9 @@ pageOrder: 0
 						</h3>
 						<div class="vr-logo-skills">
 							<ul>
-								<li><a href="{}" data-toggle="tooltip" data-placement="bottom" data-title="HTML" class="html">html</a></li>
-								<li><a href="{}" data-toggle="tooltip" data-placement="bottom" data-title="CSS" class="css">css</a></li>
-								<li><a href="{}" data-toggle="tooltip" data-placement="bottom" data-title="JQUERY" class="jquery">js</a></li>
+								<li data-toggle="tooltip" data-placement="bottom" data-title="HTML" class="html">html</li>
+								<li data-toggle="tooltip" data-placement="bottom" data-title="CSS" class="css">css</li>
+								<li data-toggle="tooltip" data-placement="bottom" data-title="JQUERY" class="jquery">js</li>
 							</ul>
 						</div>
 					</section>
@@ -56,8 +56,8 @@ pageOrder: 0
 						</h3>
 						<div class="vr-logo-skills">
 							<ul>
-								<li><a href="{}" data-toggle="tooltip" data-placement="bottom" data-title="PHP" class="php">php</a></li>
-								<li><a href="{}" data-toggle="tooltip" data-placement="bottom" data-title="ASP.NET" class="asp">asp</a></li>
+								<li data-toggle="tooltip" data-placement="bottom" data-title="PHP" class="php">php</li>
+								<li data-toggle="tooltip" data-placement="bottom" data-title="ASP.NET" class="asp">asp</li>
 							</ul>
 						</div>
 					</section>
@@ -71,7 +71,7 @@ pageOrder: 0
 						</h3>
 						<div class="vr-logo-skills">
 							<ul>
-								<li><a href="{}" data-toggle="tooltip" data-placement="bottom" data-title="MYSQL" class="mysql">mysql</a></li>
+								<li data-toggle="tooltip" data-placement="bottom" data-title="MYSQL" class="mysql">mysql</li>
 							</ul>
 						</div>
 					</section>
