@@ -1,0 +1,16 @@
+---
+layout: 'plantilla-principal'
+titulo: 'Página No Encontrada'
+---
+    <div class="container">
+        <h1><%= @document.titulo %></h1>
+        <p>Lo sentimos, no tienes los permisos suficientes.</p>
+    </div>
+
+
+
+
+
+
+
+
