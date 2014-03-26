@@ -1,14 +1,3 @@
-//piwik
-var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://fizzvr.com/piw/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 1]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
 //llamo a la funcion inicio
 $(document).on("ready", inicio);
 
@@ -29,7 +18,7 @@ function inicio () {
 	$('.vr-logo-skills .php').tooltip();
 	$('.vr-logo-skills .asp').tooltip();
 	$('.vr-logo-skills .mysql').tooltip();
-};
+}
 
 /////flexslider
 function fs() {
@@ -40,7 +29,7 @@ function fs() {
           $('body').removeClass('loading');
         }
     });
-};
+}
 
 ////////// funcion para el rollover de las miniaturas //////////
 function galleryHover() {
@@ -50,7 +39,7 @@ function galleryHover() {
 		function(){
 			$(this).find('.gallery-hover-4col').stop('true','true').fadeTo("normal",0);
 	});
-};
+}
 
 //PrettyPhoto
 function callprettyPhoto() {
@@ -61,19 +50,19 @@ function callprettyPhoto() {
 	});
 	///* light_rounded / dark_rounded / light_square / dark_square / facebook */
 	$(".gallery-icons a[rel^='prettyPhoto']").prettyPhoto({allow_expand: false, theme: 'light_rounded',social_tools:false, deeplinking: false });
-};
+}
 function blogCarrusel () {
 	$("#btn-blog-next").click(function () {
-      $('#blogCarrusel').carousel('next')
+      $('#blogCarrusel').carousel('next');
     });
      $("#btn-blog-prev").click(function () {
-      $('#blogCarrusel').carousel('prev')
+      $('#blogCarrusel').carousel('prev');
     });
-};
+}
 ////////// Regresar para arriba //////////
 $(function() {
 	$(document).scroll(function() {
-		if($(this).scrollTop() != 0) {
+		if($(this).scrollTop() !== 0) {
 			$('#toTop').fadeIn();
 		} else {
 			$('#toTop').fadeOut();
@@ -84,4 +73,3 @@ $(function() {
 		$('body,html').animate({scrollTop:0},800);
 	});
 });
-
