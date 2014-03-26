@@ -22,33 +22,33 @@ module.exports = function(grunt) {
 					src: ["./src/public/css/tipo/bauserif.*"],
 					dest: './out/cvr'
 				},
-				//bootstrap bower list --path
-				{
-					expand: true,
-					flatten: true,
-					src: ["bower_components/bootstrap/dist/js/bootstrap.min.js"],
-					dest: './out/bs3/js'
-				},
-				{
-					expand: true,
-					flatten: true,
-					src: ["bower_components/bootstrap/dist/css/bootstrap.min.css",
-						"bower_components/bootstrap/dist/css/bootstrap-theme.min.css"],
-					dest: './out/bs3/css'
-				},
-				{
-					expand: true,
-					flatten: true,
-					src: ["bower_components/bootstrap/dist/fonts/*"],
-					dest: './out/bs3/fonts'
-				},
 				//jquery bower list --path
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/jquery/jquery.min.js",
 					"bower_components/jquery/jquery.min.map"],
-					dest: './out/jvr/act/'
+					dest: './out/act/jquery/'
+				},
+				//bootstrap bower list --path
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/bootstrap/dist/js/bootstrap.min.js"],
+					dest: './out/act/bs3/'
+				},
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/bootstrap/dist/css/bootstrap.min.css",
+						"bower_components/bootstrap/dist/css/bootstrap-theme.min.css"],
+					dest: './out/act/bs3/css/'
+				},
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/bootstrap/dist/fonts/*"],
+					dest: './out/act/bs3/fonts/'
 				},
 				//flexslider bower list --path
 				{
@@ -56,32 +56,32 @@ module.exports = function(grunt) {
 					flatten: true,
 					src: ["bower_components/flexslider/flexslider.css",
 					"bower_components/flexslider/jquery.flexslider.js"],
-					dest: './out/fs/'
+					dest: './out/act/fs/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src:["bower_components/flexslider/fonts/*"],
-					dest: './out/fs/fonts/'
+					dest: './out/act/fs/fonts/'
 				},
 				//prettyPhoto bower list --path
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"],
-					dest: './out/pp/'
+					dest: './out/act/pp/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/jquery-prettyPhoto/css/*"],
-					dest: './out/pp/css/'
+					dest: './out/act/pp/css/'
 				},
 				{
 					expand: true,
 					cwd: 'bower_components/jquery-prettyPhoto/images/prettyPhoto/',
 					src: ['**'],
-					dest: './out/pp/images/prettyPhoto/'
+					dest: './out/act/pp/images/prettyPhoto/'
 				}
 
 				]
@@ -97,6 +97,7 @@ module.exports = function(grunt) {
 				js: {
 					files: {
 						'out/jvr/vrweb.js': [
+							'src/public/js/ana.js',
 							'src/public/js/jsvr.js'
 						]
 					}

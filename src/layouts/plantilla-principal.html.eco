@@ -23,9 +23,9 @@
 	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 
 	  <!-- estilos -->
-	  <link rel="stylesheet" href="/bs3/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="/fs/flexslider.css">
-	  <link rel="stylesheet" href="/pp/css/prettyPhoto.css">
+	  <link rel="stylesheet" href="/act/bs3/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="/act/fs/flexslider.css">
+	  <link rel="stylesheet" href="/act/pp/css/prettyPhoto.css">
 	  <link rel="stylesheet" href="<%= @obtenerEstilos() %>">
 	</head>
 	<body>
@@ -43,12 +43,11 @@
 					</div>
 					<div class="col-md-9">
 						<div class="vr-web-social">
-							<ul >
+							<ul>
 								<li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="github">Github</a></li>
 								<li><a href="http://steamcommunity.com/id/fizzvr" data-toggle="tooltip" data-placement="top" title="Steam" class="steam">Steam</a></li>
 								<li><a href="https://soundcloud.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Sound Cloud" class="sc">Sound Cloud</a></li>
 								<li><a href="http://twitter.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Twitter" class="twitter">Twitter</a></li>
-								<li><a href="{}" data-toggle="tooltip" data-placement="top" title="Rss" class="rss">Rss</a></li>
 							</ul>
 						</div>
 						<nav class="collapse navbar-collapse vr-web-navegacion navbar-right" id="colapsar-menu" role="navigation">
@@ -137,10 +136,18 @@
 	</footer>
 	<div id="toTop">Ir para Arriba</div>
 	<!--core JavaScript -->
-	<script src="/jvr/act/jquery.min.js"></script>
-	<script src="/bs3/js/bootstrap.min.js"></script>
-	<script src="/fs/jquery.flexslider.js" ></script>
-	<script src="/pp/jquery.prettyPhoto.js" ></script>
+	<script src="/act/jquery/jquery.min.js"></script>
+	<script src="/act/bs3/bootstrap.min.js"></script>
+	<script src="/act/fs/jquery.flexslider.js" ></script>
+	<script src="/act/pp/jquery.prettyPhoto.js" ></script>
 	<script src="<%= @obtenerJavascript() %>"></script>
+	<script>
+		(function(f,i,z,v,r,e,c){f['GoogleAnalyticsObject']=r;f[r]=f[r]||function(){
+			(f[r].q=f[r].q||[]).push(arguments)},f[r].l=1*new Date();e=i.createElement(z),
+			c=i.getElementsByTagName(z)[0];e.async=1;e.src=v;c.parentNode.insertBefore(e,c)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-49288081-1', 'fizzvr.com');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>
