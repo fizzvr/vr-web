@@ -27,9 +27,9 @@ docpadConfig = {
 		},
 		obtenerTitulo: function() {
 			if (this.document.titulo) {
-				return "" + this.site.titulo + " , " + this.document.titulo;
+				return "" + this.site.titulo + " - " + this.document.titulo;
 			} else {
-				return "" + this.site.titulo + " , Programador";
+				return "" + this.site.titulo + " - Programador";
 			}
 		},
 		obtenerDescripcion: function() {
