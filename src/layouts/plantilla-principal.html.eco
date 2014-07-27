@@ -87,6 +87,11 @@
 						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a></p>
 					</div>
 					<div class="col-md-4 footer-col">
+						<h4>Últimos Tweets</h4>
+						<a class="twitter-timeline" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560" data-tweet-limit="4" width="300">Tweets por @fizzvr</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+					<!-- <div class="col-md-4 footer-col">
 						<h4>Déjame un Mensaje</h4>
 						<form action="#" method="post" role="form">
 							<div class="form-group">
@@ -100,40 +105,34 @@
 							</div>
 							<button type="submit" class="btn btn-default">Enviar Mensaje</button>
 						</form>
+					</div> -->
+					<div class="col-md-4 footer-col">
+						<h4>Mi lista HxC</h4>
+						<iframe height="480" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
 					</div>
-				<!-- <div class="col-md-4 footer-col">
-					<h4>Últimos Tweets</h4>
-					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560">Tweets por @fizzvr</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-					</script>
-				</div> -->
-				<div class="col-md-4 footer-col">
-					<h4>Mi lista HxC</h4>
-					<iframe height="450" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
+				</div>
+				<div class="row footer-col footer-sub">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+								<span class="pull-left"><%- (new Date()).getFullYear() %> Vladimir Rodríguez - Programador
+								</span>
+							</div>
+							<div class="col-md-6">
+								<span class="pull-right">
+									<% for page in @getCollection("paginas").toJSON(): %>
+									<a href="<%= page.url %>">
+										<%= page.titulo %>
+									</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									<% end %>
+								</span>
+							</div>
+						</div>
+						<div class="text-center" style="margin-top: 10px;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.</div>
+					</div>
 				</div>
 			</div>
-			<div class="row footer-col footer-sub">
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-6">
-							<span class="pull-left"><%- (new Date()).getFullYear() %> Vladimir Rodríguez - Programador
-							</span>
-						</div>
-						<div class="col-md-6">
-							<span class="pull-right">
-								<% for page in @getCollection("paginas").toJSON(): %>
-								<a href="<%= page.url %>">
-									<%= page.titulo %>
-								</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-								<% end %>
-							</span>
-						</div>
-					</div>
-					<div class="text-center" style="margin-top: 10px;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+		</footer>
 	<div id="toTop">Ir para Arriba</div>
 	<!--core JavaScript -->
 	<script src="/act/jquery/jquery.min.js"></script>
@@ -162,5 +161,5 @@
 		})();
 	</script>
 	<noscript><p><img src="http://fizzvr.com/kik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-</body>
+	</body>
 </html>
