@@ -90,6 +90,12 @@ docpadConfig = {
 			});
 			return proc.on('exit', next);
 		}
+	},
+	plugins: {
+		ghpages: {
+			deployRemote: 'salida',
+        	deployBranch: 'master'
+		}
 	}
 };
 module.exports = docpadConfig;
