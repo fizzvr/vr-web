@@ -3,32 +3,6 @@ layout: 'plantilla-principal'
 titulo: Vladimir Rodríguez
 pageOrder: 0
 ---
-	<!-- fin vr-web-navegacion-->
-	<div class="vr-web-presentacion">
-		<div class="container">
-			<div class="row">
-				<% for pro,i in @getCollection('proyectos').toJSON(): %>
-					<% break if i > 0 %>
-				<div class="col-md-8">
-					<div class="flexslider">
-						<ul class="slides">
-							<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt=""></a></li>
-							<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt=""></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<h2>proyecto actual</h2>
-					<h4><%= pro.titulo %>
-						<small><%= pro.comentario %></small>
-					</h4>
-					<a href="<%= pro.url %>">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
-				</div>
-				<% end %>
-			</div>
-		</div>
-	</div>
-	<!-- fin vr-web-presentacion-->
 	<div class="vr-web-skills">
 		<div class="container">
 			<div class="row">
@@ -84,6 +58,31 @@ pageOrder: 0
 		</div>
 	</div>
 	<!-- fin vr-web-skills -->
+	<div class="vr-web-presentacion">
+		<div class="container">
+			<div class="row">
+				<% for pro,i in @getCollection('proyectos').toJSON(): %>
+					<% break if i > 0 %>
+				<div class="col-md-8">
+					<div class="flexslider">
+						<ul class="slides">
+							<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt=""></a></li>
+							<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h2>proyecto actual</h2>
+					<h4><%= pro.titulo %>
+						<small><%= pro.comentario %></small>
+					</h4>
+					<a href="<%= pro.url %>">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
+				</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<!-- fin vr-web-presentacion-->
 	<div class="vr-web-proyectos">
 		<div class="container">
 			<div class="row">

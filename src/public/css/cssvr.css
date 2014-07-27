@@ -186,6 +186,8 @@ blockquote {
 	background-color: #fff;
 	padding-bottom: 40px;
 	padding-top: 15px;
+	margin-bottom: 30px;
+	border-bottom: 1px dotted #a9a9a9;
 }
 .flexslider
 {
@@ -220,11 +222,9 @@ blockquote {
 .vr-web-skills
 {
 	background-color: #fff;
-	padding-top: 15px;
-	margin-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 15px;
 	text-align: center;
-	border-bottom: 1px dotted #a9a9a9;
-
 }
 .vr-web-skills #medio
 {
