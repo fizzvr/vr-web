@@ -13,7 +13,11 @@ repositorio: 'https://github.com/fizzvr/vr-v2b-createjs'
 	</div>
 	<div class="col-md-6">
 		<h1 class="text-center"><%- @document.titulo %></h1>
-		<p class="lead">En este Curso de Video2Brain aprenderé como crear juegos interactivos con <abbr title="HyperText Markup Language">HTML</abbr> Y <abbr title="Javascript">Js</abbr> comencemos con los COMMITS :)</p>
+    	<p class="text-center">
+    	    	 <iframe src="http://ghbtns.com/github-btn.html?user=fizzvr&repo=vr-v2b-createjs&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" width="180" height="35"></iframe>
+  <iframe src="http://ghbtns.com/github-btn.html?user=fizzvr&type=follow&size=large" allowtransparency="true" frameborder="0" width="180" height="35"></iframe>
+    	</p>
+		<p class="lead">¿Cómo crear juegos interactivos con <abbr title="HyperText Markup Language">HTML</abbr> Y <abbr title="Javascript">Js?</abbr></p>
 
 		<ul class="project-info">
 			<li><h5>Fecha:</h5><%= @formatoFecha(@document.date) %></li>
@@ -25,9 +29,9 @@ repositorio: 'https://github.com/fizzvr/vr-v2b-createjs'
 			</li>
 			<li><h5>Repositorio:</h5><a href="<%- @document.repositorio %>"> GitHub</a>
 			</li>
-		</ul>
 
-		<button class="btn btn-default pull-left" type="button">Demo</button>
-		<a href="index.html" class="pull-right"><i class="glyphicon glyphicon-arrow-left"></i> Regresar a los Proyectos</a>
+		</ul>
+       <p><a href="https://github.com/fizzvr/vr-v2b-createjs/commits/" class="btn btn-outlined btn-primary">Ver notas tomadas del proyecto</a></p>
+       <p><a href="#" class="btn btn-outlined btn-success">Demostración</a><a href="index.html" class="pull-right"><i class="glyphicon glyphicon-arrow-left"></i> Ver todos los Proyectos</a></p>
 	</div>
 </div>
