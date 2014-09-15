@@ -1,36 +1,36 @@
 {
-  "name": "vr-Web",
+  "name": "vr-web",
+  "author": "fizzvr",
   "version": "3.1.0",
-  "description": "Desarrollo de mi sitio web con Docpad",
-  "homepage": "https://github.com/fizzvr/vr-Web",
+  "url": "https://github.com/fizzvr/vr-Web",
+  "author_url": "http://fizzvr.github.io/",
   "keywords": [
     "fizzvr",
     "sitio web"
   ],
-  "author": "fizzvr (http://fizzvr.com)",
   "engines": {
-    "node": "0.10",
+    "node": "0.10.1",
     "npm": "1.3"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:fizzvr/vr-Web.git"
+    "url": "https://github.com/fizzvr/vr-web.git"
   },
   "dependencies": {
-    "docpad": "^6.69.0",
+    "docpad": "~6.69.0",
     "docpad-plugin-eco": "~2.0.3",
-    "grunt": "~0.4.1",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-frontend": "~1.1.2",
-    "grunt-html-validation": "~0.1.10",
-    "moment": "~2.1.0"
+    "grunt": "~0.4.5",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-frontend": "~2.0.4",
+    "grunt-html-validation": "~0.1.18",
+    "moment": "~2.8.3"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
   },
   "optionalDependencies": {
-    "docpad-plugin-ghpages": "^2.4.3"
+    "docpad-plugin-ghpages": "~2.4.3"
   },
   "devDependencies": {
     "time-grunt": "~1.0.0",
