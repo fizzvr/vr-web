@@ -1,6 +1,6 @@
 {
   "name": "vr-Web",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Desarrollo de mi sitio web con Docpad",
   "homepage": "https://github.com/fizzvr/vr-Web",
   "keywords": [
@@ -31,5 +31,9 @@
   },
   "optionalDependencies": {
     "docpad-plugin-ghpages": "^2.4.3"
+  },
+  "devDependencies": {
+    "time-grunt": "~1.0.0",
+    "load-grunt-tasks": "~0.6.0"
   }
 }
