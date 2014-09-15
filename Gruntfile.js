@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+    require('load-grunt-tasks')(grunt);
+    require('time-grunt')(grunt);
+    // myGRUNT: COPIAR[PROVEEDORES]+ DISTRIBUIR[JS&CSS] + VALIDAR[HTML]
 	// configuracion del proyecto
 	grunt.initConfig({
 		// metadatos
@@ -10,7 +13,7 @@ module.exports = function(grunt) {
 		frontendConfig: {
 			webroot: './out',
 			srcWebroot: './src/public'
-		},
+        },
 		// tarea de copia de los archivos 3rd party desde bower
 		copy: {
 			main: {
@@ -82,6 +85,20 @@ module.exports = function(grunt) {
 					cwd: 'bower_components/jquery-prettyPhoto/images/prettyPhoto/',
 					src: ['**'],
 					dest: './out/act/pp/images/prettyPhoto/'
+				},
+				//pace bower list --path
+				{
+					expand: true,
+					flatten: true,
+					src: ["bower_components/pace/pace.js"],
+					dest: './out/act/pace/'
+				},
+                //octicons fuente
+				{
+				    expand: true,
+					cwd: 'bower_components/octicons/octicons/',
+					src: ['**'],
+					dest: './out/act/oc/'
 				}
 
 				]
@@ -97,7 +114,6 @@ module.exports = function(grunt) {
 				js: {
 					files: {
 						'out/jvr/vrweb.js': [
-							'src/public/js/ana.js',
 							'src/public/js/jsvr.js'
 						]
 					}
@@ -108,7 +124,8 @@ module.exports = function(grunt) {
 		// validacion HTML
 		validation: {
 			options: {
-				reset: true
+				reset: true,
+                relaxerror: ['Attribute width not allowed on element a at this point.']
 			},
 			files: {
 				src:['out/**/*.html']
@@ -122,11 +139,6 @@ module.exports = function(grunt) {
       			}
     	}*/
 	});
-
-	// carga de los plugins para el proyecto
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-frontend');
-	grunt.loadNpmTasks('grunt-html-validation');
 
 	// validar html
 	grunt.registerTask('validar-html', ['validation']);
