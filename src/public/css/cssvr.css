@@ -1,5 +1,5 @@
 @import url(tipo/_stylesheet.css);
-
+@import url(_pace.css);
 body
 {
 	font-family: "Open Sans", sans-serif;
