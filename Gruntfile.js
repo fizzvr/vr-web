@@ -10,9 +10,10 @@ module.exports = function(grunt) {
 		banner: '/**\n' +
 				'* <%= leerJson.name %> v<%= leerJson.version %> por @fizzvr\n' +
 				'*/\n',
-		frontendConfig: {
-			webroot: './out',
-			srcWebroot: './src/public'
+		frontend: {
+           force: false,
+           srcWebroot: './src/public',
+           webroot: './out',
         },
 		// tarea de copia de los archivos 3rd party desde bower
 		copy: {
@@ -104,23 +105,44 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-		// tarea de distribucion JS y CSS minified
-		frontend: {
-			main: {
-				css: {
-					src: 'src/public/css/',
-					dest: 'out/cvr/'
-				},
-				js: {
-					files: {
-						'out/jvr/vrweb.js': [
-							'src/public/js/jsvr.js'
-						]
-					}
+		// tarea de distribucion JS
+        'frontend-js': {
+            main: {
+                // task options
+                options: {
+                    // Minify JS
+                    minify: true,
 
-				}
-			}
-		},
+                    // config for UglifyJS
+                    uglify: {}
+                },
+
+                files: {
+                    'out/jvr/vrweb.js': [
+                        'src/public/js/jsvr.js'
+                    ]
+                }
+            }
+        },
+        // tarea de distribucion CSS
+        'frontend-css': {
+            main: {
+                options: {
+                    // inline @imports
+                    inline: true,
+
+                    // rewrite all url() to versioned ones.
+                    // the `rewriteScheme` is used to create versioned URL
+                    rewriteUrl: true,
+
+                    // minify CSS
+                    minify: true
+                },
+                files: [
+                    {src: 'src/public/css/cssvr.css', dest: 'out/cvr/cssvr.css'}
+                ]
+            }
+        },
 		// validacion HTML
 		validation: {
 			options: {
@@ -143,11 +165,11 @@ module.exports = function(grunt) {
 	// validar html
 	grunt.registerTask('validar-html', ['validation']);
 	// distribucion JS y CSS
-	grunt.registerTask('dist-jscss', ['frontend']);
+	grunt.registerTask('dist-jscss', ['frontend-js', 'frontend-css']);
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss', 'validar-html']);
+	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss']);
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };
