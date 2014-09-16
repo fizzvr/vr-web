@@ -110,16 +110,11 @@
 							Ecuador, Latitud 0°0"0'<br>
 							<abbr title="Celular">C:</abbr> (593) 983288589<br>
 							<abbr title="Email">E:</abbr> <a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;">&#102;i&#00122;&#122;&#118;&#00114;&#64;&#00103;&#00109;&#0097;&#105;&#108;&#46;&#99;&#111;&#00109;</a>
-							 <script src="https://gist.github.com/fizzvr/594a841abbbe27e9bbfc.js"></script>
-
 						</address>
 						<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: <a href="http://docpad.org/"><strong>DocPad </strong></a><%= @obtenerDocpadv() %><br>además el repositorio de este<br>proyecto se encuentra en:</p>
-						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a>
-
-</a>
-		</p>
-						<p>
-						      <a href="http://www.w3.org/html/logo/">
+						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a>                                </a>
+						</p>
+						<p><a href="http://www.w3.org/html/logo/">
 <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-device-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics" title="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics">
 						</p>
 
