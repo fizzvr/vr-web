@@ -149,6 +149,13 @@
 	<script src="/act/fs/jquery.flexslider.js"></script>
 	<script src="/act/pp/jquery.prettyPhoto.js"></script>
 	<script src="<%= @obtenerJavascript() %>"></script>
-
+    <script>
+		(function(f,i,z,v,r,e,c){f['GoogleAnalyticsObject']=r;f[r]=f[r]||function(){
+			(f[r].q=f[r].q||[]).push(arguments)},f[r].l=1*new Date();e=i.createElement(z),
+			c=i.getElementsByTagName(z)[0];e.async=1;e.src=v;c.parentNode.insertBefore(e,c)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-49288081-1', 'fizzvr.github.io');
+		ga('send', 'pageview');
+	</script>
 	</body>
 </html>
