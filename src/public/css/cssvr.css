@@ -565,7 +565,7 @@ h4.title-bg button
 .footer-col
 {
 	color:#ababab;
-	font-size: 12px;
+	font-size: 14px;
 }
 .footer-col address
 {
@@ -630,10 +630,6 @@ h4.title-bg button
 .color-bar-1 { background:#428BCA; height:5px; }
 .color-bar-2 { height:3px; }
 
-.show-grid
-{
-	border: 1px dashed green;
-}
 /*###perfil###*/
 .vr-web-perfil h2
 {

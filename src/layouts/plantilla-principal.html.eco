@@ -44,7 +44,7 @@
 							<a href="/index.html" class="navbar-brand" title="fizzvr"><img src="/ivr/logo.png" alt="fizzvr logo"></a>
 						</div>
 					</div>
-					<div class="col-md-9">
+				    <div class="col-md-9">
 						<div class="vr-web-social">
 							<ul>
 								<li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="github">Github</a></li>
@@ -77,21 +77,14 @@
 		<footer class="footer-container">
 			<div class="container vr-foot">
 				<div class="row footer-row">
-					<div class="col-md-4 footer-col">
-						<h4>Información</h4>
-						<img src="/ivr/logo_foot.png" alt="logo-footer">
-						<address>
-							<strong>Vladimir Rodríguez</strong><br>San Francisco de Quito<br>
-							Ecuador, Latitud 0°0"0'<br>
-							<abbr title="Celular">C:</abbr> (593) 983288589<br>
-							<abbr title="Email">E:</abbr> <a href="mailto:<%= @site.email %>"><%= @site.email %></a>
-						</address>
-						<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: <a href="http://docpad.org/"><strong>DocPad </strong></a><%= @obtenerDocpadv() %><br>además el repositorio de este<br>proyecto se encuentra en:</p>
-						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a></p>
+
+						<div class="col-md-4 footer-col">
+						<h3 class="text-center">Mi lista HxC</h3>
+						<iframe height="490" width="380" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
 					</div>
 					<div class="col-md-4 footer-col">
-						<h4>Últimos Tweets</h4>
-						<a class="twitter-timeline" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560" data-tweet-limit="4" width="300">Tweets por @fizzvr</a>
+						<h3 class="text-center">Últimos Tweets</h3>
+						<a class="twitter-timeline" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560" data-tweet-limit="4">Tweets por @fizzvr</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					</div>
 					<!-- <div class="col-md-4 footer-col">
@@ -109,16 +102,34 @@
 							<button type="submit" class="btn btn-default">Enviar Mensaje</button>
 						</form>
 					</div> -->
-					<div class="col-md-4 footer-col">
-						<h4>Mi lista HxC</h4>
-						<iframe height="480" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
+				    <div class="col-md-4 footer-col text-center">
+						<h3>Información</h3>
+						<img src="/ivr/logo_foot.png" alt="logo-footer">
+						<address>
+							<strong>Vladimir Rodríguez</strong><br>San Francisco de Quito<br>
+							Ecuador, Latitud 0°0"0'<br>
+							<abbr title="Celular">C:</abbr> (593) 983288589<br>
+							<abbr title="Email">E:</abbr> <a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;">&#102;i&#00122;&#122;&#118;&#00114;&#64;&#00103;&#00109;&#0097;&#105;&#108;&#46;&#99;&#111;&#00109;</a>
+							 <script src="https://gist.github.com/fizzvr/594a841abbbe27e9bbfc.js"></script>
+
+						</address>
+						<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: <a href="http://docpad.org/"><strong>DocPad </strong></a><%= @obtenerDocpadv() %><br>además el repositorio de este<br>proyecto se encuentra en:</p>
+						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a>
+
+</a>
+		</p>
+						<p>
+						      <a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-device-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics" title="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics">
+						</p>
+
 					</div>
 				</div>
 				<div class="row footer-col footer-sub">
 					<div class="col-md-12">
 						<div class="row">
 							<div class="col-md-6">
-								<span class="pull-left"><%- (new Date()).getFullYear() %> Vladimir Rodríguez - Programador
+								<span class="pull-left"><%- (new Date()).getFullYear() %> FizzVR - Programador
 								</span>
 							</div>
 							<div class="col-md-6">
@@ -143,5 +154,6 @@
 	<script src="/act/fs/jquery.flexslider.js"></script>
 	<script src="/act/pp/jquery.prettyPhoto.js"></script>
 	<script src="<%= @obtenerJavascript() %>"></script>
+
 	</body>
 </html>
