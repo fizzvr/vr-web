@@ -26,7 +26,7 @@ Comenzemos!
 
 1. [Abrir http://localhost:9778/](http://localhost:9778/)
 
-1. Start hacking away by modifying the `src` directory
+1. Puedes comenzar editando el directorio `src`
 
 
 Soporte
