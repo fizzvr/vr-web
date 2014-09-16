@@ -678,6 +678,7 @@ h4.title-bg button
 .project-info li h5 {display: inline; margin-right: 5px;}
 /*boton-azul*/
 .btn-outlined {
+    font-size: 20px;
     border-radius: 0;
     -webkit-transition: all 0.3s;
        -moz-transition: all 0.3s;
