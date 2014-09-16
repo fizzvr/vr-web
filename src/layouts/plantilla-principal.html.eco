@@ -79,11 +79,11 @@
 				<div class="row footer-row">
 
 						<div class="col-md-4 footer-col">
-						<h3 class="text-center">Mi lista HxC</h3>
+						<h3>Mi lista HxC</h3>
 						<iframe height="490" width="380" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
 					</div>
 					<div class="col-md-4 footer-col">
-						<h3 class="text-center">Últimos Tweets</h3>
+						<h3>Últimos Tweets</h3>
 						<a class="twitter-timeline" href="https://twitter.com/fizzvr" data-widget-id="416249894416834560" data-tweet-limit="4">Tweets por @fizzvr</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					</div>
