@@ -29,6 +29,5 @@ Comenzemos!
 1. Puedes comenzar editando el directorio `src`
 
 
-Soporte
---------------
-[![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/fizzvr/vr-web?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge "Chat en vivo")
+Chat! [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/fizzvr/vr-web?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge "Chat en vivo")
+---
