@@ -77,10 +77,9 @@
 		<footer class="footer-container">
 			<div class="container vr-foot">
 				<div class="row footer-row">
-
-						<div class="col-md-4 footer-col">
+				    <div class="col-md-4 footer-col">
 						<h3>Mi lista HxC</h3>
-						<iframe height="490" width="380" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
+						<iframe height="505" width="380" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24081740&amp;color=248bca&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
 					</div>
 					<div class="col-md-4 footer-col">
 						<h3>Últimos Tweets</h3>
@@ -111,13 +110,19 @@
 							<abbr title="Celular">C:</abbr> (593) 983288589<br>
 							<abbr title="Email">E:</abbr> <a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;">&#102;i&#00122;&#122;&#118;&#00114;&#64;&#00103;&#00109;&#0097;&#105;&#108;&#46;&#99;&#111;&#00109;</a>
 						</address>
-						<p>El Diseño de mi Sitio Web <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a><br>X-Powered-By: <a href="http://docpad.org/"><strong>DocPad </strong></a><%= @obtenerDocpadv() %><br>además el repositorio de este<br>proyecto se encuentra en:</p>
-						<p><a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a>                                </a>
-						</p>
-						<p><a href="http://www.w3.org/html/logo/">
+						<p>El Diseño de mi Sitio Web
+                            <br>fue basado en <a href="http://wegraphics.net/downloads/piccolo-a-free-bootstrap-html-theme/"><strong>Piccolo</strong></a>
+                            <br>X-Powered-By: <a href="http://docpad.org/"><strong>DocPad </strong></a><%= @obtenerDocpadv() %>
+                            <br>además el repositorio de este
+                            <br>proyecto se encuentra en:
+                        </p>
+                        <p>
+                            <a href="https://github.com/fizzvr/vr-web" title="github"><img src="/ivr/github.png" alt="github logo"></a>
+                        </p>
+                        <p>
+                            <a href="http://www.w3.org/html/logo/"></a>
 <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-device-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics" title="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics">
-						</p>
-
+                        </p>
 					</div>
 				</div>
 				<div class="row footer-col footer-sub">
