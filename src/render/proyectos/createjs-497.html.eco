@@ -48,10 +48,23 @@ paginavr: 'http://fizzvr.github.io/proyectos/createjs-497.html'
 		</ul>
        <p>
            <a href="#" class="btn btn-outlined btn-success">Presentación</a>
-           <a href="https://github.com/fizzvr/vr-v2b-createjs/commits/" class="btn btn-outlined btn-primary pull-right">Comentarios Digitales</a>
+           <a href="https://github.com/fizzvr/vr-v2b-createjs/commits/" class="btn btn-outlined btn-primary pull-right" target="_blank" >Comentarios Digitales</a>
         </p>
        <p>
-           <a href="index.html" class="pull-right"><i class="glyphicon glyphicon-arrow-left"></i> Ver todos los Proyectos</a>
+           <a href="index.html" class="pull-right" target="_blank"><i class="glyphicon glyphicon-arrow-left"></i> Ver todos los Proyectos</a>
        </p>
+	</div>
+	<div class="col-md-12">
+	    <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'fizzvr';
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</div>
 </div>
