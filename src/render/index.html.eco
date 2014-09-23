@@ -72,11 +72,10 @@ pageOrder: 0
 					</div>
 				</div>
 				<div class="col-md-4">
-					<h2>proyecto actual</h2>
-					<h4><%= pro.titulo %>
-						<small><%= pro.comentario %></small>
-					</h4>
-					<a href="<%= pro.url %>">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
+					<h3 class="text-center">proyecto actual</h3>
+					<blockquote class="twitter-tweet" lang="es"><p>FizzVR - CreateJS. Juegos interactivos con HTML5 <a href="http://t.co/gQSvLeLi6h">http://t.co/gQSvLeLi6h</a> vía <a href="https://twitter.com/fizzvr">@fizzvr</a></p>&mdash; Vladimir Rodríguez (@fizzvr) <a href="https://twitter.com/fizzvr/status/512011648068898816">septiembre 16, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="<%= pro.url %>" class="pull-right">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
 				</div>
 				<% end %>
 			</div>
