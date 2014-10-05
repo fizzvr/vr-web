@@ -18,6 +18,7 @@ function inicio () {
 	$('.vr-logo-skills .php').tooltip();
 	$('.vr-logo-skills .asp').tooltip();
 	$('.vr-logo-skills .mysql').tooltip();
+
 }
 
 /////flexslider
@@ -73,3 +74,14 @@ $(function() {
 		$('body,html').animate({scrollTop:0},800);
 	});
 });
+//////////// CSE //////////////
+    $(function() {
+    var cx = '009969376724171116055:781xbveht7m';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
