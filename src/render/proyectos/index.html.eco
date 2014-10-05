@@ -4,15 +4,11 @@ titulo: Proyectos
 pageOrder: 2
 ---
 <div class="row clearfix">
-   <div class="col-md-6 col-md-offset-3">
-        <h4 class="title-bg"><gcse:searchbox></gcse:searchbox></h4>
-    </div>
+   <div class="col-md-6 col-md-offset-3" id="vr-searchbox"></div>
 </div>
 
 <div class="row clearfix">
-	<div class="col-md-12">
-        <gcse:searchresults></gcse:searchresults>
-    </div>
+	<div class="col-md-12" id="vr-searchresultado"></div>
 	<ul class="tabla-proyectos">
 		<% for pro in @getCollection("proyectos").toJSON(): %>
 		<!-- Proyecto N -->

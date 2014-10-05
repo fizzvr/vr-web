@@ -1,6 +1,5 @@
 //llamo a la funcion inicio
 $(document).on("ready", inicio);
-
 function inicio () {
 	"use strict";
 	fs();
@@ -18,7 +17,8 @@ function inicio () {
 	$('.vr-logo-skills .php').tooltip();
 	$('.vr-logo-skills .asp').tooltip();
 	$('.vr-logo-skills .mysql').tooltip();
-
+    $('#vr-searchbox').html('<gcse:searchbox></gcse:searchbox>');
+    $('#vr-searchresultado').html('<gcse:searchresults></gcse:searchresults>');
 }
 
 /////flexslider
