@@ -44,6 +44,7 @@
 							<a href="/index.html" class="navbar-brand" title="fizzvr"><img src="/ivr/logo.png" alt="fizzvr logo"></a>
 						</div>
 					</div>
+
 				    <div class="col-md-9">
 						<div class="vr-web-social">
 							<ul>
@@ -53,6 +54,7 @@
 								<li><a href="http://twitter.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Twitter" class="twitter">Twitter</a></li>
 							</ul>
 						</div>
+
 						<nav class="collapse navbar-collapse vr-web-navegacion navbar-right" id="colapsar-menu" role="navigation">
 							<ul class="nav navbar-nav">
 								<% for page in @getCollection("paginas").toJSON(): %>
