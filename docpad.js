@@ -6,7 +6,7 @@ json = require('./package.json');
 docpadConfig = {
 	templateData: {
 		site: {
-			url: "http://www.fizzvr.com",
+			url: "http://fizzvr.github.io",
 			titulo: "FizzVR",
 			descripcion: "Programador from Quito-Ecuador, alumno del Conocimiento Libre y desarrollador Web",
 			keywords: "vladimir, vladimir rodríguez, rodríguez, quito, ecuador, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, v2b",

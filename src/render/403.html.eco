@@ -1,6 +1,7 @@
 ---
 layout: 'plantilla-principal'
 titulo: 'Página No Encontrada'
+sitemap: False
 ---
     <div class="container">
         <h1><%= @document.titulo %></h1>
