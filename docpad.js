@@ -1,6 +1,6 @@
 var docpadConfig, moment, exec, json;
 moment = require('moment');
-moment.lang('es');
+moment.locale('es');
 exec = require('child_process').exec;
 json = require('./package.json');
 docpadConfig = {

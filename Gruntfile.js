@@ -15,18 +15,18 @@ module.exports = function(grunt) {
            srcWebroot: './src/public',
            webroot: './out',
         },
-		// tarea de copia de los archivos 3rd party desde bower
+		// tarea de copia de los archivos 3rd party desde bower --- bower list --path
 		copy: {
 			main: {
 				files: [
-				//bauserif fuente
+				//bauserif - fuente
 				{
 					expand: true,
 					flatten: true,
 					src: ["./src/public/css/tipo/bauserif.*"],
 					dest: './out/cvr'
 				},
-				//jquery bower list --path
+				//jquery - indispensable
 				{
 					expand: true,
 					flatten: true,
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 					"bower_components/jquery/dist/jquery.min.map"],
 					dest: './out/act/jquery/'
 				},
-				//bootstrap bower list --path
+				//bootstrap - responsive
 				{
 					expand: true,
 					flatten: true,
@@ -54,12 +54,12 @@ module.exports = function(grunt) {
 					src: ["bower_components/bootstrap/dist/fonts/*"],
 					dest: './out/act/bs3/fonts/'
 				},
-				//flexslider bower list --path
+				//flexslider - slider de imágenes
 				{
 					expand: true,
 					flatten: true,
-					src: ["bower_components/flexslider/flexslider.css",
-					"bower_components/flexslider/jquery.flexslider.js"],
+					src: ["bower_components/flexslider/jquery.flexslider.js",
+                          "bower_components/flexslider/flexslider.css"],
 					dest: './out/act/fs/'
 				},
 				{
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 					src:["bower_components/flexslider/fonts/*"],
 					dest: './out/act/fs/fonts/'
 				},
-				//prettyPhoto bower list --path
+				//prettyPhoto - caja de imagenes
 				{
 					expand: true,
 					flatten: true,
@@ -87,19 +87,27 @@ module.exports = function(grunt) {
 					src: ['**'],
 					dest: './out/act/pp/images/prettyPhoto/'
 				},
-				//pace bower list --path
+				//pace - barra de carga
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/pace/pace.js"],
 					dest: './out/act/pace/'
 				},
-                //octicons fuente
+                //octicons - iconos, fuente acerca de github
 				{
 				    expand: true,
 					cwd: 'bower_components/octicons/octicons/',
 					src: ['**'],
 					dest: './out/act/oc/'
+				},
+                //animsition - trancisiones css
+				{
+				    expand: true,
+                    flatten: true,
+					src: ['bower_components/animsition/dist/js/jquery.animsition.min.js',
+                          'bower_components/animsition/dist/css/animsition.min.css'],
+					dest: './out/act/an/'
 				}
 
 				]
