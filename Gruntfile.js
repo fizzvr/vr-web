@@ -172,12 +172,19 @@ module.exports = function(grunt) {
 
 	// validar html
 	grunt.registerTask('validar-html', ['validation']);
+
 	// distribucion JS y CSS
 	grunt.registerTask('dist-jscss', ['frontend-js', 'frontend-css']);
+
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
+
 	// distribucion FULL
 	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss']);
+
+    // Travis
+	grunt.registerTask('travis', ['dist-jscss', 'validar-html']);
+
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };

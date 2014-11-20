@@ -29,6 +29,7 @@
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
+    "test": "grunt travis"
   },
   "optionalDependencies": {
     "docpad-plugin-ghpages": "~2.4.3"
