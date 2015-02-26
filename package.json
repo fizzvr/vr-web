@@ -1,7 +1,6 @@
 {
   "name": "vr-web",
   "author": "fizzvr",
-  "version": "3.1.0",
   "url": "https://github.com/fizzvr/vr-Web",
   "author_url": "http://fizzvr.github.io/",
   "keywords": [
@@ -17,7 +16,7 @@
     "url": "https://github.com/fizzvr/vr-web.git"
   },
   "dependencies": {
-    "docpad": "~6.69.1",
+    "docpad": "~6.73.5",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-sitemap": "~2.2.0",
     "grunt": "~0.4.5",

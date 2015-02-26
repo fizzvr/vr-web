@@ -180,7 +180,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('dist-activos', ['copy']);
 
 	// distribucion FULL
-	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss', 'validar-html']);
+	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss']);
 
     // Travis
 	grunt.registerTask('travis', ['dist-jscss']);
