@@ -1,11 +1,11 @@
 @import url(tipo/_stylesheet.css);
 body {
+    font-family: "Open Sans", sans-serif;
     width: 100%;
     height: 100%;
     font-size: 18px;
     letter-spacing: 1px;
-    color: #5d5d5d;
-    background-color: #ccc;
+    background: #000 url('../ivr/page-bg-1.jpg');
 }
 
 html {
@@ -21,7 +21,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -31,13 +31,16 @@ p {
     font-size: 18px;
     line-height: 1.5;
 }
+
+/* NAVBAR */
+
 .navbar {
 
     margin-bottom: 0;
-/*    border-bottom: 1px solid rgba(255,255,255,.3);*/
+    border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: "bauserif","Helvetica Neue",Helvetica,Arial,sans-serif;
-/*    background-color: #333;*/
+    background-color: #000;
 }
 .light
 {
@@ -52,7 +55,7 @@ p {
     outline: 0;
 }
 .navbar-custom a {
-    color: #5d5d5d;
+    color: #f8f8f8;
 }
 
 .navbar-custom .nav li a {
@@ -71,7 +74,7 @@ p {
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #428bca;
+    color: #f8f8f8;
 }
 
 .navbar-toggle:focus,
@@ -92,10 +95,102 @@ p {
 
     .top-nav-collapse {
         padding: 0;
-        background: #f8f8f8;
+        background: #000;
     }
 
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
 }
+
+/*INTRO*/
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../ivr/intro-bg.jpg) no-repeat bottom center scroll;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.brand-heading {
+    font-size: 40px;
+}
+
+.intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro-text {
+        font-size: 25px;
+    }
+}
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.page-scroll .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.page-scroll .btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+.color-bar-1 {
+    width:100%;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    background: #000;
+    height: 5px;
+}
+
+

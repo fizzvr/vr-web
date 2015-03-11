@@ -1,31 +1,76 @@
 <!doctype html>
-<html class="no-js" lang="es">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title><%= @obtenerTitulo() %></title>
+        <meta name="description" content="<%= @obtenerDescripcion() %>">
+        <%- @getBlock('meta').toHTML() %>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+        <%- @getBlock('styles').add(@site.cvr1).toHTML() %>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <header>
+             <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+                <div class="container">
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsar-menu">
+                            <i class="glyphicon glyphicon-menu-hamburger"></i>
+                        </button>
+                        <a class="navbar-brand" href="#page-top"><i class="glyphicon glyphicon-play-circle"></i>
+                              <span class="light">fizz</span> vr
+                        </a>
+                    </div>
+
+
+                    <div class="collapse navbar-collapse navbar-right colapsar-menu">
+                        <ul class="nav navbar-nav">
+                            <% for page in @getCollection("paginas").toJSON(): %>
+                                <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+                                    <a href="<%= page.url %>">
+                                                <%= page.titulo %>
+                                    </a>
+                                </li>
+                            <% end %>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Alumno del conocimiento libre</h1>
+                        <p class="intro-text">Todos los cursos, recursos encontrados en la web y mis proyectos en desarrollo.</p>
+                        <div class="page-scroll">
+                            <a href="#about" class="btn btn-circle">
+                                <i class="glyphicon glyphicon-sort-by-alphabet animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="color-bar-1"></div>
+
+        <section>
+            <%- @content %>
+        </section>
+
+        <%- @getBlock('scripts').add(@site.jvr1).toHTML() %>
+
         <script>
             (function(f,i,z,v,r,e,c){f['GoogleAnalyticsObject']=r;f[r]=f[r]||function(){
                 (f[r].q=f[r].q||[]).push(arguments)},f[r].l=1*new Date();e=i.createElement(z),
