@@ -128,6 +128,9 @@ module.exports = function(grunt) {
                 files: {
                     'out/jvr/vrweb.js': [
                         'src/public/js/jsvr.js'
+                    ],
+                    'out/jvr/vr1.js': [
+                        'src/public/js/jvr1.js'
                     ]
                 }
             }
@@ -147,7 +150,16 @@ module.exports = function(grunt) {
                     minify: true
                 },
                 files: [
-                    {src: 'src/public/css/cssvr.css', dest: 'out/cvr/cssvr.css'}
+                    {
+                        src: 'src/public/css/cssvr.css',
+                        dest: 'out/cvr/cssvr.css'
+
+                    },
+                    {
+                        src: 'src/public/css/cvr1.css',
+                        dest: 'out/cvr/vr1.css'
+
+                    }
                 ]
             }
         },
