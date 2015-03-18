@@ -15,62 +15,8 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <header>
-             <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-                <div class="container">
-
-                    <div class="navbar-header page-scroll">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsar-menu">
-                            <i class="glyphicon glyphicon-menu-hamburger"></i>
-                        </button>
-                        <a class="navbar-brand" href="#page-top"><i class="glyphicon glyphicon-play-circle"></i>
-                              <span class="light">fizz</span> vr
-                        </a>
-                    </div>
-
-
-                    <div class="collapse navbar-collapse navbar-right colapsar-menu">
-                        <ul class="nav navbar-nav">
-                            <% for page in @getCollection("paginas").toJSON(): %>
-                                <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
-                                    <a href="<%= page.url %>">
-                                                <%= page.titulo %>
-                                    </a>
-                                </li>
-                            <% end %>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Alumno del conocimiento libre</h1>
-                        <p class="intro-text">Todos los cursos, recursos encontrados en la web y mis proyectos en desarrollo.</p>
-                        <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle">
-                                <i class="glyphicon glyphicon-sort-by-alphabet animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-
-        <div class="color-bar-1"></div>
-
-        <section>
-            <%- @content %>
-        </section>
-
+        <%- @content %>
         <%- @getBlock('scripts').add(@site.jvr1).toHTML() %>
-
         <script>
             (function(f,i,z,v,r,e,c){f['GoogleAnalyticsObject']=r;f[r]=f[r]||function(){
                 (f[r].q=f[r].q||[]).push(arguments)},f[r].l=1*new Date();e=i.createElement(z),
