@@ -8,17 +8,17 @@ docpadConfig = {
 		site: {
 			url: "http://fizzvr.github.io",
 			titulo: "FizzVR",
-			descripcion: "Programador, Desarrollador en Quito Ecuador y alumno del conocimiento libre",
+			descripcion: "Programador BACKEND en Quito Ecuador.",
 			keywords: "vladimir, vladimir rodríguez, rodríguez, quito, ecuador, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, v2b",
 			autor: "fizzvr",
 			email: "fizzvr@gmail.com",
 			go_css: "/cvr/cssvr.css",
 			go_js: "/jvr/vrweb.js",
             cvr1: ["act/bs3/css/bootstrap.min.css",
-                   "/cvr/vr1.css"],
+                   "cvr/vr1.css"],
             jvr1: ["act/jquery/jquery.min.js",
                    "act/bs3/bootstrap.min.js",
-                   "/jvr/vr1.js"]
+                   "jvr/vr1.js"]
 		},
 		obtenerDocpadv: function () {
 			version = json.dependencies.docpad;
