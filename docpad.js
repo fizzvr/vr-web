@@ -15,8 +15,11 @@ docpadConfig = {
 			go_css: "/cvr/cssvr.css",
 			go_js: "/jvr/vrweb.js",
             cvr1: ["act/bs3/css/bootstrap.min.css",
+                   "act/fs/flexslider.css",
                    "cvr/vr1.css"],
             jvr1: ["act/jquery/jquery.min.js",
+                   "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
+                   "act/fs/jquery.flexslider.js",
                    "act/bs3/bootstrap.min.js",
                    "jvr/vr1.js"]
 		},

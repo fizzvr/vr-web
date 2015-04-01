@@ -1,95 +1,89 @@
 ---
-layout: 'plantilla-principal'
-titulo: Vladimir Rodríguez
+layout: 'plantilla1'
+titulo: Inicio
 pageOrder: 0
 ---
-	<div class="vr-web-skills">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<section>
-						<span class="pennant">							<span class="icon64 icon64-1"></span>
-						</span>
-						<h3>Diseño<br><small>Sintáxis, Presentación Semántica y Acabados del lado cliente</small>
-						</h3>
-						<div class="vr-logo-skills">
-							<ul>
-								<li data-toggle="tooltip" data-placement="bottom" data-title="HTML" class="html">html</li>
-								<li data-toggle="tooltip" data-placement="bottom" data-title="CSS" class="css">css</li>
-								<li data-toggle="tooltip" data-placement="bottom" data-title="JQUERY" class="jquery">js</li>
-							</ul>
-						</div>
-					</section>
-				</div>
-				<div class="col-md-4">
-					<section id="medio">
-						<span class="pennant pennant-alt">
-							<span class="icon64 icon64-2"></span>
-						</span>
-						<h3>Código<br><small>Entorno de programación del lado del servidor</small>
-						</h3>
-						<div class="vr-logo-skills">
-							<ul>
-								<li data-toggle="tooltip" data-placement="bottom" data-title="PHP" class="php">php</li>
-								<li data-toggle="tooltip" data-placement="bottom" data-title="ASP.NET" class="asp">asp</li>
-							</ul>
-						</div>
-					</section>
-				</div>
-				<div class="col-md-4">
-					<section>
-						<span class="pennant pennant-alt2">
-							<span class="icon64 icon64-3"></span>
-						</span>
-						<h3>Datos<br><small>almacenar y acceder a los datos de forma rápida y estructurada</small>
-						</h3>
-						<div class="vr-logo-skills">
-							<ul>
-								<li data-toggle="tooltip" data-placement="bottom" data-title="MYSQL" class="mysql">mysql</li>
-							</ul>
-						</div>
-					</section>
-				</div>
-				<div class="col-md-12">
-					<blockquote><p>"Compilando el mundo con tecnologías de hoy y generando bits para la web de mañana"</p><small><cite>VLADIMIR RODRIGUEZ</cite></small>
-					</blockquote>
+<header>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsar-menu">
+                            <i class="glyphicon glyphicon-menu-hamburger"></i>
+                        </button>
+                        <a class="navbar-brand" href="#page-top">
+                            <span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+                            <span class="light">fizz</span> vr
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right colapsar-menu">
+                        <ul class="nav navbar-nav">
+                           <li class="hidden"><a href="#page-top"></a></li>
+                            <li class="page-scroll"><a href="#presentacion">Inicio</a></li>
+                            <li class="page-scroll"><a href="#proyectos">Proyectos</a></li>
+                            <li class="page-scroll"><a href="#vr-web-contacto">Acerca de</a></li>
+                            <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><span class="glyphicon glyphicon-envelope"></span></a></li>
+                        </ul>
+                    </div>
+            </div>
+    </nav>
+</header>
+<section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Programador backend</h1>
+                        <p class="intro-text">San Francisco de Quito - Ecuador</p>
+                        <div class="vr-logo-skills">
+                            <ul>
+                                <li data-toggle="tooltip" data-placement="left" data-title="NODEJS" class="nodejs">NodeJS</li>
+                                <li data-toggle="tooltip" data-placement="right" data-title="MONGODB" class="mongodb">MongoDB</li>
+                            </ul>
+                        </div>
+                        <div class="page-scroll">
+                            <a href="#presentacion" class="btn btn-circle">
+                                <i class="glyphicon glyphicon-download animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<div class="color-bar-1"></div>
+<section id="presentacion" class="vr-web-presentacion content-section">
+	<div class="container">
+        <h4 class="title-bg"><span class="glyphicon glyphicon-expand"></span>Proyectos en desarrollo <small>GITHUB</small></h4>
+
+		<div class="row">
+			<% for pro,i in @getCollection('proyectos').toJSON(): %>
+			<% break if i > 0 %>
+			<div class="col-md-8">
+				<div class="flexslider">
+					<ul class="slides">
+						<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt=""></a></li>
+						<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt=""></a></li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- fin vr-web-skills -->
-	<div class="vr-web-presentacion">
-		<div class="container">
-			<div class="row">
-				<% for pro,i in @getCollection('proyectos').toJSON(): %>
-					<% break if i > 0 %>
-				<div class="col-md-8">
-					<div class="flexslider">
-						<ul class="slides">
-							<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt=""></a></li>
-							<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt=""></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<h3 class="text-center">proyecto actual</h3>
-					<blockquote class="twitter-tweet" lang="es"><p>FizzVR - CreateJS. Juegos interactivos con HTML5 <a href="http://t.co/gQSvLeLi6h">http://t.co/gQSvLeLi6h</a> vía <a href="https://twitter.com/fizzvr">@fizzvr</a></p>&mdash; Vladimir Rodríguez (@fizzvr) <a href="https://twitter.com/fizzvr/status/512011648068898816">septiembre 16, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    <a href="<%= pro.url %>" class="pull-right">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
-				</div>
-				<% end %>
+			<div class="col-md-4">
+				<h3 class="text-center">proyecto actual</h3>
+				<blockquote class="twitter-tweet" lang="es"><p>FizzVR - CreateJS. Juegos interactivos con HTML5 <a href="http://t.co/gQSvLeLi6h">http://t.co/gQSvLeLi6h</a> vía <a href="https://twitter.com/fizzvr">@fizzvr</a></p>&mdash; Vladimir Rodríguez (@fizzvr) <a href="https://twitter.com/fizzvr/status/512011648068898816">septiembre 16, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<a href="<%= pro.url %>" class="pull-right">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
+			<% end %>
 		</div>
 	</div>
-	<!-- fin vr-web-presentacion-->
-	<div class="vr-web-proyectos">
+</section>
+
+<div class="color-bar-1"></div>
+<div id="proyectos" class="vr-web-proyectos content-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h4 class="title-bg">proyectos culminados
-						<small>de los mejores profesionales de la web</small>
-						<!-- <button class="btn btn-mini btn-inverse hidden-phone" type="button">Ver Portafolio</button> -->
-					</h4>
+					<h4 class="title-bg">dictados por los mejores profesionales <small>del mundo web</small></h4>
 					<div class="row clearfix">
 						<ul class="tabla-proyectos">
 							<% for pro in @getCollection("proyectos").toJSON(): %>
@@ -112,4 +106,4 @@ pageOrder: 0
 			</div>
 		</div>
 	</div>
-	<!-- fin vr-web-proyectos -->
+<div id="toTop">Ir para Arriba</div>
