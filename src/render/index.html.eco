@@ -1,109 +1,204 @@
 ---
 layout: 'plantilla1'
-titulo: Inicio
-pageOrder: 0
+titulo: Vladimir Rodríguez
 ---
 <header>
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                    <div class="navbar-header page-scroll">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsar-menu">
-                            <i class="glyphicon glyphicon-menu-hamburger"></i>
-                        </button>
-                        <a class="navbar-brand" href="#page-top">
-                            <span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
-                            <span class="light">fizz</span> vr
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-right colapsar-menu">
-                        <ul class="nav navbar-nav">
-                           <li class="hidden"><a href="#page-top"></a></li>
-                            <li class="page-scroll"><a href="#presentacion">Inicio</a></li>
-                            <li class="page-scroll"><a href="#proyectos">Proyectos</a></li>
-                            <li class="page-scroll"><a href="#vr-web-contacto">Acerca de</a></li>
-                            <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><span class="glyphicon glyphicon-envelope"></span></a></li>
-                        </ul>
-                    </div>
-            </div>
-    </nav>
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsar-menu">
+          <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </button>
+        <a class="navbar-brand" href="#page-top">
+          <span class="mini-ec" aria-hidden="true"></span>
+          <span class="light">fizz</span> vr
+        </a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right colapsar-menu">
+        <ul class="nav navbar-nav">
+         <li class="hidden"><a href="#page-top"></a></li>
+         <li class="page-scroll"><a href="#id-proyectos">Proyectos</a></li>
+         <li class="page-scroll"><a href="#id-desarrollando">Desarrollando</a></li>
+         <li class="page-scroll"><a href="#id-contacto"><span class="glyphicon glyphicon-envelope"></span></a></li>
+         <!--         <li><a data-toggle="modal" data-target="#vr-web-contacto" href="#vr-web-contacto"><span class="glyphicon glyphicon-envelope"></span></a></li>-->
+         <li class="followers"><a aria-label="Sìgueme @fizzvr en GitHub" data-count-aria-label="# seguidores en GitHub" data-count-api="/users/fizzvr#followers" data-count-href="/fizzvr/followers" data-style="mega" href="https://github.com/fizzvr" class="github-button">@fizzvr</a></li>
+       </ul>
+     </div>
+   </div>
+ </nav>
 </header>
+<!--fin header-->
 <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Programador backend</h1>
-                        <p class="intro-text">San Francisco de Quito - Ecuador</p>
-                        <div class="vr-logo-skills">
-                            <ul>
-                                <li data-toggle="tooltip" data-placement="left" data-title="NODEJS" class="nodejs">NodeJS</li>
-                                <li data-toggle="tooltip" data-placement="right" data-title="MONGODB" class="mongodb">MongoDB</li>
-                            </ul>
-                        </div>
-                        <div class="page-scroll">
-                            <a href="#presentacion" class="btn btn-circle">
-                                <i class="glyphicon glyphicon-download animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+  <div class="intro-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="brand-heading">Desarrollador WeB backend</h1>
+          <p class="intro-text">San Francisco de Quito - Ecuador</p>
+         <div class="vr-logo-skills">
+            <ul>
+              <li data-toggle="tooltip" data-placement="left" data-title="NODEJS" class="nodejs">NodeJS</li>
+              <li data-toggle="tooltip" data-placement="right" data-title="MONGODB" class="mongodb">MongoDB</li>
+            </ul>
+          </div>
+          <div class="page-scroll">
+            <a href="#id-proyectos" class="btn btn-circle">
+              <i class="glyphicon glyphicon-download animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--fin vr-intro-->
+<section id="id-proyectos" class="content-section">
+  <div class="container">
+   <h4 class="title-bg text-center">
+    <span class="glyphicon glyphicon-chevron-right pull-left"></span>proyectos<span class="glyphicon glyphicon-chevron-left pull-right"></span>
+  </h4>
+  <div class="row">
+  <% for pro in @getCollection("proyectos_finalizados").toJSON(): %>
+  <div class="col-sm-6 col-md-3 text-center">
+    <!-- Proyecto N -->
+    <div class="thumbnail">
+     <a href="<%= pro.paginavr %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= pro.titulo %>">
+      <img src="ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" alt="<%= pro.titulo %>" class="img-thumbnail">
+      </a>
+      <div class="caption">
+         <span class="pad"><a aria-label="Demo <%= pro.repositorio %>" href="<%= pro.paginagh %>" class="btn btn-outlined btn-success"><span class="octicon octicon-octoface"></span>  Demostración</a></span>
+         <span class="pad"><a aria-label="Star <%= pro.repositorio %> on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/<%= pro.repositorio %>#stargazers_count" data-count-href="/<%= pro.repositorio %>/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/<%= pro.repositorio %>" class="github-button">Star</a></span>
+         <span class="pad"><a aria-label="Download <%= pro.repositorio %> on GitHub" data-style="mega" data-icon="octicon-cloud-download" href="https://github.com/<%= pro.repositorio %>/archive/master.zip" class="github-button">Descarga</a></span>
+<!--         <span class="pad"><a aria-label="Fork <%= pro.repositorio %> on GitHub" data-count-aria-label="# forks on GitHub" data-count-api="/repos/<%= pro.repositorio %>#forks_count" data-count-href="/<%= pro.repositorio %>/network" data-style="mega" data-icon="octicon-git-branch" href="https://github.com/<%= pro.repositorio %>/fork" class="github-button">Fork</a></span>-->
+<!--         <span class="pad"><a aria-label="Issue <%= pro.repositorio %> on GitHub" data-count-aria-label="# issues on GitHub" data-count-api="/repos/<%= pro.repositorio %>#open_issues_count" data-style="mega" data-icon="octicon-issue-opened" href="https://github.com/<%= pro.repositorio %>/issues" class="github-button">Issue</a></span>-->
+    </div>
+    </div>
+  </div>
+    <% end %>
+</div>
+</div>
+</section>
+<!-- fin vr-web-proyectos -->
+<section id="id-desarrollando" class="content-section">
+  <div class="container">
+    <h4 class="title-bg text-center">
+      <span class="octicon octicon-repo-forked pull-left"></span>Desarrollando<span class="octicon octicon-repo-forked pull-right"></span>
+    </h4>
+    <div class="row">
+      <div class="col-md-4">
+       <div class="panel panel-default">
+        <!-- tabla -->
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-condensed">
+            <thead>
+              <tr>
+                <th class="text-center">Curso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for pro,i in @getCollection('proyectos_desarrollando').toJSON(): %>
+              <% break if i > 3 %>
+              <% if pro.estado is 'desarrollando': %>
+              <tr>
+                <td><a href="https://github.com/<%= pro.repositorio %>/commits"><%= pro.titulo %></a></td>
+              </tr>
+              <% end %>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="flexslider">
+        <ul class="slides">
+          <% for pro,i in @getCollection('proyectos_desarrollando').toJSON(): %>
+          <% break if i > 3 %>
+          <% if pro.estado is 'desarrollando': %>
+          <li><a href="https://github.com/<%= pro.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt="<%= pro.repositorio %>"></a></li>
+          <li><a href="https://github.com/<%= pro.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt="<%= pro.repositorio %>"></a></li>
+          <% end %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!--fin vr-web-desarrollo-->
+<!--
+<section id="id-proximamente" class="vr-web-pendientes content-section">
+  <div class="container">
+    <h4 class="title-bg text-center">
+      <span class="glyphicon glyphicon-chevron-right pull-left"></span>Próximamente<span class="glyphicon glyphicon-chevron-left pull-right"></span>
+    </h4>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default">
+           tabla
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-condensed">
+              <thead>
+                <tr>
+                  <th>Hex</th>
+                  <th class="tex-center">Nombre</th>            <th>Estado</th>
+                  <th>Fecha</th>
+                </tr>
+              </thead>
+              <tbody>
+               <% posts = @getCollection('proyectos_desarrollando') %>
+              <% for i in [0...Math.min(4,posts.length)]: %>
+              <% document = posts.at(i).toJSON() %>
+              <% if document.estado is 'proximamente': %>
+              <tr>
+                <th scope="row"><%= document.hex %></th>
+                <td><p><a href="<%= document.url %>"><%= document.titulo %></a></p></td>
+                <td>Pendiente</td>
+                <td><%= @formatoFecha(@document.date, 'L') %></td>
+              </tr>
+              <% end %>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+-->
+<!--fin vr-web-proximamente-->
+ <section id="id-contacto" class="download-section content-section">
+      <div class="container">
+        <h4 class="title-bg text-center">
+              <span class="octicon octicon-comment-discussion pull-left"></span>Contacto<span class="octicon octicon-comment-discussion pull-right"></span>
+            </h4>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center ">
+                <p>No dude en llamarme o enviarme un correo electrónico para solicitar información sobre mi trabajo o para brindar alguna sugerencia que ayude a involucrarse en este proyecto, actualmente me encuentro ubicado en la ciudad de Quito - Ecuador.</p>
+                <address class="email">
+                    Vladimir Rodríguez
+					<br><abbr title="Celular">C:</abbr> (+593) 983288589
+					<br><strong><a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;">&#102;i&#00122;&#122;&#118;&#00114;&#64;&#00103;&#00109;&#0097;&#105;&#108;&#46;&#99;&#111;&#00109;</a></strong>
+				</address>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="btn btn-default btn-lg"><span class="vr-web-social vr-web-social-github"></span><span class="center-block">Github</span></a>
+                    </li>
+                    <li><a href="https://twitter.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Twitter" class="btn btn-default btn-lg"><span class="vr-web-social vr-web-social-twitter"></span><span class="center-block">Twitter</span></a>
+                    </li>
+                </ul>
             </div>
         </div>
-</section>
-
-<div class="color-bar-1"></div>
-<section id="presentacion" class="vr-web-presentacion content-section">
-	<div class="container">
-        <h4 class="title-bg"><span class="glyphicon glyphicon-expand"></span>Proyectos en desarrollo <small>GITHUB</small></h4>
-
-		<div class="row">
-			<% for pro,i in @getCollection('proyectos').toJSON(): %>
-			<% break if i > 0 %>
-			<div class="col-md-8">
-				<div class="flexslider">
-					<ul class="slides">
-						<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt=""></a></li>
-						<li><a href="<%= pro.url %>"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt=""></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<h3 class="text-center">proyecto actual</h3>
-				<blockquote class="twitter-tweet" lang="es"><p>FizzVR - CreateJS. Juegos interactivos con HTML5 <a href="http://t.co/gQSvLeLi6h">http://t.co/gQSvLeLi6h</a> vía <a href="https://twitter.com/fizzvr">@fizzvr</a></p>&mdash; Vladimir Rodríguez (@fizzvr) <a href="https://twitter.com/fizzvr/status/512011648068898816">septiembre 16, 2014</a></blockquote>
-				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-				<a href="<%= pro.url %>" class="pull-right">Ir al Proyecto <i class="glyphicon glyphicon-arrow-right"></i></a>
-			</div>
-			<% end %>
-		</div>
-	</div>
-</section>
-
-<div class="color-bar-1"></div>
-<div id="proyectos" class="vr-web-proyectos content-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h4 class="title-bg">dictados por los mejores profesionales <small>del mundo web</small></h4>
-					<div class="row clearfix">
-						<ul class="tabla-proyectos">
-							<% for pro in @getCollection("proyectos").toJSON(): %>
-							<!-- Proyecto N -->
-							<li class="col-md-3 item-de-la-galeria" data-id="id-<%= pro.hex %>" data-type="<%= pro.tipo %>">
-								<span class="gallery-hover-4col" >
-									<span class="gallery-icons">
-										<a href="/ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" title="<%= pro.titulo %>" class="item-zoom-link" data-rel="prettyPhoto"></a>
-									</span>
-								</span>
-								<img src="/ivr/proyectos/gallery-img-<%= pro.hex %>.jpg" alt="proyecto" class="img-responsive">
-								<span class="project-details">
-									<a href="<%= pro.url %>"><%= pro.titulo %></a><%= pro.comentario %>
-								</span>
-							</li>
-							<% end %>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+      </div>
+    </section>
+<div id="map"></div>
+<!--fin map-->
+<footer class="footer">
+      <div class="container">
+        <span class="made-with-heart">
+          <span class="octicon octicon-pencil"></span> por <strong><a href="https://github.com/fizzvr">@fizzvr </a></strong> <%= @formatoFecha(@site.date, "L") %>
+        </span>
+      </div>
+</footer>
+<!--fin footer-->
 <div id="toTop">Ir para Arriba</div>
