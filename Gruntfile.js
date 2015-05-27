@@ -1,9 +1,7 @@
 module.exports = function(grunt) {
-
     require('load-grunt-tasks')(grunt);
     require('time-grunt')(grunt);
     // myGRUNT: COPIAR[PROVEEDORES]+ DISTRIBUIR[JS&CSS] + VALIDAR[HTML]
-	// configuracion del proyecto
 	grunt.initConfig({
 		// metadatos
 		leerJson: grunt.file.readJSON('package.json'),
@@ -15,7 +13,10 @@ module.exports = function(grunt) {
            srcWebroot: './src/public',
            webroot: './out',
         },
+        //--------------------
+        // COPIAR[PROVEEDORES]
 		// tarea de copia de los archivos 3rd party desde bower --- bower list --path
+        //--------------------
 		copy: {
 			main: {
 				files: [
@@ -87,13 +88,6 @@ module.exports = function(grunt) {
 					src: ['**'],
 					dest: './out/act/pp/images/prettyPhoto/'
 				},
-				//pace - barra de carga
-				{
-					expand: true,
-					flatten: true,
-					src: ["bower_components/pace/pace.js"],
-					dest: './out/act/pace/'
-				},
                 //octicons - iconos, fuente acerca de github
 				{
 				    expand: true,
@@ -109,11 +103,13 @@ module.exports = function(grunt) {
                           'bower_components/animsition/dist/css/animsition.min.css'],
 					dest: './out/act/an/'
 				}
-
 				]
 			}
 		},
+        //--------------------
+        // DISTRIBUIR[JS&CSS]
 		// tarea de distribucion JS
+        //--------------------
         'frontend-js': {
             main: {
                 // task options
@@ -124,11 +120,7 @@ module.exports = function(grunt) {
                     // config for UglifyJS
                     uglify: {}
                 },
-
                 files: {
-                    'out/jvr/vrweb.js': [
-                        'src/public/js/jsvr.js'
-                    ],
                     'out/jvr/vr1.js': [
                         'src/public/js/jvr1.js'
                     ]
@@ -141,29 +133,25 @@ module.exports = function(grunt) {
                 options: {
                     // inline @imports
                     inline: true,
-
                     // rewrite all url() to versioned ones.
                     // the `rewriteScheme` is used to create versioned URL
-                    rewriteUrl: true,
+                    rewriteUrl: false,
 
                     // minify CSS
                     minify: true
                 },
                 files: [
                     {
-                        src: 'src/public/css/cssvr.css',
-                        dest: 'out/cvr/cssvr.css'
-
-                    },
-                    {
                         src: 'src/public/css/cvr1.css',
                         dest: 'out/cvr/vr1.css'
-
                     }
                 ]
             }
         },
+        //--------------------
+        // VALIDAR[HTML]
 		// validacion HTML
+        //--------------------
 		validation: {
 			options: {
 				reset: true,
@@ -181,22 +169,16 @@ module.exports = function(grunt) {
       			}
     	}*/
 	});
-
 	// validar html
 	grunt.registerTask('validar-html', ['validation']);
-
 	// distribucion JS y CSS
 	grunt.registerTask('dist-jscss', ['frontend-js', 'frontend-css']);
-
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
-
 	// distribucion FULL
 	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss']);
-
     // Travis
 	grunt.registerTask('travis', ['dist-jscss']);
-
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };
