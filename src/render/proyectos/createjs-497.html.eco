@@ -1,11 +1,12 @@
 ---
-layout: 'proyecto'
+estado: 'desarrollando'
+layout: 'presentacion'
 titulo: 'CreateJS. Juegos interactivos con HTML5'
 hex: 497
 tipo: Diseño
 comentario: Crea juegos multiplataforma con HTML5 y JavaScript
 tags: ['Html','CreateJS']
-repositorio: 'https://github.com/fizzvr/vr-v2b-createjs'
+repositorio: 'fizzvr/vr-v2b-createjs'
 paginagh: 'http://fizzvr.github.io/vr-v2b-createjs/'
 paginavr: 'http://fizzvr.github.io/proyectos/createjs-497.html'
 ---
