@@ -4,24 +4,33 @@ moment.locale('es');
 exec = require('child_process').exec;
 json = require('./package.json');
 docpadConfig = {
+//  en la salida ya no es necesario incluir los archivos sin minificar, grunt realiza esta tarea.
+//    ignorePaths: [
+//        "/mnt/12F7437F2537BBBC/proyectosgithub/vr-web/src/public/css/",
+//        "/mnt/12F7437F2537BBBC/proyectosgithub/vr-web/src/public/js/"
+//    ],
 	templateData: {
 		site: {
 			url: "http://fizzvr.github.io",
 			titulo: "FizzVR",
-			descripcion: "Programador BACKEND en Quito Ecuador.",
-			keywords: "vladimir, vladimir rodríguez, rodríguez, quito, ecuador, javascript, html5, jquery, css3, git, ajax, html, desarrolo web, diseño web, programación, v2b",
+			descripcion: "Desarrollador Web BACKEND Quito Ecuador.",
+			keywords: "fizzvr, vladimir, vladimir rodríguez, rodríguez, quito, ecuador, desarrollador web, desarrollo web, backend, programador",
 			autor: "fizzvr",
 			email: "fizzvr@gmail.com",
-			go_css: "/cvr/cssvr.css",
-			go_js: "/jvr/vrweb.js",
             cvr1: ["act/bs3/css/bootstrap.min.css",
                    "act/fs/flexslider.css",
+                   "act/oc/octicons.css",
+                   "act/pp/css/prettyPhoto.css",
                    "cvr/vr1.css"],
             jvr1: ["act/jquery/jquery.min.js",
                    "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
                    "act/fs/jquery.flexslider.js",
                    "act/bs3/bootstrap.min.js",
-                   "jvr/vr1.js"]
+                   "act/pp/jquery.prettyPhoto.js",
+                   "//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js",
+                   "jvr/vr1.js"],
+            apiv3: ["AIzaSyAHoa3zy3vwa8rYshYCdz-sMqjI9_1Jp60"],
+            anal: ["49288081-2"]
 		},
 		obtenerDocpadv: function () {
 			version = json.dependencies.docpad;
@@ -58,29 +67,51 @@ docpadConfig = {
 	},
 	collections: {
 	    paginas: function(database) {
-	    return database.findAllLive({
-	        pageOrder: {
-	          $exists: true
-	        }
-	      }, [
+	       return database.findAllLive( {pageOrder: {$exists: true} }, [
 	        {
 	          pageOrder: 1,
 	          titulo: 1
 	        }
 	      ]);
 	    },
-	    proyectos: function(database) {
+
+	    proyectos_finalizados: function(database) {
 	      return database.findAllLive({
 	        relativeOutDirPath: 'proyectos',
-	        hex: {
-	          $exists: true
+	        estado: {
+	          $exists: false
 	        }
 	      }, [
 	        {
-	          hex: 1
+	              title: 1,
 	        }
 	      ]);
-	    }
+	    },
+	    proyectos_desarrollando: function(database) {
+	      return database.findAllLive({
+	        relativeOutDirPath: 'proyectos',
+	           estado: {
+	               $exists: true
+	        }
+	      }, [
+	        {
+                title: 1,
+	            date: -1
+	        }
+	      ]);
+	    },
+        proyectos_favoritos: function(database) {
+            return database.findAllLive({
+              relativeOutDirPath: 'proyectos',
+                favorito: {
+                    $exists: true
+                }
+            }, [
+              {
+                title: 1
+              }
+            ]);
+          }
 	},
 	events: {
 		generateBefore: function(opts, next) {
