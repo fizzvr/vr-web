@@ -20,13 +20,13 @@
         <%- @content %>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<%- @site.apiv3 %>&amp;sensor=false"></script>
         <%- @getBlock('scripts').add(@site.jvr1).toHTML() %>
-        <script>
-            (function(f,i,z,v,r,e,c){f['GoogleAnalyticsObject']=r;f[r]=f[r]||function(){
-                (f[r].q=f[r].q||[]).push(arguments)},f[r].l=1*new Date();e=i.createElement(z),
-                c=i.getElementsByTagName(z)[0];e.async=1;e.src=v;c.parentNode.insertBefore(e,c)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-<%- @site.anal %>', 'fizzvr.github.io');
-            ga('send', 'pageview');
-	   </script>
+	   <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-<%= @site.anal %>', 'auto');
+          ga('send', 'pageview');
+        </script>
     </body>
 </html>
