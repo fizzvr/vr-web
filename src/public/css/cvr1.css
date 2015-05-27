@@ -1,22 +1,16 @@
-@import url('http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
-@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
-
 @import url(tipo/_stylesheet.css);
-
 body {
-    font-family: "Lora", sans-serif;
+    font-family: "octicons", sans-serif;
     width: 100%;
     height: 100%;
     font-size: 16px;
     background: #000 url('../ivr/page-bg-1.jpg');
 /*    background: #000;*/
 }
-
 html {
     width: 100%;
     height: 100%;
 }
-
 h1,
 h2,
 h3,
@@ -26,15 +20,23 @@ h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: "bauserif","Helvetica Neue",Helvetica,Arial,sans-serif;
-
     letter-spacing: 10px;
+}
+.pad {
+    padding: 4px;
+}
+h5.titulo-pro a {
+    color: #000;
+}
+h5.titulo-pro a:hover {
+    color: #333;
 }
 h4.title-bg, h5.title-bg {
 background: #f8f8f8;
-padding: 10px 5px;
-margin: 0 0 20px 0;
-border-bottom: 1px dotted #a9a9a9;
-border-top: 1px dotted #a9a9a9;
+padding: 12px;
+color: #000;
+border-bottom: 1px dotted #000;
+border-top: 1px dotted #000;
 }
 p {
     margin: 0 0 25px;
@@ -130,7 +132,13 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
 }
+.mini-ec {
+    background: url("../ivr/ec.png") no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
 
+}
 /*INTRO*/
 
 .intro {
@@ -154,7 +162,7 @@ a:focus {
 
 .brand-heading {
 
-    font-size: 50px;
+    font-size: 20px;
 }
 
 .intro-text {
@@ -192,7 +200,7 @@ a:focus {
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -262,10 +270,21 @@ a:focus {
 .color-bar-1 {
     width:100%;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    background: gold;
+    background: black;
     height: 5px;
 }
 /*LOGO SKILLS*/
+.logoi {
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+}
+.logoi:hover {
+  color: #fff;
+}
+.vr-logo-skills {
+    margin-top: 35px;
+}
 .vr-logo-skills ul {
     padding-left: 0px;
 }
@@ -287,17 +306,16 @@ a:focus {
 		background-position: -64px 0;
 	}
 .content-section {
-    padding: 200px 0 200px 0;
+    padding: 100px 0;
 }
 
 .download-section {
     display: table;
     width: 100%;
     height: auto;
-
     padding: 50px 0;
     color: #fff;
-    background: url(../ivr/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../ivr/contacto.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -308,12 +326,12 @@ a:focus {
 #map {
     width: 100%;
     height: 200px;
-    margin-top: 100px;
+/*    margin-top: 100px;*/
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 80px;
+        padding-top: 80px 0;
     }
 
     .download-section {
@@ -322,7 +340,7 @@ a:focus {
 
     #map {
         height: 400px;
-        margin-top: 250px;
+/*        margin-top: 250px;*/
     }
 }
 .vr-web-presentacion h2 {
@@ -333,7 +351,7 @@ a:focus {
 }
 .vr-web-presentacion
 {
-	background-color: #fff;
+	background-color: #f8f8f8;
 }
 .flexslider
 {
@@ -358,4 +376,163 @@ a:focus {
 .flex-control-nav
 {
 	display: none;
+}
+.thumbnail {
+    border: 1px solid #000;
+}
+/*footer*/
+.footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    padding: 20px 0px;
+    background-color: #fff;
+}
+
+.footer .made-with-heart a{
+	position:relative;
+	top:1px;
+	text-decoration:none;
+	color:#aaa;
+	-webkit-transition:0.2s color ease-in 0;
+	-moz-transition:0.2s color ease-in 0;
+	-o-transition:0.2s color ease-in 0;
+	-transition:0.2s color ease-in 0;
+}
+
+.footer .made-with-heart a:hover{
+	color:#333;
+}
+
+.download-section .email a {
+    position:relative;
+	top:1px;
+	text-decoration:none;
+	color: #fff;
+	-webkit-transition:0.2s color ease-in 0;
+	-moz-transition:0.2s color ease-in 0;
+	-o-transition:0.2s color ease-in 0;
+	-transition:0.2s color ease-in 0;
+}
+/*
+.download-section .email a:hover {
+    color: #fff;
+}
+*/
+
+.list-inline {
+    padding-top: 35px;
+}
+
+/*totop*/
+#toTop {
+	width:47px;
+	height:47px;
+	background:url('../ivr/back-top-btn.png') no-repeat;
+	text-align:center;
+	position:fixed;
+	bottom:10px;
+	right:5px;
+	cursor:pointer;
+	display:none;
+	text-indent:-9999px;
+	z-index:12;
+}
+.followers {
+    padding: 8px;
+}
+
+.vr-web-social
+{
+	display:inline-block;
+    background-image: url('../ivr/social.png');
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 32px;
+     -webkit-transition:0.2s color ease-in 0;
+	-moz-transition:0.2s color ease-in 0;
+	-o-transition:0.2s color ease-in 0;
+	-transition:0.2s color ease-in 0
+}
+.vr-web-social-github
+{
+    background-position: 0 0;
+}
+/*
+.vr-web-social-github:hover
+{
+    background-position: 0 -30px;
+}
+*/
+.vr-web-social-twitter
+{
+    background-position: -32px 0;
+}
+/*
+.vr-web-social-twitter:hover
+{
+    background-position: -35px -30px;
+}
+*/
+.btn {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    width: 125px;
+    border: 1px solid #f8f8f8;
+    color: #f8f8f8;
+    background-color: transparent;
+}
+
+.btn-default:hover {
+    border: 1px solid #000;
+    outline: 0;
+    color: #000;
+    background-color: #f8f8f8;
+}
+.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons>li:last-child {
+        margin-bottom: 0;
+    }
+}
+.btn-outlined {
+    font-size: 16px;
+    border-radius: 0;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+/*boton-verde*/
+.btn-outlined.btn-success {
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+}
+.btn-outlined.btn-success:hover,
+.btn-outlined.btn-success:active {
+    color: #FFF;
+    background: #000;
 }
