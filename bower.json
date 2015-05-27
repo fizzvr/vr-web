@@ -10,7 +10,6 @@
     "bootstrap": "https://github.com/twbs/bootstrap.git",
     "flexslider": "git://github.com/woothemes/FlexSlider.git",
     "jquery-prettyPhoto": "https://github.com/scaron/prettyphoto.git",
-    "pace": "git://github.com/HubSpot/pace.git",
     "octicons": "~2.1.2",
     "animsition": "git@github.com:blivesta/animsition.git#~3.3.3"
   }
