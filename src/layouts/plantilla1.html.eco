@@ -8,21 +8,24 @@
         <%- @getBlock('meta').toHTML() %>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <%- @getBlock('styles').add(@site.cvr1).toHTML() %>
+        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <%- @content %>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<%- @site.apiv3 %>&amp;sensor=false"></script>
         <%- @getBlock('scripts').add(@site.jvr1).toHTML() %>
         <script>
             (function(f,i,z,v,r,e,c){f['GoogleAnalyticsObject']=r;f[r]=f[r]||function(){
                 (f[r].q=f[r].q||[]).push(arguments)},f[r].l=1*new Date();e=i.createElement(z),
                 c=i.getElementsByTagName(z)[0];e.async=1;e.src=v;c.parentNode.insertBefore(e,c)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', '', 'fizzvr.github.io');
+            ga('create', 'UA-<%- @site.anal %>', 'fizzvr.github.io');
             ga('send', 'pageview');
 	   </script>
     </body>
