@@ -536,3 +536,18 @@ a:focus {
     color: #FFF;
     background: #000;
 }
+.gallery-icons {
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  border: 0;
+  width: 149px;
+  height: 149px;
+}
+a.item-zoom-link {
+  height: 100%;
+  background: url("../ivr/forkme.png") no-repeat;
+  display: block;
+}
+

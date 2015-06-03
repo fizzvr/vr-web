@@ -35,6 +35,7 @@ titulo: Vladimir Rodríguez
         <div class="col-md-8 col-md-offset-2">
           <h1 class="brand-heading">Desarrollador WeB backend</h1>
           <p class="intro-text">San Francisco de Quito - Ecuador</p>
+          <div class="g-page" data-href="//plus.google.com/u/0/104608480923063156692" data-theme="light" data-layout="landscape" data-rel="publisher"></div>
          <div class="vr-logo-skills">
             <ul>
               <li data-toggle="tooltip" data-placement="left" data-title="NODEJS" class="nodejs">NodeJS</li>
@@ -62,16 +63,17 @@ titulo: Vladimir Rodríguez
   <div class="col-sm-6 col-md-3 text-center">
     <!-- Proyecto N -->
     <div class="thumbnail">
-     <a href="<%= pro.paginavr %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= pro.titulo %>">
-      <img src="ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" alt="<%= pro.titulo %>" class="img-thumbnail">
+      <span class="gallery-icons">
+        <a aria-label="Fork <%= pro.repositorio %> on GitHub" data-count-aria-label="# forks on GitHub" data-count-api="/repos/<%= pro.repositorio %>#forks_count" data-count-href="/<%= pro.repositorio %>/network" href="https://github.com/<%= pro.repositorio %>/fork" class="item-zoom-link"></a>
+      </span>
+      <a href="<%= pro.paginavr %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= pro.titulo %>">
+        <img src="ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" alt="<%= pro.titulo %>" class="img-thumbnail">
       </a>
       <div class="caption">
-         <span class="pad"><a aria-label="Demo <%= pro.repositorio %>" href="<%= pro.paginagh %>" class="btn btn-outlined btn-success"><span class="octicon octicon-octoface"></span>  Demostración</a></span>
-         <span class="pad"><a aria-label="Star <%= pro.repositorio %> on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/<%= pro.repositorio %>#stargazers_count" data-count-href="/<%= pro.repositorio %>/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/<%= pro.repositorio %>" class="github-button">Star</a></span>
-         <span class="pad"><a aria-label="Download <%= pro.repositorio %> on GitHub" data-style="mega" data-icon="octicon-cloud-download" href="https://github.com/<%= pro.repositorio %>/archive/master.zip" class="github-button">Descarga</a></span>
-<!--         <span class="pad"><a aria-label="Fork <%= pro.repositorio %> on GitHub" data-count-aria-label="# forks on GitHub" data-count-api="/repos/<%= pro.repositorio %>#forks_count" data-count-href="/<%= pro.repositorio %>/network" data-style="mega" data-icon="octicon-git-branch" href="https://github.com/<%= pro.repositorio %>/fork" class="github-button">Fork</a></span>-->
-<!--         <span class="pad"><a aria-label="Issue <%= pro.repositorio %> on GitHub" data-count-aria-label="# issues on GitHub" data-count-api="/repos/<%= pro.repositorio %>#open_issues_count" data-style="mega" data-icon="octicon-issue-opened" href="https://github.com/<%= pro.repositorio %>/issues" class="github-button">Issue</a></span>-->
-    </div>
+       <span class="pad"><a aria-label="Demo <%= pro.repositorio %>" href="<%= pro.paginagh %>" class="btn btn-outlined btn-success"><span class="octicon octicon-octoface"></span>  Demostración</a></span>
+       <span class="pad"><a aria-label="Star <%= pro.repositorio %> on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/<%= pro.repositorio %>#stargazers_count" data-count-href="/<%= pro.repositorio %>/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/<%= pro.repositorio %>" class="github-button">Star</a></span>
+       <span class="pad"><a aria-label="Download <%= pro.repositorio %> on GitHub" data-style="mega" data-icon="octicon-cloud-download" href="https://github.com/<%= pro.repositorio %>/archive/master.zip" class="github-button">Descarga</a></span>
+     </div>
     </div>
   </div>
     <% end %>
