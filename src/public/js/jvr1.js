@@ -43,7 +43,7 @@ $(function maplace() {
         lon: -78.538488,
         title: 'Quito',
         html: 'FIZZVR',
-        zoom: 6,
+        zoom: 7,
         show_infowindow: false
         //icon: 'http://img4.uploadhouse.com/fileuploads/21419/21419864b17f94926d92d1a55761b3f5506d7373.png',
     }];
