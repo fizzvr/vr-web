@@ -1,6 +1,5 @@
-@import url(tipo/_stylesheet.css);
 body {
-    font-family: "octicons", sans-serif;
+    font-family: "Open Sans", sans-serif;
     width: 100%;
     height: 100%;
     font-size: 16px;
@@ -19,12 +18,13 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "bauserif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
     letter-spacing: 10px;
+    font-weight: 700;
 }
 .pad {
     padding: 4px;
-}
+}s
 h5.titulo-pro a {
     color: #000;
 }
@@ -37,6 +37,7 @@ padding: 12px;
 color: #000;
 border-bottom: 1px dotted #000;
 border-top: 1px dotted #000;
+font-weight: 400;
 }
 p {
     margin: 0 0 25px;
@@ -69,7 +70,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
     background-color: rgba(0, 0, 0, 0.9);
 }
 .light
@@ -178,7 +179,7 @@ a:focus {
     }
 
     .brand-heading {
-        font-size: 80px;
+        font-size: 65px;
     }
 
     .intro-text {
@@ -309,12 +310,12 @@ a:focus {
     padding: 100px 0;
 }
 
-.download-section {
+.contact-section {
     display: table;
     width: 100%;
     height: auto;
     padding: 50px 0;
-    color: #fff;
+    color: #f8f8f8;
     background: url(../ivr/contacto.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -334,12 +335,12 @@ a:focus {
         padding-top: 80px 0;
     }
 
-    .download-section {
+    .contact-section {
         padding: 100px 0;
     }
 
     #map {
-        height: 400px;
+        height: 300px;
 /*        margin-top: 250px;*/
     }
 }
@@ -386,7 +387,7 @@ a:focus {
     color: #aaa;
     font-size: 14px;
     padding: 20px 0px;
-    background-color: #fff;
+    background-color: #f8f8f8;
 }
 
 .footer .made-with-heart a{
@@ -404,11 +405,11 @@ a:focus {
 	color:#333;
 }
 
-.download-section .email a {
+.contact-section .email a {
     position:relative;
 	top:1px;
 	text-decoration:none;
-	color: #fff;
+	color: #f8f8f8;
 	-webkit-transition:0.2s color ease-in 0;
 	-moz-transition:0.2s color ease-in 0;
 	-o-transition:0.2s color ease-in 0;
@@ -477,7 +478,7 @@ a:focus {
 .btn {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -551,3 +552,12 @@ a.item-zoom-link {
   display: block;
 }
 
+.overflow {
+    position: absolute;
+      z-index: 3;
+  padding: 12px;
+  color: #000;
+  font-weight: 700;
+    width: 195px;
+  margin-top: 50px;
+}
