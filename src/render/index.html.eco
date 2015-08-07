@@ -3,15 +3,15 @@ layout: 'plantilla1'
 titulo: Vladimir Rodríguez
 ---
 <header>
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-custom navbar-fixed-top">
     <div class="container">
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsar-menu">
-          <i class="glyphicon glyphicon-menu-hamburger"></i>
+          <i class="fa fa-bars"></i>
         </button>
         <a class="navbar-brand" href="#page-top">
           <span class="mini-ec" aria-hidden="true"></span>
-          <span class="light">fizz</span> vr
+          <span class="light">fizz</span>vr
         </a>
       </div>
       <div class="collapse navbar-collapse navbar-right colapsar-menu">
@@ -19,7 +19,7 @@ titulo: Vladimir Rodríguez
          <li class="hidden"><a href="#page-top"></a></li>
          <li class="page-scroll"><a href="#id-proyectos">Proyectos</a></li>
          <li class="page-scroll"><a href="#id-desarrollando">Desarrollando</a></li>
-         <li class="page-scroll"><a href="#id-contacto"><span class="glyphicon glyphicon-envelope"></span></a></li>
+         <li class="page-scroll"><a href="#id-contacto"><span class="fa fa-hand-pointer-o"></span></a></li>
          <!--         <li><a data-toggle="modal" data-target="#vr-web-contacto" href="#vr-web-contacto"><span class="glyphicon glyphicon-envelope"></span></a></li>-->
          <li class="followers"><a aria-label="Sìgueme @fizzvr en GitHub" data-count-aria-label="# seguidores en GitHub" data-count-api="/users/fizzvr#followers" data-count-href="/fizzvr/followers" data-style="mega" href="https://github.com/fizzvr" class="github-button">@fizzvr</a></li>
        </ul>
@@ -28,13 +28,14 @@ titulo: Vladimir Rodríguez
  </nav>
 </header>
 <!--fin header-->
+
 <section class="intro">
   <div class="intro-body">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1 class="brand-heading">Desarrollador WeB backend</h1>
-          <p class="intro-text">San Francisco de Quito - Ecuador</p>
+          <p class="intro-text">Quito - Ecuador</p>
           <div class="g-page" data-href="//plus.google.com/u/0/104608480923063156692" data-theme="light" data-layout="landscape" data-rel="publisher"></div>
          <div class="vr-logo-skills">
             <ul>
@@ -44,7 +45,7 @@ titulo: Vladimir Rodríguez
           </div>
           <div class="page-scroll">
             <a href="#id-proyectos" class="btn btn-circle">
-              <i class="glyphicon glyphicon-download animated"></i>
+              <i class="fa fa-angle-double-down animated"></i>
             </a>
           </div>
         </div>
@@ -53,10 +54,11 @@ titulo: Vladimir Rodríguez
   </div>
 </section>
 <!--fin vr-intro-->
+
 <section id="id-proyectos" class="content-section">
   <div class="container">
    <h4 class="title-bg text-center">
-    <span class="glyphicon glyphicon-chevron-right pull-left"></span>proyectos<span class="glyphicon glyphicon-chevron-left pull-right"></span>
+    <span class="fa fa-gg pull-left"></span>proyectos<span class="fa fa-gg pull-right"></span>
   </h4>
   <div class="row">
   <% for pro in @getCollection("proyectos_finalizados").toJSON(): %>
@@ -70,9 +72,11 @@ titulo: Vladimir Rodríguez
         <img src="ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" alt="<%= pro.titulo %>" class="img-thumbnail">
       </a>
       <div class="caption">
-       <span class="pad"><a aria-label="Demo <%= pro.repositorio %>" href="<%= pro.paginagh %>" class="btn btn-outlined btn-success"><span class="octicon octicon-octoface"></span>  Demostración</a></span>
+       <span class="pad"><a aria-label="Demostración" data-style="mega" data-icon="mega-octicon octicon-octoface" href="<%= pro.paginagh %>" class="github-button">DEMO</a></span>
+       <br>
+<!--       <span class="pad"><a aria-label="Demo <%= pro.repositorio %>" href="<%= pro.paginagh %>" class="btn btn-outlined btn-success"><span class="octicon octicon-octoface"></span>  Demo</a></span><br>-->
        <span class="pad"><a aria-label="Star <%= pro.repositorio %> on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/<%= pro.repositorio %>#stargazers_count" data-count-href="/<%= pro.repositorio %>/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/<%= pro.repositorio %>" class="github-button">Star</a></span>
-       <span class="pad"><a aria-label="Download <%= pro.repositorio %> on GitHub" data-style="mega" data-icon="octicon-cloud-download" href="https://github.com/<%= pro.repositorio %>/archive/master.zip" class="github-button">Descarga</a></span>
+       <span class="pad"><a aria-label="Download <%= pro.repositorio %> on GitHub" data-style="mega" data-icon="octicon-cloud-download" href="https://github.com/<%= pro.repositorio %>/archive/master.zip" class="github-button">Descargar</a></span>
      </div>
     </div>
   </div>
@@ -81,10 +85,11 @@ titulo: Vladimir Rodríguez
 </div>
 </section>
 <!-- fin vr-web-proyectos -->
+
 <section id="id-desarrollando" class="content-section">
   <div class="container">
     <h4 class="title-bg text-center">
-      <span class="octicon octicon-repo-forked pull-left"></span>Desarrollando<span class="octicon octicon-repo-forked pull-right"></span>
+      <span class="fa fa-gg pull-left"></span>Desarrollando<span class="fa fa-gg pull-right"></span>
     </h4>
     <div class="row">
       <div class="col-md-4">
@@ -127,57 +132,47 @@ titulo: Vladimir Rodríguez
   </div>
 </div>
 </section>
-<!--fin vr-web-desarrollo-->
-<!--
-<section id="id-proximamente" class="vr-web-pendientes content-section">
+<!--fin vr-web-desarrollando-->
+
+<section id="id-todo" class="content-section">
   <div class="container">
     <h4 class="title-bg text-center">
-      <span class="glyphicon glyphicon-chevron-right pull-left"></span>Próximamente<span class="glyphicon glyphicon-chevron-left pull-right"></span>
+      <span class="fa fa-gg pull-left"></span>Pendientes<span class="fa fa-gg pull-right"></span>
     </h4>
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="panel panel-default">
-           tabla
-          <div class="table-responsive">
-            <table class="table table-bordered table-striped table-condensed">
-              <thead>
-                <tr>
-                  <th>Hex</th>
-                  <th class="tex-center">Nombre</th>            <th>Estado</th>
-                  <th>Fecha</th>
-                </tr>
-              </thead>
-              <tbody>
-               <% posts = @getCollection('proyectos_desarrollando') %>
-              <% for i in [0...Math.min(4,posts.length)]: %>
-              <% document = posts.at(i).toJSON() %>
-              <% if document.estado is 'proximamente': %>
-              <tr>
-                <th scope="row"><%= document.hex %></th>
-                <td><p><a href="<%= document.url %>"><%= document.titulo %></a></p></td>
-                <td>Pendiente</td>
-                <td><%= @formatoFecha(@document.date, 'L') %></td>
-              </tr>
-              <% end %>
-              <% end %>
-            </tbody>
-          </table>
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <div class="list-group">
+        <% pendientes = @getCollection('proyectos_desarrollando') %>
+          <% for i in [0...Math.min(4,pendientes.length)]: %>
+              <% document = pendientes.at(i).toJSON() %>
+              <% if document.estado is 'todo': %>
+          <a href="<%= document.url %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= document.titulo %>" class="list-group-item list-group-item-warning <%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>"><span class="fa fa-cog fa-spin pull-left"></span><%= document.titulo %><span class="fa fa-cog fa-spin pull-right"></span></a>
+          <% end %>
+          <% end %>
         </div>
-      </div>
+
     </div>
   </div>
 </div>
 </section>
--->
-<!--fin vr-web-proximamente-->
- <section id="id-contacto" class="download-section content-section">
+<!--fin vr-web-todo-->
+
+ <section id="id-contacto" class="contact-section">
       <div class="container">
         <h4 class="title-bg text-center">
-              <span class="octicon octicon-comment-discussion pull-left"></span>Contacto<span class="octicon octicon-comment-discussion pull-right"></span>
+              <span class="fa fa-gg pull-left"></span>Contacto<span class="fa fa-gg pull-right"></span>
             </h4>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center ">
-                <p>No dude en llamarme o enviarme un correo electrónico para solicitar información sobre mi trabajo o para brindar alguna sugerencia que ayude a involucrarse en este proyecto, actualmente me encuentro ubicado en la ciudad de Quito - Ecuador.</p>
+               <div class="col-md-6 text-center">
+                   <p><span class="fa fa-glass fa-2x" style="margin:20px 0;"></span><br>Estoy gustoso en ayudar a tí o a tu empresa a ser más productivo y rentable.</p>
+               </div>
+               <div class="col-md-6 text-center">
+                   <p><span class="fa fa-commenting-o fa-2x" style="margin:20px 0;"></span><br>El Asesoramiento es gratuito; No dude en llamarme o enviarme un correo electrónico si tiene alguna pregunta. </p>
+               </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <p><span class="fa fa-university fa-2x" style="margin:20px 0;"></span><br>Descuentos para organizaciones caritativas sin fines de lucro están disponibles.</p>
+            </div>
+            <div class="clear-fix col-lg-8 col-lg-offset-2 text-center">
                 <address class="email">
                     Vladimir Rodríguez
 					<br><abbr title="Celular">C:</abbr> (+593) 983288589
@@ -193,12 +188,23 @@ titulo: Vladimir Rodríguez
         </div>
       </div>
     </section>
-<div id="map"></div>
+    <!--fin contacto-->
+
+<section id="id-mapa">
+   <div class="container">
+        <h4 class="overflow text-center">
+              <span class="fa fa-globe pull-left"></span>Quito EC170146
+        </h4>
+    </div>
+    <div id="map"></div>
+
+</section>
 <!--fin map-->
+
 <footer class="footer">
       <div class="container">
         <span class="made-with-heart">
-          <span class="octicon octicon-pencil"></span> por <strong><a href="https://github.com/fizzvr">@fizzvr </a></strong> <%= @formatoFecha(@site.date, "L") %>
+          <span class="octicon octicon-pencil"></span> por <strong><a href="https://github.com/fizzvr">@fizzvr </a></strong> <%= @formatoFecha(@site.date, "LLL") %>
         </span>
       </div>
 </footer>
