@@ -5,10 +5,10 @@ exec = require('child_process').exec;
 json = require('./package.json');
 docpadConfig = {
 //  en la salida ya no es necesario incluir los archivos sin minificar, grunt realiza esta tarea.
-//    ignorePaths: [
-//        "/mnt/12F7437F2537BBBC/proyectosgithub/vr-web/src/public/css/",
-//        "/mnt/12F7437F2537BBBC/proyectosgithub/vr-web/src/public/js/"
-//    ],
+    // ignorePaths: [
+    //     "/mnt/12F7437F2537BBBC/proyectosgithub/vr-web/src/public/css/",
+    //     "/mnt/12F7437F2537BBBC/proyectosgithub/vr-web/src/public/js/"
+    // ],
 	templateData: {
 		site: {
 			url: "http://fizzvr.github.io",
@@ -19,16 +19,17 @@ docpadConfig = {
 			email: "fizzvr@gmail.com",
             cvr1: ["act/bs3/css/bootstrap.min.css",
                    "act/fs/flexslider.css",
-                   "act/oc/octicons.css",
+                   "act/fa/css/font-awesome.min.css",
                    "act/pp/css/prettyPhoto.css",
-                   "cvr/vr1.css"],
+                   "cvr/vr1.min.css"],
             jvr1: ["act/jquery/jquery.min.js",
                    "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
                    "act/fs/jquery.flexslider.js",
                    "act/bs3/bootstrap.min.js",
                    "act/pp/jquery.prettyPhoto.js",
-                   "//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js",
-                   "jvr/vr1.js"],
+                   "act/is/isotope.pkgd.min.js",
+                   "js/maplace.js",
+                   "jvr/vr1.min.js"],
             apiv3: ["AIzaSyAHoa3zy3vwa8rYshYCdz-sMqjI9_1Jp60"],
             anal: ["49288081-2"]
 		},
