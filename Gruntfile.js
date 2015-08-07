@@ -20,13 +20,13 @@ module.exports = function(grunt) {
 		copy: {
 			main: {
 				files: [
-				//bauserif - fuente
-				{
-					expand: true,
-					flatten: true,
-					src: ["./src/public/css/tipo/bauserif.*"],
-					dest: './out/cvr'
-				},
+				// //bauserif - fuente
+				// {
+				// 	expand: true,
+				// 	flatten: true,
+				// 	src: ["./src/public/css/bauserif.*"],
+				// 	dest: './out/cvr/'
+				// },
 				//jquery - indispensable
 				{
 					expand: true,
@@ -88,12 +88,18 @@ module.exports = function(grunt) {
 					src: ['**'],
 					dest: './out/act/pp/images/prettyPhoto/'
 				},
-                //octicons - iconos, fuente acerca de github
+                //font-awesome - iconos, fuente
 				{
 				    expand: true,
-					cwd: 'bower_components/octicons/octicons/',
+					cwd: 'bower_components/font-awesome/css/',
 					src: ['**'],
-					dest: './out/act/oc/'
+					dest: './out/act/fa/css/'
+				},
+				{
+					expand: true,
+					flatten: true,
+					src:["bower_components/font-awesome/fonts/*"],
+					dest: './out/act/fa/fonts/'
 				},
                 //animsition - trancisiones css
 				{
@@ -102,6 +108,13 @@ module.exports = function(grunt) {
 					src: ['bower_components/animsition/dist/js/jquery.animsition.min.js',
                           'bower_components/animsition/dist/css/animsition.min.css'],
 					dest: './out/act/an/'
+				},
+                //isotope - Filter & sort magical layouts
+				{
+				    expand: true,
+                    flatten: true,
+					src: ['bower_components/isotope/dist/isotope.pkgd.min.js'],
+					dest: './out/act/is/'
 				}
 				]
 			}
@@ -110,44 +123,50 @@ module.exports = function(grunt) {
         // DISTRIBUIR[JS&CSS]
 		// tarea de distribucion JS
         //--------------------
-        'frontend-js': {
+        uglify: {
             main: {
                 // task options
                 options: {
-                    // Minify JS
-                    minify: true,
-
-                    // config for UglifyJS
-                    uglify: {}
+                    banner: '// <%= leerJson.name %> - <%= leerJson.url %> - ' + '<%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n\n',
+                    preserveComments: 'some'
                 },
                 files: {
-                    'out/jvr/vr1.js': [
-                        'src/public/js/jvr1.js'
-                    ]
+                    'out/jvr/vr1.min.js': ['src/public/js/jvr1.js']
                 }
             }
         },
-        // tarea de distribucion CSS
-        'frontend-css': {
-            main: {
-                options: {
-                    // inline @imports
-                    inline: true,
-                    // rewrite all url() to versioned ones.
-                    // the `rewriteScheme` is used to create versioned URL
-                    rewriteUrl: false,
-
-                    // minify CSS
-                    minify: true
+       // tarea de distribucion CSS
+        csso: {
+           main: {
+               options: {
+                    banner: '/* <%= leerJson.name %> - <%= leerJson.url %> - ' + '<%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %> */\n\n'
                 },
-                files: [
-                    {
-                        src: 'src/public/css/cvr1.css',
-                        dest: 'out/cvr/vr1.css'
-                    }
-                ]
+                files: {
+                  'out/cvr/vr1.min.css': ['src/public/css/cvr1.css']
+                }
             }
         },
+
+//        'frontend-css': {
+//            main: {
+//                options: {
+//                    // inline @imports
+//                    inline: true,
+//                    // rewrite all url() to versioned ones.
+//                    // the `rewriteScheme` is used to create versioned URL
+//                    rewriteUrl: false,
+//
+//                    // minify CSS
+//                    minify: true
+//                },
+//                files: [
+//                    {
+//                        src: 'src/public/css/cvr1.css',
+//                        dest: 'out/cvr/vr1.css'
+//                    }
+//                ]
+//            }
+//        },
         //--------------------
         // VALIDAR[HTML]
 		// validacion HTML
@@ -172,7 +191,7 @@ module.exports = function(grunt) {
 	// validar html
 	grunt.registerTask('validar-html', ['validation']);
 	// distribucion JS y CSS
-	grunt.registerTask('dist-jscss', ['frontend-js', 'frontend-css']);
+	grunt.registerTask('dist-jscss', ['uglify', 'csso']);
 	// distribucion de los activos
 	grunt.registerTask('dist-activos', ['copy']);
 	// distribucion FULL
