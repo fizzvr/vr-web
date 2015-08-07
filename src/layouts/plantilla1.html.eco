@@ -9,10 +9,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
         <link rel="shortcut icon" href="favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <%- @getBlock('styles').add(@site.cvr1).toHTML() %>
         <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-        <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'es'}</script>
+        <script async defer src="https://apis.google.com/js/platform.js"></script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
         <!--[if lt IE 8]>
