@@ -101,20 +101,26 @@ module.exports = function(grunt) {
 					src:["bower_components/font-awesome/fonts/*"],
 					dest: './out/act/fa/fonts/'
 				},
-                //animsition - trancisiones css
+                //lazy load - imagenes
 				{
 				    expand: true,
                     flatten: true,
-					src: ['bower_components/animsition/dist/js/jquery.animsition.min.js',
-                          'bower_components/animsition/dist/css/animsition.min.css'],
-					dest: './out/act/an/'
+					src: ['bower_components/jquery.lazyload/*.js'],
+					dest: './out/act/ll/'
 				},
-                //isotope - Filter & sort magical layouts
+                // TODO: isotope - Filter & sort magical layouts
 				{
 				    expand: true,
                     flatten: true,
 					src: ['bower_components/isotope/dist/isotope.pkgd.min.js'],
 					dest: './out/act/is/'
+				},
+                //maplace - interactuar con google maps
+				{
+				    expand: true,
+                    flatten: true,
+					src: ['bower_components/maplace.js/src/*.min.js'],
+					dest: './out/act/ma/'
 				}
 				]
 			}
