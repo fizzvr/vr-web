@@ -1,5 +1,8 @@
 $(document).on("ready", inicio);
 function inicio () {
+     $("img.lazy").lazyload({
+        event : "scrollstop"
+    });
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
@@ -9,6 +12,7 @@ function inicio () {
     fs();
 	callprettyPhoto();
     btn_hover_social();
+
 }
 function btn_hover_social() {
     // interesante cambio - verificar por que no se hizo en css
@@ -21,6 +25,7 @@ function btn_hover_social() {
             $(this).find('.vr-web-social-twitter').css("background-position","-32px 0");
 	});
 };
+
 function mapa() {
     //Google Map Skin - Get more at http://snazzymaps.com/
     var misOpciones = {

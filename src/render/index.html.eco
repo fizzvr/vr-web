@@ -35,8 +35,8 @@ titulo: Vladimir Rodríguez
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1 class="brand-heading">Desarrollador WeB backend</h1>
-          <p class="intro-text">Quito - Ecuador</p>
-          <div class="g-page" data-href="//plus.google.com/u/0/104608480923063156692" data-theme="light" data-layout="landscape" data-rel="publisher"></div>
+          <div class="g-page" data-href="//plus.google.com/u/0/104608480923063156692" data-theme="dark" data-layout="landscape" data-rel="publisher"></div>
+          <p class="intro-text" style="padding-top:15px;">Quito - Ecuador</p>
          <div class="vr-logo-skills">
             <ul>
               <li data-toggle="tooltip" data-placement="left" data-title="NODEJS" class="nodejs">NodeJS</li>
@@ -68,8 +68,8 @@ titulo: Vladimir Rodríguez
       <span class="gallery-icons">
         <a aria-label="Fork <%= pro.repositorio %> on GitHub" data-count-aria-label="# forks on GitHub" data-count-api="/repos/<%= pro.repositorio %>#forks_count" data-count-href="/<%= pro.repositorio %>/network" href="https://github.com/<%= pro.repositorio %>/fork" class="item-zoom-link"></a>
       </span>
-      <a href="<%= pro.paginavr %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= pro.titulo %>">
-        <img src="ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" alt="<%= pro.titulo %>" class="img-thumbnail">
+      <a href="<%= pro.url %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= @formatoFecha(pro.date, "LL") %>">
+        <img data-original="ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" alt="Tabla de contenidos <%= pro.hex %>" class="lazy img-thumbnail">
       </a>
       <div class="caption">
        <span class="pad"><a aria-label="Demostración" data-style="mega" data-icon="mega-octicon octicon-octoface" href="<%= pro.paginagh %>" class="github-button">DEMO</a></span>
@@ -87,8 +87,8 @@ titulo: Vladimir Rodríguez
 <!-- fin vr-web-proyectos -->
 
 <section id="id-desarrollando" class="content-section">
-  <div class="container">
-    <h4 class="title-bg text-center">
+  <div class="container text-center">
+    <h4 class="title-bg">
       <span class="fa fa-gg pull-left"></span>Desarrollando<span class="fa fa-gg pull-right"></span>
     </h4>
     <div class="row">
@@ -146,7 +146,7 @@ titulo: Vladimir Rodríguez
           <% for i in [0...Math.min(4,pendientes.length)]: %>
               <% document = pendientes.at(i).toJSON() %>
               <% if document.estado is 'todo': %>
-          <a href="<%= document.url %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= document.titulo %>" class="list-group-item list-group-item-warning <%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>"><span class="fa fa-cog fa-spin pull-left"></span><%= document.titulo %><span class="fa fa-cog fa-spin pull-right"></span></a>
+          <a href="<%= document.url %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= @formatoFecha(pendientes.date, "LL") %>" class="list-group-item list-group-item-warning <%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>"><span class="fa fa-cog fa-spin pull-left"></span><%= document.titulo %><span class="fa fa-cog fa-spin pull-right"></span></a>
           <% end %>
           <% end %>
         </div>
@@ -164,14 +164,11 @@ titulo: Vladimir Rodríguez
             </h4>
         <div class="row">
                <div class="col-md-6 text-center">
-                   <p><span class="fa fa-glass fa-2x" style="margin:20px 0;"></span><br>Estoy gustoso en ayudar a tí o a tu empresa a ser más productivo y rentable.</p>
+                   <p><span class="fa fa-commenting-o fa-2x" style="margin:20px 0;"></span><br>Asesoramiento gratuito; No dude en llamarme o enviarme un correo electrónico si tiene alguna pregunta. </p>
                </div>
                <div class="col-md-6 text-center">
-                   <p><span class="fa fa-commenting-o fa-2x" style="margin:20px 0;"></span><br>El Asesoramiento es gratuito; No dude en llamarme o enviarme un correo electrónico si tiene alguna pregunta. </p>
+                <p><span class="fa fa-university fa-2x" style="margin:20px 0;"></span><br>Descuentos para organizaciones sin fines de lucro están disponibles.</p>
                </div>
-            <div class="col-md-6 col-md-offset-3 text-center">
-                <p><span class="fa fa-university fa-2x" style="margin:20px 0;"></span><br>Descuentos para organizaciones caritativas sin fines de lucro están disponibles.</p>
-            </div>
             <div class="clear-fix col-lg-8 col-lg-offset-2 text-center">
                 <address class="email">
                     Vladimir Rodríguez
@@ -193,7 +190,7 @@ titulo: Vladimir Rodríguez
 <section id="id-mapa">
    <div class="container">
         <h4 class="overflow text-center">
-              <span class="fa fa-globe pull-left"></span>Quito EC170146
+              <span class="fa fa-globe pull-left"></span>     Quito EC170146
         </h4>
     </div>
     <div id="map"></div>
@@ -203,8 +200,8 @@ titulo: Vladimir Rodríguez
 
 <footer class="footer">
       <div class="container">
-        <span class="made-with-heart">
-          <span class="octicon octicon-pencil"></span> por <strong><a href="https://github.com/fizzvr">@fizzvr </a></strong> <%= @formatoFecha(@site.date, "LLL") %>
+        <span class="made-with-heart text-uppercase">
+          <strong><a href="https://github.com/fizzvr">@fizzvr </a></strong><br><%= @formatoFecha(@site.date, "LL") %>
         </span>
       </div>
 </footer>

@@ -18,13 +18,13 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    letter-spacing: 10px;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+    letter-spacing: 5px;
     font-weight: 700;
 }
 .pad {
     padding: 4px;
-}s
+}
 h5.titulo-pro a {
     color: #000;
 }
@@ -307,14 +307,14 @@ a:focus {
 		background-position: -64px 0;
 	}
 .content-section {
-    padding: 100px 0;
+    padding-top: 80px;
 }
 
 .contact-section {
     display: table;
     width: 100%;
     height: auto;
-    padding: 50px 0;
+    padding-top: 80px;
     color: #f8f8f8;
     background: url(../ivr/contacto.jpg) no-repeat bottom center scroll;
     background-color: #000;
@@ -332,11 +332,12 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 80px 0;
+        padding-top: 75px;
     }
 
     .contact-section {
-        padding: 100px 0;
+        padding-top: 75px;
+        padding-bottom: 10px;
     }
 
     #map {
