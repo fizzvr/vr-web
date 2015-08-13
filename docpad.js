@@ -18,17 +18,18 @@ docpadConfig = {
 			autor: "fizzvr",
 			email: "fizzvr@gmail.com",
             cvr1: ["act/bs3/css/bootstrap.min.css",
-                   "act/fs/flexslider.css",
                    "act/fa/css/font-awesome.min.css",
+                   "act/fs/flexslider.css",
                    "act/pp/css/prettyPhoto.css",
                    "cvr/vr1.min.css"],
             jvr1: ["act/jquery/jquery.min.js",
-                   "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
-                   "act/fs/jquery.flexslider.js",
                    "act/bs3/bootstrap.min.js",
+                   "act/ll/jquery.lazyload.js",
+                   "act/ll/jquery.scrollstop.js",
+                   "act/fs/jquery.flexslider.js",
                    "act/pp/jquery.prettyPhoto.js",
-                   "act/is/isotope.pkgd.min.js",
-                   "js/maplace.js",
+                   "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
+                   "act/ma/maplace-0.1.3.min.js",
                    "jvr/vr1.min.js"],
             apiv3: ["AIzaSyAHoa3zy3vwa8rYshYCdz-sMqjI9_1Jp60"],
             anal: ["49288081-2"]
@@ -84,7 +85,7 @@ docpadConfig = {
 	        }
 	      }, [
 	        {
-	              title: 1,
+	              title: -1,
 	        }
 	      ]);
 	    },
