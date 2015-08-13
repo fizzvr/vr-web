@@ -7,11 +7,12 @@
     "bower_components"
   ],
   "dependencies": {
+    "jquery": "git@github.com:jquery/jquery.git#~2.1.4",
     "bootstrap": "https://github.com/twbs/bootstrap.git",
     "flexslider": "git://github.com/woothemes/FlexSlider.git",
     "jquery-prettyPhoto": "https://github.com/scaron/prettyphoto.git",
-    "animsition": "git@github.com:blivesta/animsition.git#~3.3.3",
-    "isotope": "~2.2.0",
-    "font-awesome": "git@github.com:FortAwesome/Font-Awesome.git#~4.4.0"
+    "font-awesome": "git@github.com:FortAwesome/Font-Awesome.git#~4.4.0",
+    "jquery.lazyload": "~1.9.5",
+    "maplace.js": "~0.1.33"
   }
 }
