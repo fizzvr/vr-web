@@ -1,34 +1,31 @@
-<p align="center">
-  <a href="http://fizzvr.github.io/">
-    <img src="http://fizzvr.github.io/ivr/logo.png">
-  </a>
-</p>
 [![Build Status](http://img.shields.io/travis/fizzvr/vr-web/master.svg?style=flat)](https://travis-ci.org/fizzvr/vr-web)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-[![Gittip](http://img.shields.io/gratipay/fizzvr.svg?style=flat)](https://gratipay.com/fizzvr/ "Ayudame a cumplir mi objetivo!") 
-[![PayPayl donate button](http://img.shields.io/badge/paypal-donar-green.svg?style=flat)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5KHX8U95AJL3A "Invitame una cerveza?")
-[![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/fizzvr/vr-web?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge "Chat en vivo")
 
 Desarrollando con DOCPAD
 ================
-*Repositorio fuente*
-
-
-Comenzemos!
---------------
-
-1. [Instalar DocPad](https://github.com/bevry/docpad)
-
+![Alt text](http://img8.uploadhouse.com/fileuploads/21439/21439888ad02f473d6b0307d3c9d0fd73670d8ee.jpg)
+* **NODEJS**
+  * [DocPad](http://docpad.org/) - Generador estático
+  ``` bash
+	sudo npm install -g docpad
+	```
+  * [Grunt](http://gruntjs.com/) - Corredor de tareas
+   ``` bash
+	sudo npm install -g grunt-cli
+	```
+  * [Bower](http://bower.io/) - Dependencias del cliente
+   ``` bash
+	sudo npm install -g bower
+	```
 1. Clonar el repositorio, instalar dependencias y correr el servidor
 
 	``` bash
 	git clone git@github.com:fizzvr/vr-web.git
 	cd vr-web
-	npm install
-    bower install
+	sudo npm install
+    bower install --allow-root
 	docpad run
 	```
 
 1. Abrir el navegador [http://localhost:9778/](http://localhost:9778/)
 
-1. Puedes comenzar editando el directorio `src`
+1. Comenzar editando el directorio `src`
