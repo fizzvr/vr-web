@@ -200,8 +200,8 @@ titulo: Vladimir Rodríguez
 
 <footer class="footer">
       <div class="container">
-        <span class="made-with-heart text-uppercase">
-          <strong><a href="https://github.com/fizzvr">@fizzvr </a></strong><br><%= @formatoFecha(@site.date, "LL") %>
+        <span class="made-with-heart col-lg-12">Copyright © 2015 Vladimir Rodríguez <br>
+            <div class="g-plusone" data-size="tall" data-annotation="inline" data-width="120"></div>
         </span>
       </div>
 </footer>
