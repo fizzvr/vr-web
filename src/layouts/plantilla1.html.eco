@@ -13,7 +13,8 @@
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <%- @getBlock('styles').add(@site.cvr1).toHTML() %>
         <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-        <script async defer src="https://apis.google.com/js/platform.js"></script>
+        <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=104608480923063156692">
+</script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
         <!--[if lt IE 8]>
