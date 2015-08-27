@@ -187,10 +187,10 @@ titulo: Vladimir Rodríguez
     </section>
     <!--fin contacto-->
 
-<section id="id-mapa">
+<section>
    <div class="container">
         <h4 class="overflow text-center">
-              <span class="fa fa-globe pull-left"></span>     Quito EC170146
+              <span class="fa fa-globe pull-left"></span>     EC170130
         </h4>
     </div>
     <div id="map"></div>
