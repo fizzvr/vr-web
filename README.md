@@ -13,13 +13,15 @@ NPM | Descripción | Instalación
 [**Bower**](http://bower.io/) | Dependencias del cliente |`sudo npm install -g bower`
 
 1. Clonar este repositorio, instalar dependencias y correr el servidor
-	``` bash
+
+    ```bash
 	git clone git@github.com:fizzvr/vr-web.git
 	cd vr-web
 	sudo npm install
     bower install --allow-root
 	docpad run
 	```
+
 1. Abrir el navegador [http://localhost:9778/](http://localhost:9778/)
 1. Comenzar editando el directorio `src`
 
