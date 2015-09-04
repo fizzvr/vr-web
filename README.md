@@ -7,7 +7,7 @@ Proyecto 1F4
 
 
 NPM | Descripción | Instalación
--|
+--- | --- | ---
 [**DocPad**](http://docpad.org/) | Generador estático | `sudo npm install -g docpad`
 [**Grunt**](http://gruntjs.com/) | Corredor de tareas | `sudo npm install -g grunt-cli`
 [**Bower**](http://bower.io/) | Dependencias del cliente |`sudo npm install -g bower`
