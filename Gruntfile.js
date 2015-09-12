@@ -8,11 +8,6 @@ module.exports = function(grunt) {
 		banner: '/**\n' +
 				'* <%= leerJson.name %> v<%= leerJson.version %> por @fizzvr\n' +
 				'*/\n',
-		frontend: {
-           force: false,
-           srcWebroot: './src/public',
-           webroot: './out',
-        },
         //--------------------
         // COPIAR[PROVEEDORES]
 		// tarea de copia de los archivos 3rd party desde bower --- bower list --path
@@ -133,7 +128,15 @@ module.exports = function(grunt) {
             main: {
                 // task options
                 options: {
-                    banner: '// <%= leerJson.name %> - <%= leerJson.url %> - ' + '<%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n\n',
+                    banner: '/*\n'+
+                   '* <%= leerJson.name %>\n' +
+                   '*\n' +
+                   '* Copyright (c) 2015 <%= leerJson.author %> \n' +
+                   '* Licensed under the MIT license \n' +
+                   '* Para todo los dettalles y documentación: \n' +
+                   '* <%= leerJson.url %> \n' +
+                   '* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +
+                   '*/\n\n',
                     preserveComments: 'some'
                 },
                 files: {
@@ -145,34 +148,21 @@ module.exports = function(grunt) {
         csso: {
            main: {
                options: {
-                    banner: '/* <%= leerJson.name %> - <%= leerJson.url %> - ' + '<%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %> */\n\n'
+                    banner: '/*\n'+
+                   '* <%= leerJson.name %>\n' +
+                   '*\n' +
+                   '* Copyright (c) 2015 <%= leerJson.author %> \n' +
+                   '* Licensed under the MIT license \n' +
+                   '* Para todo los dettalles y documentación: \n' +
+                   '* <%= leerJson.url %> \n' +
+                   '* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +
+                   '*/\n\n'
                 },
                 files: {
                   'out/cvr/vr1.min.css': ['src/public/css/cvr1.css']
                 }
             }
         },
-
-//        'frontend-css': {
-//            main: {
-//                options: {
-//                    // inline @imports
-//                    inline: true,
-//                    // rewrite all url() to versioned ones.
-//                    // the `rewriteScheme` is used to create versioned URL
-//                    rewriteUrl: false,
-//
-//                    // minify CSS
-//                    minify: true
-//                },
-//                files: [
-//                    {
-//                        src: 'src/public/css/cvr1.css',
-//                        dest: 'out/cvr/vr1.css'
-//                    }
-//                ]
-//            }
-//        },
         //--------------------
         // VALIDAR[HTML]
 		// validacion HTML
