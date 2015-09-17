@@ -129,12 +129,12 @@ module.exports = function(grunt) {
                 // task options
                 options: {
                     banner: '/*\n'+
-                   '* <%= leerJson.name %>\n' +
+                   '* <%= leerJson.name %> - <%= leerJson.url %>\n' +
                    '*\n' +
                    '* Copyright (c) 2015 <%= leerJson.author %> \n' +
-                   '* Licensed under the MIT license \n' +
+                   '* bajo licencia MIT \n' +
                    '* Para todo los dettalles y documentación: \n' +
-                   '* <%= leerJson.url %> \n' +
+                   '* <%= leerJson.homepage %> \n' +
                    '* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +
                    '*/\n\n',
                     preserveComments: 'some'
@@ -149,12 +149,12 @@ module.exports = function(grunt) {
            main: {
                options: {
                     banner: '/*\n'+
-                   '* <%= leerJson.name %>\n' +
+                   '* <%= leerJson.name %> - <%= leerJson.url %>\n' +
                    '*\n' +
                    '* Copyright (c) 2015 <%= leerJson.author %> \n' +
-                   '* Licensed under the MIT license \n' +
+                   '* bajo licencia MIT \n' +
                    '* Para todo los dettalles y documentación: \n' +
-                   '* <%= leerJson.url %> \n' +
+                   '* <%= leerJson.homepage %> \n' +
                    '* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +
                    '*/\n\n'
                 },
