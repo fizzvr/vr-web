@@ -35,11 +35,12 @@ titulo: Vladimir Rodríguez
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1 class="brand-heading">Desarrollador WeB backend</h1>
-          <div class="g-page" data-href="//plus.google.com/u/0/104608480923063156692" data-theme="dark" data-layout="landscape" data-rel="publisher"></div>
+          <div class="g-page" data-href="//plus.google.com/u/0/104608480923063156692" data-width="200" data-showtagline="false"  data-showcoverphoto="false" data-theme="light" data-rel="publisher"></div>
           <p class="intro-text" style="padding-top:15px;">Quito - Ecuador</p>
          <div class="vr-logo-skills">
             <ul>
               <li data-toggle="tooltip" data-placement="left" data-title="NODEJS" class="nodejs">NodeJS</li>
+              <li data-toggle="tooltip" data-placement="bottom" data-title="ANGULARJS" class="angularjs">angularjs</li>
               <li data-toggle="tooltip" data-placement="right" data-title="MONGODB" class="mongodb">MongoDB</li>
             </ul>
           </div>
@@ -164,10 +165,10 @@ titulo: Vladimir Rodríguez
             </h4>
         <div class="row">
                <div class="col-md-6 text-center">
-                   <p><span class="fa fa-commenting-o fa-2x" style="margin:20px 0;"></span><br>Asesoramiento gratuito; No dude en llamarme o enviarme un correo electrónico si tiene alguna pregunta. </p>
+                   <p><span class="fa fa-commenting-o fa-2x" style="margin:20px 0;"></span><br>No dude en llamarme o enviarme un correo electrónico si tiene alguna pregunta.</p>
                </div>
                <div class="col-md-6 text-center">
-                <p><span class="fa fa-university fa-2x" style="margin:20px 0;"></span><br>Descuentos para organizaciones sin fines de lucro están disponibles.</p>
+                <p><span class="fa fa-university fa-2x" style="margin:20px 0;"></span><br>Asesoramiento gratuito; Descuentos para organizaciones sin fines de lucro están disponibles.</p>
                </div>
             <div class="clear-fix col-lg-8 col-lg-offset-2 text-center">
                 <address class="email">
@@ -190,7 +191,7 @@ titulo: Vladimir Rodríguez
 <section>
    <div class="container">
         <h4 class="overflow text-center">
-              <span class="fa fa-globe pull-left"></span>     EC170130
+              <span class="fa fa-globe pull-left"></span>     EC170146
         </h4>
     </div>
     <div id="map"></div>
@@ -200,9 +201,7 @@ titulo: Vladimir Rodríguez
 
 <footer class="footer">
       <div class="container">
-        <span class="made-with-heart col-lg-12">Copyright © 2015 Vladimir Rodríguez <br>
-            <div class="g-plusone" data-size="tall" data-annotation="inline" data-width="120"></div>
-        </span>
+        <span class="made-with-heart col-lg-12">Copyright © 2015 Vladimir Rodríguez</span>
       </div>
 </footer>
 <!--fin footer-->

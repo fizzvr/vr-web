@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" itemscope itemtype="http://schema.org/LocalBusiness">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +7,26 @@
         <meta name="description" content="<%= @obtenerDescripcion() %>">
         <%- @getBlock('meta').toHTML() %>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta itemprop="name" content="FizzVR">
+        <meta itemprop="description" content="Desarrollador web Backend - Node.js+Mongo.db+Angular.js">
+        <meta itemprop="image" content="https://s.gravatar.com/avatar/da8211973de81d27f756bb3efea650ad?s=100">
+        <meta itemprop="currenciesAccepted" content="USD,PEI,XAG,XAU">
+        <meta itemprop="openingHours" content="Mo-Fr 08:00-17:00">
+        <meta itemprop="paymentAccepted" content="Dinero,Tarjeta de Crédito,Transferencia">
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
         <link rel="shortcut icon" href="favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="https://plus.google.com/+fizzvrGITHUBio" rel="publisher" />
+        <link href="http://plus.google.com/+FizzVRgithubio" rel="publisher" />
         <%- @getBlock('styles').add(@site.cvr1).toHTML() %>
         <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-        <script async defer src="https://apis.google.com/js/platform.js?publisherid=104608480923063156692"></script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
         <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browserupgrade">Tu estas usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">descarga </a> uno mas moderno en  para mejorar tu experiencia en este sitio.</p>
         <![endif]-->
         <%- @content %>
+        <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=104608480923063156692"></script>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<%- @site.apiv3 %>&amp;sensor=false"></script>
         <%- @getBlock('scripts').add(@site.jvr1).toHTML() %>
 	   <script>

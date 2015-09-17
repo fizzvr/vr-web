@@ -8,6 +8,7 @@ function inicio () {
         $('.navbar-toggle:visible').click();
     });
     $('.vr-logo-skills .nodejs').tooltip();
+    $('.vr-logo-skills .angularjs').tooltip();
 	$('.vr-logo-skills .mongodb').tooltip();
     fs();
 	callprettyPhoto();
@@ -26,7 +27,7 @@ function btn_hover_social() {
 	});
 };
 
-function mapa() {
+function mapa_sin_maplace() {
     //Google Map Skin - Get more at http://snazzymaps.com/
     var misOpciones = {
         zoom: 7,
@@ -44,13 +45,14 @@ function mapa() {
 
 $(function maplace() {
     var data = [{
-        lat: -0.2195114,
-        lon: -78.513751,
+        lat: -0.291569,
+        lon: -78.535547,
         title: 'Quito',
-        html: 'FIZZVR',
+        html: '<a href="https://www.google.com/maps/@-0.2630595,-78.5047253,12.75z?hl=es-ES"></a>',
         zoom: 7,
-        show_infowindow: false
-        //icon: 'http://img4.uploadhouse.com/fileuploads/21419/21419864b17f94926d92d1a55761b3f5506d7373.png',
+        show_infowindow: false,
+        icon: 'http://img4.uploadhouse.com/fileuploads/21419/21419864b17f94926d92d1a55761b3f5506d7373.png',
+        animation: google.maps.Animation.DROP
     }];
     var styles =
     new Maplace({
