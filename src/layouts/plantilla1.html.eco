@@ -27,7 +27,7 @@
         <![endif]-->
         <%- @content %>
         <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=104608480923063156692"></script>
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<%- @site.apiv3 %>&amp;sensor=false"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<%- @site.apiv3 %>"></script>
         <%- @getBlock('scripts').add(@site.jvr1).toHTML() %>
 	   <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
