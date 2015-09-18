@@ -317,7 +317,7 @@ a:focus {
 .contact-section {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding-top: 80px;
     color: #f8f8f8;
     background: url(../ivr/contacto.jpg) no-repeat bottom center scroll;
@@ -391,8 +391,8 @@ a:focus {
     text-align: center;
     color: #aaa;
     font-size: 14px;
-    padding: 15px 0px;
-    background-color: #f8f8f8;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .footer .made-with-heart a{
@@ -425,20 +425,23 @@ a:focus {
     color: #fff;
 }
 */
+/*
 
+//bootstrap regla
 .list-inline {
     padding-top: 35px;
 }
+*/
 
 /*totop*/
 #toTop {
 	width:47px;
 	height:47px;
 	background:url('../ivr/back-top-btn.png') no-repeat;
-	text-align:center;
+/*	text-align:center;*/
 	position:fixed;
-	bottom:10px;
-	right:5px;
+	bottom:75px;
+	right:20px;
 	cursor:pointer;
 	display:none;
 	text-indent:-9999px;
