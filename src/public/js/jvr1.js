@@ -45,16 +45,16 @@ function mapa_sin_maplace() {
 
 $(function maplace() {
     var data = [{
-        lat: -0.291569,
+        lat: -1.75,
         lon: -78.535547,
         title: 'Quito',
-        zoom: 7,
-        show_infowindow: false,
-        icon: 'http://img4.uploadhouse.com/fileuploads/21419/21419864b17f94926d92d1a55761b3f5506d7373.png',
-        animation: google.maps.Animation.DROP
+        zoom: 6,
+        show_infowindow: true
+        //icon: 'http://img4.uploadhouse.com/fileuploads/21419/21419864b17f94926d92d1a55761b3f5506d7373.png',
+        //animation: google.maps.Animation.DROP
     }];
-    var styles =
     new Maplace({
+        show_markers: false,
         locations: data,
         map_div: "#map",
         generate_controls: false,
