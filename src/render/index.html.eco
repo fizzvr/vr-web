@@ -171,11 +171,7 @@ titulo: Vladimir Rodríguez
                 <p><span class="fa fa-university fa-2x" style="margin:20px 0;"></span><br>Asesoramiento gratuito; Descuentos para organizaciones sin fines de lucro están disponibles.</p>
                </div>
             <div class="clear-fix col-lg-8 col-lg-offset-2 text-center">
-                <address class="email">
-                    Vladimir Rodríguez
-					<br><abbr title="Celular">C:</abbr> (+593) 983288589
-					<br><strong><a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;">&#102;i&#00122;&#122;&#118;&#00114;&#64;&#00103;&#00109;&#0097;&#105;&#108;&#46;&#99;&#111;&#00109;</a></strong>
-				</address>
+               <iframe width="750" height="400" frameborder="0" style="border:10px solid #f8f8f8;" src="https://www.google.com/maps/embed/v1/place?q=FIzzVR&key=<%- @site.apiv3 %>" allowfullscreen></iframe>
                 <ul class="list-inline banner-social-buttons">
                     <li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="btn btn-default btn-lg"><span class="vr-web-social vr-web-social-github"></span><span class="center-block">Github</span></a>
                     </li>
@@ -189,19 +185,18 @@ titulo: Vladimir Rodríguez
     <!--fin contacto-->
 
 <section>
-   <div class="container">
+    <div class="container">
         <h4 class="overflow text-center">
               <span class="fa fa-globe pull-left"></span>     EC170146
         </h4>
     </div>
     <div id="map"></div>
-
 </section>
 <!--fin map-->
 
 <footer class="footer">
       <div class="container">
-        <span class="made-with-heart col-lg-12">Copyright © 2015 Vladimir Rodríguez</span>
+        <span class="made-with-heart col-lg-12">Copyright © 2015 Vladimir Rodríguez <br> <a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;">&#102;i&#00122;&#122;&#118;&#00114;&#64;&#00103;&#00109;&#0097;&#105;&#108;&#46;&#99;&#111;&#00109;</a></span>
       </div>
 </footer>
 <!--fin footer-->
