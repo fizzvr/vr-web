@@ -3,7 +3,7 @@
 Proyecto 1F4
 ================
 
-![Alt text](http://img8.uploadhouse.com/fileuploads/21439/21439888ad02f473d6b0307d3c9d0fd73670d8ee.jpg)
+![1F4](http://img8.uploadhouse.com/fileuploads/21439/21439888ad02f473d6b0307d3c9d0fd73670d8ee.jpg)
 
 
 NPM | Descripción | Instalación
