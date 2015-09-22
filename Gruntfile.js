@@ -28,27 +28,27 @@ module.exports = function(grunt) {
 					flatten: true,
 					src: ["bower_components/jquery/dist/jquery.min.js",
 					"bower_components/jquery/dist/jquery.min.map"],
-					dest: './out/act/jquery/'
+					dest: '../fizzvr.github.io/act/jquery/'
 				},
 				//bootstrap - responsive
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/bootstrap/dist/js/bootstrap.min.js"],
-					dest: './out/act/bs3/'
+					dest: '../fizzvr.github.io/act/bs3/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/bootstrap/dist/css/bootstrap.min.css",
 						"bower_components/bootstrap/dist/css/bootstrap-theme.min.css"],
-					dest: './out/act/bs3/css/'
+					dest: '../fizzvr.github.io/act/bs3/css/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/bootstrap/dist/fonts/*"],
-					dest: './out/act/bs3/fonts/'
+					dest: '../fizzvr.github.io/act/bs3/fonts/'
 				},
 				//flexslider - slider de imágenes
 				{
@@ -56,66 +56,66 @@ module.exports = function(grunt) {
 					flatten: true,
 					src: ["bower_components/flexslider/jquery.flexslider.js",
                           "bower_components/flexslider/flexslider.css"],
-					dest: './out/act/fs/'
+					dest: '../fizzvr.github.io/act/fs/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src:["bower_components/flexslider/fonts/*"],
-					dest: './out/act/fs/fonts/'
+					dest: '../fizzvr.github.io/act/fs/fonts/'
 				},
 				//prettyPhoto - caja de imagenes
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"],
-					dest: './out/act/pp/'
+					dest: '../fizzvr.github.io/act/pp/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/jquery-prettyPhoto/css/*"],
-					dest: './out/act/pp/css/'
+					dest: '../fizzvr.github.io/act/pp/css/'
 				},
 				{
 					expand: true,
 					cwd: 'bower_components/jquery-prettyPhoto/images/prettyPhoto/',
 					src: ['**'],
-					dest: './out/act/pp/images/prettyPhoto/'
+					dest: '../fizzvr.github.io/act/pp/images/prettyPhoto/'
 				},
                 //font-awesome - iconos, fuente
 				{
 				    expand: true,
 					cwd: 'bower_components/font-awesome/css/',
 					src: ['**'],
-					dest: './out/act/fa/css/'
+					dest: '../fizzvr.github.io/act/fa/css/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src:["bower_components/font-awesome/fonts/*"],
-					dest: './out/act/fa/fonts/'
+					dest: '../fizzvr.github.io/act/fa/fonts/'
 				},
                 //lazy load - imagenes
 				{
 				    expand: true,
                     flatten: true,
 					src: ['bower_components/jquery.lazyload/*.js'],
-					dest: './out/act/ll/'
+					dest: '../fizzvr.github.io/act/ll/'
 				},
                 // TODO: isotope - Filter & sort magical layouts
 				{
 				    expand: true,
                     flatten: true,
 					src: ['bower_components/isotope/dist/isotope.pkgd.min.js'],
-					dest: './out/act/is/'
+					dest: '../fizzvr.github.io/act/is/'
 				},
                 //maplace - interactuar con google maps
 				{
 				    expand: true,
                     flatten: true,
 					src: ['bower_components/maplace.js/src/*.min.js'],
-					dest: './out/act/ma/'
+					dest: '../fizzvr.github.io/act/ma/'
 				}
 				]
 			}
@@ -140,7 +140,7 @@ module.exports = function(grunt) {
                     preserveComments: 'some'
                 },
                 files: {
-                    'out/jvr/vr1.min.js': ['src/public/js/jvr1.js']
+                    '../fizzvr.github.io/jvr/vr1.min.js': ['src/public/js/jvr1.js']
                 }
             }
         },
@@ -159,7 +159,7 @@ module.exports = function(grunt) {
                    '*/\n\n'
                 },
                 files: {
-                  'out/cvr/vr1.min.css': ['src/public/css/cvr1.css']
+                  '../fizzvr.github.io/cvr/vr1.min.css': ['src/public/css/cvr1.css']
                 }
             }
         },
