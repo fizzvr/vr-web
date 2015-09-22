@@ -22,7 +22,6 @@
     "moment": "~2.8.3"
   },
   "optionalDependencies": {
-    "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-livereload": "^2.6.1"
   },
   "devDependencies": {
