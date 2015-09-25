@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fizzvr/vr-web.svg?branch=master)](https://travis-ci.org/fizzvr/vr-web)
+
 ![nodejs](http://img1.uploadhouse.com/fileuploads/21514/21514611857b7f818ed2ff4e7d12a3e4093ea280.jpg)
 
 Proyecto 1F4
@@ -24,6 +26,3 @@ NPM | Descripción | Instalación
 
 1. Abrir el navegador [http://localhost:9778/](http://localhost:9778/)
 1. Comenzar editando el directorio `src`
-
-[![Build Status](http://img.shields.io/travis/fizzvr/vr-web/master.svg?style=flat)](https://travis-ci.org/fizzvr/vr-web)
-
