@@ -86,11 +86,10 @@ titulo: Vladimir Rodríguez
 </div>
 </section>
 <!-- fin vr-web-proyectos -->
-
 <section id="id-desarrollando" class="content-section">
   <div class="container text-center">
     <h4 class="title-bg">
-      <span class="fa fa-gg pull-left"></span>Desarrollando<span class="fa fa-gg pull-right"></span>
+      <span class="fa fa-gg pull-left"></span>Desarrollando <span class="live"></span> <span class="fa fa-gg pull-right"></span>
     </h4>
     <div class="row">
       <div class="col-md-4">
@@ -100,7 +99,7 @@ titulo: Vladimir Rodríguez
           <table class="table table-bordered table-striped table-condensed">
             <thead>
               <tr>
-                <th class="text-center">Curso</th>
+                <th class="text-center">Proyecto</th>
               </tr>
             </thead>
             <tbody>
@@ -157,6 +156,8 @@ titulo: Vladimir Rodríguez
 </div>
 </section>
 <!--fin vr-web-todo-->
+
+
 
  <section id="id-contacto" class="contact-section">
       <div class="container">

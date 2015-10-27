@@ -1,4 +1,5 @@
 $(document).on("ready", inicio);
+
 function inicio () {
      $("img.lazy").lazyload({
         event : "scrollstop"

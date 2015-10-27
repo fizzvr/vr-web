@@ -141,7 +141,12 @@ a:focus {
 
 }
 /*INTRO*/
-
+.live {
+    background: url("../ivr/live.gif");
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+}
 .intro {
     display: table;
     width: 100%;
