@@ -455,6 +455,7 @@ a:focus {
 .followers {
     padding: 8px;
 }
+/*
 
 .vr-web-social
 {
@@ -472,17 +473,14 @@ a:focus {
 {
     background-position: 0 0;
 }
-/*
 .vr-web-social-github:hover
 {
     background-position: 0 -30px;
 }
-*/
 .vr-web-social-twitter
 {
     background-position: -32px 0;
 }
-/*
 .vr-web-social-twitter:hover
 {
     background-position: -35px -30px;
@@ -574,3 +572,25 @@ a.item-zoom-link {
     width: 195px;
   margin-top: 50px;
 }
+
+.direccion {
+    position: relative;
+}
+
+.direccion--overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(#f8f8f8 60%, transparent);
+    padding-top: 25px;
+    padding-bottom: 110px;
+    color: #000;
+    border-radius: 10px;
+}
+.direccion--map {
+    width: 100%;
+    height: 550px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+

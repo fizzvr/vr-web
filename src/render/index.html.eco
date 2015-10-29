@@ -19,8 +19,7 @@ titulo: Vladimir Rodríguez
          <li class="hidden"><a href="#page-top"></a></li>
          <li class="page-scroll"><a href="#id-proyectos">Proyectos</a></li>
          <li class="page-scroll"><a href="#id-desarrollando">Desarrollando</a></li>
-         <li class="page-scroll"><a href="#id-contacto"><span class="fa fa-hand-pointer-o"></span></a></li>
-         <!--         <li><a data-toggle="modal" data-target="#vr-web-contacto" href="#vr-web-contacto"><span class="glyphicon glyphicon-envelope"></span></a></li>-->
+         <li class="page-scroll"><a href="#id-contacto"><span class="fa fa-signal"></span></a></li>
          <li class="followers"><a aria-label="Sìgueme @fizzvr en GitHub" data-count-aria-label="# seguidores en GitHub" data-count-api="/users/fizzvr#followers" data-count-href="/fizzvr/followers" data-style="mega" href="https://github.com/fizzvr" class="github-button">@fizzvr</a></li>
        </ul>
      </div>
@@ -63,7 +62,7 @@ titulo: Vladimir Rodríguez
   </h4>
   <div class="row">
   <% for pro in @getCollection("proyectos_finalizados").toJSON(): %>
-  <div class="col-sm-6 col-md-3 text-center">
+  <div class="col-sm-6 col-md-3 text-centear">
     <!-- Proyecto N -->
     <div class="thumbnail">
       <span class="gallery-icons">
@@ -73,11 +72,22 @@ titulo: Vladimir Rodríguez
         <img data-original="ivr/proyectos/gallery-img-<%= pro.hex %>-full.jpg" alt="Tabla de contenidos <%= pro.hex %>" class="lazy img-thumbnail">
       </a>
       <div class="caption">
-       <span class="pad"><a aria-label="Demostración" data-style="mega" data-icon="mega-octicon octicon-octoface" href="<%= pro.paginagh %>" class="github-button">DEMO</a></span>
-       <br>
-<!--       <span class="pad"><a aria-label="Demo <%= pro.repositorio %>" href="<%= pro.paginagh %>" class="btn btn-outlined btn-success"><span class="octicon octicon-octoface"></span>  Demo</a></span><br>-->
+<span class="pads">
+    <a href=""  class="github-button" data-icon="octicon-book" target="_blank">Libro</a>
+    <a href=""  class="github-button" data-icon="octicon-file-pdf">Pdf</a>
+    <a href=""  class="github-button" data-icon="octicon-file-text">ePub</a>
+    <a href=""  class="github-button" data-icon="octicon-file-zip">mobi</a>
+    <a href="<%= pro.paginagh %>"  class="github-button" data-icon="octicon-device-desktop" target="_blank">Diapositiva</a>
+    <a href="https://github.com/<%= pro.repositorio %>/archive/master.zip" class="github-button" data-icon="octicon-cloud-download">Master</a>
+     </span>
+<!--
+      <span class="pad"><a href=""  class="github-button" data-style="" data-icon="octicon-book" target="_blank"><span class="fa fa-envelope"></span><span class="center-block">PDF</span></a></span>
+       <span class="pad"><a href=""  class="github-button" data-style="" data-icon="octicon-book" target="_blank"><span class="fa fa-envelope"></span><span class="center-block">ePub</span></a></span>
+        <span class="pad"><a href=""  class="github-button" data-style="" data-icon="octicon-book" target="_blank"><span class="fa fa-envelope"></span><span class="center-block">mobi</span></a></span>
+        <span class="pad"><a href=""  class="github-button" data-style="" data-icon="octicon-book" target="_blank"><span class="fa fa-envelope"></span><span class="center-block">Diapositiva</span></a></span>
        <span class="pad"><a aria-label="Star <%= pro.repositorio %> on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/<%= pro.repositorio %>#stargazers_count" data-count-href="/<%= pro.repositorio %>/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/<%= pro.repositorio %>" class="github-button">Star</a></span>
        <span class="pad"><a aria-label="Download <%= pro.repositorio %> on GitHub" data-style="mega" data-icon="octicon-cloud-download" href="https://github.com/<%= pro.repositorio %>/archive/master.zip" class="github-button">Descargar</a></span>
+-->
      </div>
     </div>
   </div>
@@ -124,6 +134,7 @@ titulo: Vladimir Rodríguez
           <% if pro.estado is 'desarrollando': %>
           <li><a href="https://github.com/<%= pro.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt="<%= pro.repositorio %>"></a></li>
           <li><a href="https://github.com/<%= pro.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt="<%= pro.repositorio %>"></a></li>
+          <li><a href="https://github.com/<%= pro.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= pro.hex %>-3.jpg" alt="<%= pro.repositorio %>"></a></li>
           <% end %>
           <% end %>
         </ul>
@@ -137,7 +148,7 @@ titulo: Vladimir Rodríguez
 <section id="id-todo" class="content-section">
   <div class="container">
     <h4 class="title-bg text-center">
-      <span class="fa fa-gg pull-left"></span>Pendientes<span class="fa fa-gg pull-right"></span>
+      <span class="fa fa-gg pull-left"></span>por hacer<span class="fa fa-gg pull-right"></span>
     </h4>
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
@@ -165,20 +176,25 @@ titulo: Vladimir Rodríguez
               <span class="fa fa-gg pull-left"></span>Contacto<span class="fa fa-gg pull-right"></span>
             </h4>
         <div class="row">
-               <div class="col-md-6 text-center">
-                   <p><span class="fa fa-commenting-o fa-2x" style="margin:20px 0;"></span><br>No dude en llamarme o enviarme un correo electrónico si tiene alguna pregunta.</p>
-               </div>
-               <div class="col-md-6 text-center">
-                <p><span class="fa fa-university fa-2x" style="margin:20px 0;"></span><br>Asesoramiento gratuito; Descuentos para organizaciones sin fines de lucro están disponibles.</p>
-               </div>
             <div class="clear-fix col-lg-8 col-lg-offset-2 text-center">
+                <div class="direccion">
+                    <div class="direccion--overlay">
+                        <strong>FizzVR - Vladimir Rodríguez</strong>
+                        <div>Puente de Guajaló Av. Simón Bolivar,</div>
+                        <div>Distrito metropolitano de Quito</div>
+                        <div>Ecuador, EC 170146</div>
+                    </div>
+                </div>
+               <iframe allowfullscreen class="direccion--map" frameborder="0" scrollwheel="false" style="border:4px solid #f8f8f8;pointer-events:none" src="https://www.google.com/maps/embed/v1/place?q=FIzzVR&key=<%- @site.apiv3 %>"></iframe>
+               <br /><small><a href="https://www.google.com/maps/place/FizzVR/data=!4m2!3m1!1s0x91d5989dadfed297:0xe1cbe556996d4852?gl=EC&hl=es-419" style="color:black;">Ver mapa completo</a></small>
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="btn btn-default btn-lg"><span class="vr-web-social vr-web-social-github"></span><span class="center-block">Github</span></a>
+                    <li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="btn btn-default btn-lg" target="_blank"><span class="fa fa-github fa-2x"></span><span class="center-block">Github</span></a>
                     </li>
-                    <li><a href="https://twitter.com/fizzvr" data-toggle="tooltip" data-placement="top" title="Twitter" class="btn btn-default btn-lg"><span class="vr-web-social vr-web-social-twitter"></span><span class="center-block">Twitter</span></a>
+                    <li><a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;" data-toggle="tooltip" data-placement="top" title="Twitter" class="btn btn-default btn-lg"><span class="fa fa-envelope-o fa-2x"></span><span class="center-block">correo</span></a>
+                    </li>
+                    <li><a href="tel:+593983288589" data-toggle="tooltip" data-placement="top" title="Twitter" class="btn btn-default btn-lg"><span class="fa fa-phone fa-2x"></span><span class="center-block">Llamar</span></a>
                     </li>
                 </ul>
-               <iframe width="100%" height="400" style="border:10px solid #f8f8f8;" src="https://www.google.com/maps/embed/v1/place?q=FIzzVR&key=<%- @site.apiv3 %>" allowfullscreen></iframe><br /><small><a href="https://www.google.com/maps/place/FizzVR/data=!4m2!3m1!1s0x91d5989dadfed297:0xe1cbe556996d4852?gl=EC&hl=es-419" style="color:black;">Ver mapa completo</a></small>
             </div>
         </div>
       </div>
@@ -197,7 +213,7 @@ titulo: Vladimir Rodríguez
 
 <footer class="footer">
       <div class="container">
-        <span class="made-with-heart col-lg-12">Copyright © 2015 Vladimir Rodríguez <br> <a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;">&#102;i&#00122;&#122;&#118;&#00114;&#64;&#00103;&#00109;&#0097;&#105;&#108;&#46;&#99;&#111;&#00109;</a></span>
+        <span class="made-with-heart col-lg-12">Copyright © 2015 Vladimir Rodríguez</span>
       </div>
 </footer>
 <!--fin footer-->

@@ -4,7 +4,7 @@ function inicio () {
      $("img.lazy").lazyload({
         event : "scrollstop"
     });
-    // Closes the Responsive Menu on Menu Item Click
+    // Cierra el menu responsive al evento click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
@@ -13,20 +13,20 @@ function inicio () {
 	$('.vr-logo-skills .mongodb').tooltip();
     fs();
 	callprettyPhoto();
-    btn_hover_social();
+//    btn_hover_social();
 
 }
-function btn_hover_social() {
-    // interesante cambio - verificar por que no se hizo en css
-	$('.btn-default').hover(function(){
-			$(this).find('.vr-web-social-github').css("background-position","0 -32px");
-            $(this).find('.vr-web-social-twitter').css("background-position","-32px -32px");
-	},
-		function(){
-			$(this).find('.vr-web-social-github').css("background-position","0 0");
-            $(this).find('.vr-web-social-twitter').css("background-position","-32px 0");
-	});
-};
+//function btn_hover_social() {
+//    // interesante cambio - verificar por que no se hizo en css
+//	$('.btn-default').hover(function(){
+//			$(this).find('.vr-web-social-github').css("background-position","0 -32px");
+//            $(this).find('.vr-web-social-twitter').css("background-position","-32px -32px");
+//	},
+//		function(){
+//			$(this).find('.vr-web-social-github').css("background-position","0 0");
+//            $(this).find('.vr-web-social-twitter').css("background-position","-32px 0");
+//	});
+//};
 
 function mapa_sin_maplace() {
     //Google Map Skin - Get more at http://snazzymaps.com/
