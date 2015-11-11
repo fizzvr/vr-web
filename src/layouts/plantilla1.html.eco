@@ -37,5 +37,13 @@
           ga('create', 'UA-<%= @site.anal %>', 'auto');
           ga('send', 'pageview');
         </script>
+<!--
+        <script>
+          ((window.gitter = {}).chat = {}).options = {
+            room: 'fizzvr/ClientesVR'
+          };
+        </script>
+        <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+-->
     </body>
 </html>
