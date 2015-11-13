@@ -510,6 +510,7 @@ a:focus {
 }
 .banner-social-buttons {
     margin-top: 0;
+    padding-top: 20px;
 }
 
 @media(max-width:1199px) {
@@ -593,11 +594,6 @@ a.item-zoom-link {
     box-shadow: 0 2px 2px rgba(0,0,0,0.25);
     border-radius: 10px;
 }
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
-}
 .no-video .video-container video,
 .touch .video-container video {
     display: none;
@@ -646,5 +642,16 @@ a.item-zoom-link {
     top: 35%;
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
+}
+.intro2 {
+    height: 100%;
+    padding: 0;
+    margin-bottom: 0;
+     border-right: none;
+    border-left: none;
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: rgba(127, 195, 98, 1)5px 10px 90px;
 }

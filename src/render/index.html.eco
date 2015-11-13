@@ -28,6 +28,53 @@ titulo: Vladimir Rodríguez
 </header>
 <!--fin header-->
 
+<section class="intro2 jumbotron">
+    <div class="video-container">
+<!--
+       <div class="share-buttons-group affix-top">
+            <a href="https://plus.google.com/share?url=http://fizzvr.githu.io" target="_blank" class="btn-track" data-event="GoogleShare_Click">
+                <div id="google-button" class="share-button-banner">
+                    <div class="share-container">
+                        <i class="fa fa-google-plus fa-2x share-content"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+-->
+        <div class="title-container">
+            <div class="headlsine">
+                <h1 class="brand-heading">Desarrollador web backend</h1>
+                <p class="intro-text" style="padding-top:15px;">Quito - Ecuador</p>
+                <div class="vr-logo-skills">
+                    <ul>
+                        <li data-toggle="tooltip" data-placement="left" data-title="NODEJS" class="nodejs">NodeJS</li>
+                        <li data-toggle="tooltip" data-placement="bottom" data-title="ANGULARJS" class="angularjs">angularjs</li>
+                        <li data-toggle="tooltip" data-placement="right" data-title="MONGODB" class="mongodb">MongoDB</li>
+                    </ul>
+                </div>
+                 <div class="page-scroll">
+                    <a href="#id-proyectos" class="btn btn-circle">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="filter" style="width: 1009px;"></div>
+        <video autoplay="" loop="" class="fillWidth fadeIn animated" poster="ivr/Type.jpg" style="width: 1009px;">
+            <source src="ivr/MP4/Type.mp4" type="video/mp4">Tu navegador no soporta la etiqueta de video. Te sigiero que actualizes a un navegador más moderno.
+            <source src="ivr/WEBM/Type.webm" type="video/webm">Tu navegador no soporta la etiqueta de video. Te sigiero que actualizes a un navegador más moderno.
+        </video>
+        <div class="poster hidden">
+            <img src="ivr/Type.jpg" alt="" style="width: 1009px;">
+        </div>
+<!--
+        <div style="position: absolute; bottom: 10px; left: 20px;">
+            <a id="" class="btn btn-success btn-download" data-name="" href="www.google.com.ec" style="background-color: transparent; border-color: #ffffff; border: 1px solid #fff; font-size: 12px" data-location="top"><i class="fa fa-play"></i> Detener Música</a>
+        </div>
+-->
+    </div>
+</section>
+<!--
 <section class="intro">
   <div class="intro-body">
     <div class="container">
@@ -53,6 +100,7 @@ titulo: Vladimir Rodríguez
     </div>
   </div>
 </section>
+-->
 <!--fin vr-intro-->
 
 <section id="id-proyectos" class="content-section">

@@ -34,7 +34,7 @@ function inicio () {
             bottom: 200
         }
     });
-
+//    maplace();
 }
 //function btn_hover_social() {
 //    // interesante cambio - verificar por que no se hizo en css
@@ -112,7 +112,7 @@ function mapa_sin_maplace() {
     });
 };
 
-$(function maplace() {
+function maplace() {
     var data = [{
         lat: -1.75,
         lon: -78.535547,
@@ -135,7 +135,7 @@ $(function maplace() {
             scrollwheel: false
         }
     }).Load();
-});
+};
 //maplace
 
 
