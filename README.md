@@ -1,11 +1,11 @@
 [![Build Status](https://travis-ci.org/fizzvr/vr-web.svg?branch=master)](https://travis-ci.org/fizzvr/vr-web)
 
-![nodejs](http://img1.uploadhouse.com/fileuploads/21514/21514611857b7f818ed2ff4e7d12a3e4093ea280.jpg)
+![nodejs](http://k46.kn3.net/5/0/C/B/3/B/BB7.jpg)
 
 Proyecto 1F4
 ================
 
-![1F4](http://img8.uploadhouse.com/fileuploads/21439/21439888ad02f473d6b0307d3c9d0fd73670d8ee.jpg)
+![1F4](http://k46.kn3.net/8/6/1/4/B/5/3D4.jpg)
 
 
 NPM | Descripción | Instalación
