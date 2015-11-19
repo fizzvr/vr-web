@@ -1,7 +1,6 @@
 language: node_js
 node_js: "4.2.1"
-before_install: npm install -g grunt-cli; npm install -g bower;
-before_script: "bower install --allow-root"
+before_install: npm install -g grunt-cli;
 notifications:
   email:
     recipients:
