@@ -33,6 +33,6 @@
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server",
-    "test": "grunt dist-full"
+    "test": "grunt dist-jscss"
   }
 }
