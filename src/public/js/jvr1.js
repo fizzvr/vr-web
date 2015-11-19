@@ -34,7 +34,7 @@ function inicio () {
             bottom: 200
         }
     });
-//    maplace();
+    maplace();
 }
 //function btn_hover_social() {
 //    // interesante cambio - verificar por que no se hizo en css
