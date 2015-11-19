@@ -104,19 +104,25 @@ module.exports = function(grunt) {
 					dest: '../fizzvr.github.io/act/ll/'
 				},
                 // TODO: isotope - Filter & sort magical layouts
-				{
-				    expand: true,
-                    flatten: true,
-					src: ['bower_components/isotope/dist/isotope.pkgd.min.js'],
-					dest: '../fizzvr.github.io/act/is/'
-				},
+//				{
+//				    expand: true,
+//                    flatten: true,
+//					src: ['bower_components/isotope/dist/isotope.pkgd.min.js'],
+//					dest: '../fizzvr.github.io/act/is/'
+//				},
                 //maplace - interactuar con google maps
 				{
 				    expand: true,
                     flatten: true,
 					src: ['bower_components/maplace.js/src/*.min.js'],
 					dest: '../fizzvr.github.io/act/ma/'
-				}
+				},
+                {
+                    expand: true,
+                    flatten: true,
+                    src : ['bower_components/jquery-easing-original/jquery.easing.min.js'],
+                    dest: '../fizzvr.github.io/act/ea/'
+                }
 				]
 			}
 		},

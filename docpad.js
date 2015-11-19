@@ -29,7 +29,7 @@ docpadConfig = {
                    "act/ll/jquery.scrollstop.js",
                    "act/fs/jquery.flexslider.js",
                    "act/pp/jquery.prettyPhoto.js",
-                   "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
+                   "act/ea/jquery.easing.min.js",
                    "act/ma/maplace-0.1.3.min.js",
                    "jvr/vr1.min.js"],
             apiv3: ["AIzaSyAHoa3zy3vwa8rYshYCdz-sMqjI9_1Jp60"],
