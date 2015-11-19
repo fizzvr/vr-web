@@ -49,7 +49,7 @@ docpadConfig = {
 			if (this.document.titulo) {
 				return "" + this.site.titulo + " - " + this.document.titulo;
 			} else {
-				return "" + this.site.titulo + " - Programador";
+				return "" + this.site.titulo + " - Desarrollador";
 			}
 		},
 		obtenerDescripcion: function() {
@@ -131,12 +131,6 @@ docpadConfig = {
 				}
 			});
 			return proc.on('exit', next);
-		}
-	},
-	plugins: {
-		ghpages: {
-			deployRemote: 'salida',
-        	deployBranch: 'master'
 		}
 	}
 };

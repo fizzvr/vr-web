@@ -198,8 +198,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('dist-activos', ['copy']);
 	// distribucion FULL
 	grunt.registerTask('dist-full', ['dist-activos', 'dist-jscss']);
-    // Travis
-	grunt.registerTask('travis', ['dist-jscss']);
 	// tarea por default
 	grunt.registerTask('default', ['dist-full']);
 };

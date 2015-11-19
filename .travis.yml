@@ -1,3 +1,9 @@
 language: node_js
-node_js: "0.12"
+node_js: "4.2.1"
 before_install: npm install -g docpad; npm install -g grunt-cli; npm install -g bower;
+before_script: "node_modules/docpad/bin/docpad-server"
+script: "npm test"
+notifications:
+  email:
+    recipients:
+      - fizzvr@gmail.com
