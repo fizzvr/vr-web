@@ -14,7 +14,7 @@ docpadConfig = {
 		site: {
 			url: "http://fizzvr.github.io",
 			titulo: "FizzVR",
-			descripcion: "Desarrollador Web BACKEND Quito Ecuador.",
+			descripcion: "Desarrollador Quito Ecuador",
 			keywords: "fizzvr, vladimir, vladimir rodríguez, rodríguez, quito, ecuador, desarrollador web, desarrollo web, backend, programador",
 			autor: "fizzvr",
 			email: "fizzvr@gmail.com",
