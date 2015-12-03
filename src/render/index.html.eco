@@ -62,8 +62,8 @@ titulo: Vladimir Rodríguez
         </div>
         <div class="filter" style="width: 1009px;"></div>
         <video autoplay="" loop="" class="fillWidth fadeIn animated" poster="ivr/Type.jpg" style="width: 1009px;">
-            <source src="ivr/MP4/Type.mp4" type="video/mp4">Tu navegador no soporta la etiqueta de video. Te sigiero que actualizes a un navegador más moderno.
-            <source src="ivr/WEBM/Type.webm" type="video/webm">Tu navegador no soporta la etiqueta de video. Te sigiero que actualizes a un navegador más moderno.
+            <source src="ivr/MP4/Type.mp4" type="video/mp4">Tu navegador no soporta la etiqueta de video. Te sugiero que actualizes a un navegador más moderno.
+            <source src="ivr/WEBM/Type.webm" type="video/webm">Tu navegador no soporta la etiqueta de video. Te sugiero que actualizes a un navegador más moderno.
         </video>
         <div class="poster hidden">
             <img src="ivr/Type.jpg" alt="" style="width: 1009px;">
