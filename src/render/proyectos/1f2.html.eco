@@ -1,0 +1,6 @@
+---
+estado: todo
+titulo: "Web app con AngularJs, NodeJS y MongoDB"
+hex: 1f2
+---
+<img src="<%= @site.url %>/ivr/proyectos/galley-img-<%= @document.hex %>-full.jpg">

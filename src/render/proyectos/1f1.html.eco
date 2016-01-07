@@ -1,0 +1,6 @@
+---
+estado: "todo"
+titulo: "NodeJS"
+hex: 1f1
+---
+<img src="ivr/proyectos/galley-img-<%= @document.hex %>-full.jpg">
