@@ -86,7 +86,7 @@ docpadConfig = {
 	        }
 	      }, [
 	        {
-	              title: -1,
+	              title: -1
 	        }
 	      ]);
 	    },
@@ -98,8 +98,7 @@ docpadConfig = {
 	        }
 	      }, [
 	        {
-                title: 1,
-	            date: -1
+                hex: 1
 	        }
 	      ]);
 	    },
