@@ -26,8 +26,8 @@ module.exports = function(grunt) {
 				{
 					expand: true,
 					flatten: true,
-					src: ["bower_components/jquery/dist/jquery.min.js",
-					"bower_components/jquery/dist/jquery.min.map"],
+					src: ["bower_components/jquery/jquery.min.js",
+					"bower_components/jquery/jquery.min.map"],
 					dest: '../fizzvr.github.io/act/jquery/'
 				},
 				//bootstrap - responsive
