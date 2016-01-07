@@ -202,7 +202,7 @@ titulo: Vladimir Rodríguez
           <% for i in [0...Math.min(10,proximamente.length)]: %>
               <% document = proximamente.at(i).toJSON() %>
               <% if document.estado is 'todo': %>
-          <a href="<%= document.url %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= document.titulo %>" class="list-group-item list-group-item-warning <%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>"><span class="fa fa-cog fa-spin pull-left"></span><%= document.titulo %><span class="fa fa-cog fa-spin pull-right"></span></a>
+          <a href="<%= document.url %>?iframe=true&amp;width=420&amp;height=600" data-rel="prettyPhoto" title="<%= document.titulo %>" class="list-group-item list-group-item-warning <%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>"><span class="fa fa-cog fa-spin pull-left"></span><%= document.titulo %><span class="fa fa-cog fa-spin pull-right"></span></a>
           <% end %>
           <% end %>
         </div>
