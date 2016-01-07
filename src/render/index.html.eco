@@ -44,8 +44,9 @@ titulo: Vladimir Rodríguez
         <div class="title-container">
             <div class="headlsine">
                 <h1 class="brand-heading">Desarrollador</h1>
-                <div class="g-page" data-href="//plus.google.com/u/0/104608480923063156692" data-width="200" data-showtagline="false"  data-showcoverphoto="false" data-theme="light" data-rel="publisher"></div>
-                <p class="intro-text" style="padding-top:15px;">Quito - Ecuador</p>
+                    <div class="oculto">
+                        <div class="g-page" data-width="200" data-href="//plus.google.com/u/0/104608480923063156692" data-showcoverphoto="false" data-theme="light" data-rel="publisher"></div>
+                    </div>
                 <div class="vr-logo-skills">
                     <ul>
                         <li data-toggle="tooltip" data-placement="left" data-title="NODEJS" class="nodejs">NodeJS</li>
@@ -53,7 +54,7 @@ titulo: Vladimir Rodríguez
                         <li data-toggle="tooltip" data-placement="right" data-title="MONGODB" class="mongodb">MongoDB</li>
                     </ul>
                 </div>
-                 <div class="page-scroll">
+             <div class="page-scroll">
                     <a href="#id-proyectos" class="btn btn-circle">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
@@ -161,12 +162,9 @@ titulo: Vladimir Rodríguez
                 <th class="text-center">Proyecto</th>
               </tr>
             </thead>
-            <tbody>
-              <% for pro,i in @getCollection('proyectos_desarrollando').toJSON(): %>
-              <% break if i > 3 %>
-              <% if pro.estado is 'desarrollando': %>
+            <tbody><% desarrollando = @getCollection('proyectos_desarrollando') %><% for i in [0...Math.min(5,desarrollando.length)]: %><% documento = desarrollando.at(i).toJSON() %><% if documento.estado is 'dev': %>
               <tr>
-                <td><a href="https://github.com/<%= pro.repositorio %>/commits"><%= pro.titulo %></a></td>
+                <td><a href="https://github.com/<%= documento.repositorio %>/commits"><%= documento.titulo %></a></td>
               </tr>
               <% end %>
               <% end %>
@@ -178,12 +176,10 @@ titulo: Vladimir Rodríguez
     <div class="col-md-8">
       <div class="flexslider">
         <ul class="slides">
-          <% for pro,i in @getCollection('proyectos_desarrollando').toJSON(): %>
-          <% break if i > 3 %>
-          <% if pro.estado is 'desarrollando': %>
-          <li><a href="https://github.com/<%= pro.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= pro.hex %>-1.jpg" alt="<%= pro.repositorio %>"></a></li>
-          <li><a href="https://github.com/<%= pro.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= pro.hex %>-2.jpg" alt="<%= pro.repositorio %>"></a></li>
-          <li><a href="https://github.com/<%= pro.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= pro.hex %>-3.jpg" alt="<%= pro.repositorio %>"></a></li>
+        <% desarrollando = @getCollection('proyectos_desarrollando') %><% for i in [0...Math.min(5,desarrollando.length)]: %><% documento = desarrollando.at(i).toJSON() %><% if documento.estado is 'dev': %>
+          <li><a href="https://github.com/<%= documento.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= documento.hex %>-1.jpg" alt="<%= documento.repositorio %>"></a></li>
+          <li><a href="https://github.com/<%= documento.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= documento.hex %>-2.jpg" alt="<%= documento.repositorio %>"></a></li>
+          <li><a href="https://github.com/<%= documento.repositorio %>/commits"><img src="ivr/slider/slider-img-<%= documento.hex %>-3.jpg" alt="<%= documento.repositorio %>"></a></li>
           <% end %>
           <% end %>
         </ul>
@@ -197,16 +193,16 @@ titulo: Vladimir Rodríguez
 <section id="id-todo" class="content-section">
   <div class="container">
     <h4 class="title-bg text-center">
-      <span class="fa fa-gg pull-left"></span>por hacer<span class="fa fa-gg pull-right"></span>
+      <span class="fa fa-gg pull-left"></span>próximamente<span class="fa fa-gg pull-right"></span>
     </h4>
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
+      <div class="col-md-8 col-md-offset-2  text-center">
         <div class="list-group">
-        <% pendientes = @getCollection('proyectos_desarrollando') %>
-          <% for i in [0...Math.min(4,pendientes.length)]: %>
-              <% document = pendientes.at(i).toJSON() %>
+        <% proximamente = @getCollection('proyectos_desarrollando') %>
+          <% for i in [0...Math.min(10,proximamente.length)]: %>
+              <% document = proximamente.at(i).toJSON() %>
               <% if document.estado is 'todo': %>
-          <a href="<%= document.url %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= @formatoFecha(pendientes.date, "LL") %>" class="list-group-item list-group-item-warning <%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>"><span class="fa fa-cog fa-spin pull-left"></span><%= document.titulo %><span class="fa fa-cog fa-spin pull-right"></span></a>
+          <a href="<%= document.url %>?iframe=true&amp;width=700&amp;height=500" data-rel="prettyPhoto" title="<%= document.titulo %>" class="list-group-item list-group-item-warning <%= 'active'  if @document.url is document.url or @document.firstPageDoc?.get('url') is document.url %>"><span class="fa fa-cog fa-spin pull-left"></span><%= document.titulo %><span class="fa fa-cog fa-spin pull-right"></span></a>
           <% end %>
           <% end %>
         </div>
@@ -266,4 +262,4 @@ titulo: Vladimir Rodríguez
       </div>
 </footer>
 <!--fin footer-->
-<div id="toTop">Ir para Arriba</div>
+<div id="toTop">arriba</div>
