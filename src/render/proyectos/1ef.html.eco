@@ -3,4 +3,4 @@ estado: "todo"
 titulo: "MongoDB"
 hex: 1ef
 ---
-<img src="<%= @site.url %>/ivr/proyectos/galley-img-<%= @document.hex %>-full.jpg">
+<img src="<%= @site.url %>/ivr/proyectos/gallery-img-<%= @document.hex %>-full.jpg">
