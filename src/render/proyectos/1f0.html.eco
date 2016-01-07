@@ -3,4 +3,5 @@ estado: "todo"
 titulo: "AngularJS"
 hex: 1f0
 ---
-<img src="<%= @site.url %>/ivr/proyectos/gallery-img-<%= @document.hex %>-full.jpg">
+<img style="max-width: 100%; height: auto; display: block;" src="<%= @site.url %>/ivr/proyectos/gallery-img-<%= @document.hex %>-full.jpg">
+

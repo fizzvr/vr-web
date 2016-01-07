@@ -3,4 +3,6 @@ estado: todo
 titulo: "Web app con AngularJs, NodeJS y MongoDB"
 hex: 1f2
 ---
-<img src="<%= @site.url %>/ivr/proyectos/gallery-img-<%= @document.hex %>-full.jpg">
+<img style="max-width: 100%; height: auto; display: block;" src="<%= @site.url %>/ivr/proyectos/gallery-img-<%= @document.hex %>-full.jpg">
+
+
