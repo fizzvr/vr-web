@@ -235,9 +235,9 @@ titulo: Vladimir Rodríguez
                 <ul class="list-inline banner-social-buttons">
                     <li><a href="https://github.com/fizzvr" data-toggle="tooltip" data-placement="top" title="GitHub" class="btn btn-default btn-lg" target="_blank"><span class="fa fa-github fa-2x"></span><span class="center-block">Github</span></a>
                     </li>
-                    <li><a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;" data-toggle="tooltip" data-placement="top" title="Twitter" class="btn btn-default btn-lg"><span class="fa fa-envelope-o fa-2x"></span><span class="center-block">correo</span></a>
+                    <li><a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;i&#00122;&#122;&#118;&#114;&#0064;&#103;&#00109;&#97;&#00105;&#00108;&#0046;&#0099;&#00111;&#109;" data-toggle="tooltip" data-placement="top" title="Correo" class="btn btn-default btn-lg"><span class="fa fa-envelope-o fa-2x"></span><span class="center-block">correo</span></a>
                     </li>
-                    <li><a href="tel:+593983288589" data-toggle="tooltip" data-placement="top" title="Twitter" class="btn btn-default btn-lg"><span class="fa fa-phone fa-2x"></span><span class="center-block">Llamar</span></a>
+                    <li><a href="tel:+593983288589" data-toggle="tooltip" data-placement="top" title="WhatsApp" class="btn btn-default btn-lg"><span class="fa fa-phone fa-2x"></span><span class="center-block">WhatsApp</span></a>
                     </li>
                 </ul>
             </div>
@@ -258,7 +258,7 @@ titulo: Vladimir Rodríguez
 
 <footer class="footer">
       <div class="container">
-        <span class="made-with-heart col-lg-12">Copyright © 2015 Vladimir Rodríguez</span>
+        <span class="made-with-heart col-lg-12">Copyright © 2016 Vladimir Rodríguez</span>
       </div>
 </footer>
 <!--fin footer-->
