@@ -26,8 +26,8 @@ module.exports = function(grunt) {
 				{
 					expand: true,
 					flatten: true,
-					src: ["bower_components/jquery/jquery.min.js",
-					"bower_components/jquery/jquery.min.map"],
+					src: ["bower_components/jquery/dist/jquery.min.js",
+					"bower_components/jquery/dist/jquery.min.map"],
 					dest: '../fizzvr.github.io/act/jquery/'
 				},
 				//bootstrap - responsive
@@ -146,7 +146,7 @@ module.exports = function(grunt) {
                     preserveComments: 'some'
                 },
                 files: {
-                    '../fizzvr.github.io/jvr/vr1.min.js': ['src/public/js/jvr1.js']
+                    '../fizzvr.github.io/jvr/vr1.min.js': ['src/public/js/jvr2.js']
                 }
             }
         },

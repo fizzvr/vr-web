@@ -19,8 +19,8 @@ NPM | Descripción | Instalación
     ```bash
 	git clone git@github.com:fizzvr/vr-web.git
 	cd vr-web
-	sudo npm install
-    bower install --allow-root
+	npm install
+    bower install
 	docpad run
 	```
 
