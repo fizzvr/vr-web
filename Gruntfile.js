@@ -137,9 +137,9 @@ module.exports = function(grunt) {
                     banner: '/*\n'+
                    '* <%= leerJson.name %> - <%= leerJson.url %>\n' +
                    '*\n' +
-                   '* Copyright (c) 2015 <%= leerJson.author %> \n' +
+                   '* Copyright (c) 2016 <%= leerJson.author %> \n' +
                    '* bajo licencia MIT \n' +
-                   '* Para todo los dettalles y documentación: \n' +
+                   '* Para todos los detalles y documentación: \n' +
                    '* <%= leerJson.homepage %> \n' +
                    '* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +
                    '*/\n\n',
@@ -157,9 +157,9 @@ module.exports = function(grunt) {
                     banner: '/*\n'+
                    '* <%= leerJson.name %> - <%= leerJson.url %>\n' +
                    '*\n' +
-                   '* Copyright (c) 2015 <%= leerJson.author %> \n' +
+                   '* Copyright (c) 2016 <%= leerJson.author %> \n' +
                    '* bajo licencia MIT \n' +
-                   '* Para todo los dettalles y documentación: \n' +
+                   '* Para todos los dettalles y documentación: \n' +
                    '* <%= leerJson.homepage %> \n' +
                    '* <%= grunt.template.today("yyyy-mm-dd HH:mm:ss") %>\n' +
                    '*/\n\n'
