@@ -1,6 +1,5 @@
 {
   "name": "vr-web",
-  "description": "Desarrollador",
   "main": "node_modules/docpad/bin/docpad-server",
   "authors": [
     "Vladimir Rodríguez (fizzvr.github.io)"
