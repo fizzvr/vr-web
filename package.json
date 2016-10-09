@@ -30,7 +30,6 @@
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-csso": "^2.0.1",
     "load-grunt-tasks": "~3.5.2",
-    "superagent": "^2.3.0",
     "time-grunt": "~1.4.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",

@@ -1,6 +1,9 @@
+var moment;
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
     require('time-grunt')(grunt);
+    moment = require('moment');
+	moment.locale('es');
     // myGRUNT: COPIAR[PROVEEDORES]+ DISTRIBUIR[JS&CSS] + VALIDAR[HTML]
 	grunt.initConfig({
 		// metadatos
