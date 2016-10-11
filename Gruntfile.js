@@ -149,7 +149,7 @@ module.exports = function(grunt) {
                     preserveComments: 'some'
                 },
                 files: {
-                    '../fizzvr.github.io/jvr/vr1.min.js': ['src/public/js/jvr2.js']
+                    '../fizzvr.github.io/jvr/vr1.min.js': ['src/public/js/jvr1.js']
                 }
             }
         },

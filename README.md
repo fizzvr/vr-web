@@ -1,3 +1,4 @@
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/)
 [![Build Status](https://travis-ci.org/fizzvr/vr-web.svg?branch=master)](https://travis-ci.org/fizzvr/vr-web)
 
 ![nodejs](http://k46.kn3.net/5/0/C/B/3/B/BB7.jpg)

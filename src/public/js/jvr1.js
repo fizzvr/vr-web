@@ -91,7 +91,7 @@ function scaleBannerVideoSize(element){
             $(this).width(videoWidth).height(videoHeight);
         }
 
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+        //$('.homepage-hero-module .video-container video').addClass('fadeIn animated');
 
     });
 }
