@@ -31,27 +31,27 @@ module.exports = function(grunt) {
 					flatten: true,
 					src: ["bower_components/jquery/dist/jquery.min.js",
 					"bower_components/jquery/dist/jquery.min.map"],
-					dest: '../fizzvr.github.io/act/jquery/'
+					dest: './out/act/jquery/'
 				},
 				//bootstrap - responsive
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/bootstrap/dist/js/bootstrap.min.js"],
-					dest: '../fizzvr.github.io/act/bs3/'
+					dest: './out/act/bs3/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/bootstrap/dist/css/bootstrap.min.css",
 						"bower_components/bootstrap/dist/css/bootstrap-theme.min.css"],
-					dest: '../fizzvr.github.io/act/bs3/css/'
+					dest: './out/act/bs3/css/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/bootstrap/dist/fonts/*"],
-					dest: '../fizzvr.github.io/act/bs3/fonts/'
+					dest: './out/act/bs3/fonts/'
 				},
 				//flexslider - slider de imágenes
 				{
@@ -59,52 +59,52 @@ module.exports = function(grunt) {
 					flatten: true,
 					src: ["bower_components/flexslider/jquery.flexslider.js",
                           "bower_components/flexslider/flexslider.css"],
-					dest: '../fizzvr.github.io/act/fs/'
+					dest: './out/act/fs/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src:["bower_components/flexslider/fonts/*"],
-					dest: '../fizzvr.github.io/act/fs/fonts/'
+					dest: './out/act/fs/fonts/'
 				},
 				//prettyPhoto - caja de imagenes
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"],
-					dest: '../fizzvr.github.io/act/pp/'
+					dest: './out/act/pp/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src: ["bower_components/jquery-prettyPhoto/css/*"],
-					dest: '../fizzvr.github.io/act/pp/css/'
+					dest: './out/act/pp/css/'
 				},
 				{
 					expand: true,
 					cwd: 'bower_components/jquery-prettyPhoto/images/prettyPhoto/',
 					src: ['**'],
-					dest: '../fizzvr.github.io/act/pp/images/prettyPhoto/'
+					dest: './out/act/pp/images/prettyPhoto/'
 				},
                 //font-awesome - iconos, fuente
 				{
 				    expand: true,
 					cwd: 'bower_components/font-awesome/css/',
 					src: ['**'],
-					dest: '../fizzvr.github.io/act/fa/css/'
+					dest: './out/act/fa/css/'
 				},
 				{
 					expand: true,
 					flatten: true,
 					src:["bower_components/font-awesome/fonts/*"],
-					dest: '../fizzvr.github.io/act/fa/fonts/'
+					dest: './out/act/fa/fonts/'
 				},
                 //lazy load - imagenes
 				{
 				    expand: true,
                     flatten: true,
 					src: ['bower_components/jquery.lazyload/*.js'],
-					dest: '../fizzvr.github.io/act/ll/'
+					dest: './out/act/ll/'
 				},
                 // TODO: isotope - Filter & sort magical layouts
 //				{
@@ -118,13 +118,13 @@ module.exports = function(grunt) {
 				    expand: true,
                     flatten: true,
 					src: ['bower_components/maplace.js/src/*.min.js'],
-					dest: '../fizzvr.github.io/act/ma/'
+					dest: './out/act/ma/'
 				},
                 {
                     expand: true,
                     flatten: true,
                     src : ['bower_components/jquery-easing-original/jquery.easing.min.js'],
-                    dest: '../fizzvr.github.io/act/ea/'
+                    dest: './out/act/ea/'
                 }
 				]
 			}
@@ -149,7 +149,7 @@ module.exports = function(grunt) {
                     preserveComments: 'some'
                 },
                 files: {
-                    '../fizzvr.github.io/jvr/vr1.min.js': ['src/public/js/jvr1.js']
+                    './out/jvr/vr1.min.js': ['src/public/js/jvr1.js']
                 }
             }
         },
@@ -168,7 +168,7 @@ module.exports = function(grunt) {
                    '*/\n\n'
                 },
                 files: {
-                  '../fizzvr.github.io/cvr/vr1.min.css': ['src/public/css/cvr1.css']
+                  './out/cvr/vr1.min.css': ['src/public/css/cvr1.css']
                 }
             }
         },

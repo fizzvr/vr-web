@@ -5,7 +5,7 @@ exec = require('child_process').exec;
 json = require('./package.json');
 docpadConfig = {
 //  en la salida ya no es necesario incluir los archivos sin minificar, grunt realiza esta tarea.
-    outPath: '../fizzvr.github.io',
+    //outPath: '../fizzvr.github.io',
     //ignorePaths: [
     //     "/mnt/12F7437F2537BBBC/proyectosgithub/vr-web/src/public/css/",
     //     "/mnt/12F7437F2537BBBC/proyectosgithub/vr-web/src/public/js/"

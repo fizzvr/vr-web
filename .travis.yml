@@ -5,3 +5,6 @@ notifications:
   email:
     recipients:
       - fizzvr@gmail.com
+cache:
+  directories:
+    - node_modules
